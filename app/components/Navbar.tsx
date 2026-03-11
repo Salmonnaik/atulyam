@@ -14,6 +14,7 @@ export const LINKS = [
   { label:'Merch',   href:'/merch'    },
   { label:'Team',    href:'/team'     },
   { label:'About',   href:'/about'    },
+  { label:'Gallery', href:'/gallery'  },
 ]
 
 export default function Navbar() {
@@ -64,11 +65,13 @@ export default function Navbar() {
       {/* Right: ThemeSwitcher + Register */}
       <div className="hidden lg:flex items-center gap-4">
         <ThemeSwitcher />
-        <Link href="/events"
-          className="px-5 py-2 font-mono text-[0.62rem] tracking-[2px] uppercase text-black cursor-none clip transition-all duration-200 hover:scale-105"
+        <a href="https://forms.google.com/example" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-5 py-2 font-mono text-[0.62rem] tracking-[2px] uppercase text-black cursor-none clip transition-all duration-200 hover:scale-105 no-underline block"
           style={{ background:`linear-gradient(135deg,${theme.accent},${theme.accent}bb)`, boxShadow:`0 0 20px ${theme.accent}44` }}>
           Register
-        </Link>
+        </a>
       </div>
 
       {/* Mobile right */}

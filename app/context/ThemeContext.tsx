@@ -70,7 +70,12 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const saved = typeof window !== 'undefined' ? localStorage.getItem('atulyam-theme') : null
-    if (saved && THEMES.find(t=>t.id===saved)) setId(saved)
+    if (saved && THEMES.find(t=>t.id===saved)) {
+      setId(saved)
+    } else {
+      // Default to dark mode if no saved theme or invalid theme
+      setId('dark')
+    }
   }, [])
 
   const theme = THEMES.find(t=>t.id===id)??THEMES[0]

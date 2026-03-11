@@ -63,11 +63,16 @@ export default function EventCard({ event, index }: { event:EventItem; index:num
             </div>
           ))}
         </div>
-        <motion.button whileHover={{scale:1.02}} whileTap={{scale:.97}}
-          className="w-full py-4 font-mono text-[0.7rem] font-bold tracking-[3px] uppercase text-black cursor-none clip"
+        <motion.a 
+          href="https://forms.google.com/example" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          whileHover={{scale:1.02}} 
+          whileTap={{scale:.97}}
+          className="w-full py-4 font-mono text-[0.7rem] font-bold tracking-[3px] uppercase text-black cursor-none clip text-center no-underline block"
           style={{background:`linear-gradient(135deg,${event.color},${event.color}bb)`,boxShadow:hov?`0 0 28px ${event.color}55`:'none'}}>
           Register Now ✦
-        </motion.button>
+        </motion.a>
       </div>
     </motion.article>
   )

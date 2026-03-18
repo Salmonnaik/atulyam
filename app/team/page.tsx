@@ -123,61 +123,6 @@ const teamCategories = [
         }
       },
       {
-        name: "Prof. Michael Chen",
-        role: "Faculty Coordinator", 
-        department: "Information Technology",
-        image: "👨‍🏫",
-        description: "Overseeing infrastructure and technology integration.",
-        social: {
-          instagram: "https://instagram.com/michaelchen",
-          linkedin: "https://linkedin.com/in/michaelchen"
-        }
-      },
-      {
-        name: "Dr. Emily Rodriguez",
-        role: "Faculty Coordinator",
-        department: "Design",
-        image: "👩‍🏫",
-        description: "Mentoring creative teams and design innovation.",
-        social: {
-          instagram: "https://instagram.com/emilyrodriguez",
-          linkedin: "https://linkedin.com/in/emilyrodriguez"
-        }
-      },
-      {
-        name: "Prof. David Kim",
-        role: "Faculty Coordinator",
-        department: "Business Administration",
-        image: "👨‍🏫",
-        description: "Managing organizational structure and operations.",
-        social: {
-          instagram: "https://instagram.com/davidkim",
-          linkedin: "https://linkedin.com/in/davidkim"
-        }
-      },
-      {
-        name: "Dr. Lisa Wang",
-        role: "Faculty Coordinator",
-        department: "Media Studies",
-        image: "👩‍🏫",
-        description: "Guiding media and publicity strategies.",
-        social: {
-          instagram: "https://instagram.com/lisawang",
-          linkedin: "https://linkedin.com/in/lisawang"
-        }
-      },
-      {
-        name: "Prof. James Miller",
-        role: "Faculty Coordinator",
-        department: "Finance",
-        image: "👨‍🏫",
-        description: "Overseeing budget management and financial planning.",
-        social: {
-          instagram: "https://instagram.com/jamesmiller",
-          linkedin: "https://linkedin.com/in/jamesmiller"
-        }
-      },
-      {
         name: "Kenji Yamamoto",
         role: "Technical Lead",
         department: "Information Technology",
@@ -381,6 +326,8 @@ export default function Team() {
                   <div className={`grid gap-6 ${
                     category.members.length === 1 
                       ? 'grid-cols-1 max-w-md mx-auto' 
+                      : category.members.length === 3
+                      ? 'grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto'
                       : 'md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'
                   }`}>
                     {category.members.map((member, memberIndex) => (

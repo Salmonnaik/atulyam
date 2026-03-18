@@ -2,32 +2,75 @@
 import { EventItem, MerchItem, SponsorItem } from '@/types'
 
 export const EVENTS: EventItem[] = [
-  { id:'dance',   icon:'🌸', name:'Dance',   tagline:'Move Like the Cosmos',       description:'Classical Bharatanatyam to street-style fusion battles. Every step is a star being born.',  date:'March 14',  venue:'Main Amphitheatre',  prize:'₹15,000', fee:'₹100/person', color:'#ff88aa', day:1, tags:['Solo','Group','Classical','Fusion']  },
-  { id:'music',   icon:'🎵', name:'Music',   tagline:'Frequencies from the Stars', description:'Battle of Bands, vocal championships, and the legendary Star Night Concert finale.',         date:'March 14',  venue:'Galaxy Stage',        prize:'₹20,000', fee:'₹150/person', color:'#00f5ff', day:1, tags:['Solo','Band','Vocal','Instrumental'] },
-  { id:'drama',   icon:'🎭', name:'Drama',   tagline:'Stories in Starlight',       description:'One-act plays, Nukkad Natak, improv comedy battles, and mono-act performances.',             date:'March 15',  venue:'Black Box Theatre',   prize:'₹12,000', fee:'₹100/person', color:'#ffd700', day:2, tags:['One-Act','Nukkad','Improv','Mono']    },
-  { id:'gaming',  icon:'⚡', name:'Gaming',  tagline:'Enter the Digital Cosmos',   description:'BGMI, Valorant, FIFA tournaments. Retro arcade and Chess Blitz round out the digital arena.',date:'March 15',  venue:'Cyber Arena',         prize:'₹25,000', fee:'₹200/team',   color:'#9b59f5', day:2, tags:['BGMI','Valorant','FIFA','Chess']      },
-  { id:'art',     icon:'🖌️', name:'Art',     tagline:'Paint the Night Sky',        description:'Live canvas battles, photography contests, digital exhibitions and origami design.',          date:'March 16',  venue:'Art Pavilion',        prize:'₹10,000', fee:'₹80/person',  color:'#4ade80', day:3, tags:['Canvas','Photo','Digital','Origami'] },
-  { id:'coding',  icon:'💻', name:'Coding',  tagline:'Logic Meets the Universe',   description:'24-hour Hackathon, competitive programming, UI/UX design sprints, and AI showcases.',       date:'March 16',  venue:'Tech Hub',            prize:'₹30,000', fee:'₹200/team',   color:'#60a5fa', day:3, tags:['Hackathon','CP','UI/UX','AI']         },
+  { id:'dance',   icon:'🌸', name:'Dance',   tagline:'Move Like the Cosmos',       description:'Classical Bharatanatyam to street-style fusion battles. Every step is a star being born.',  date:'April 9',  venue:'Main Amphitheatre',  prize:'₹15,000', fee:'₹100/person', color:'#ff88aa', day:1, tags:['Solo','Group','Classical','Fusion']  },
+  { id:'music',   icon:'🎵', name:'Music',   tagline:'Frequencies from the Stars', description:'Battle of Bands, vocal championships, and the legendary Star Night Concert finale.',         date:'April 9',  venue:'Galaxy Stage',        prize:'₹20,000', fee:'₹150/person', color:'#00f5ff', day:1, tags:['Solo','Band','Vocal','Instrumental'] },
+  { id:'drama',   icon:'🎭', name:'Drama',   tagline:'Stories in Starlight',       description:'One-act plays, Nukkad Natak, improv comedy battles, and mono-act performances.',             date:'April 10',  venue:'Black Box Theatre',   prize:'₹12,000', fee:'₹100/person', color:'#ffd700', day:2, tags:['One-Act','Nukkad','Improv','Mono']    },
+  { id:'gaming',  icon:'⚡', name:'Gaming',  tagline:'Enter the Digital Cosmos',   description:'BGMI, Valorant, FIFA tournaments. Retro arcade and Chess Blitz round out the digital arena.',date:'April 10',  venue:'Cyber Arena',         prize:'₹25,000', fee:'₹200/team',   color:'#9b59f5', day:2, tags:['BGMI','Valorant','FIFA','Chess']      },
+  { id:'art',     icon:'🖌️', name:'Art',     tagline:'Paint the Night Sky',        description:'Live canvas battles, photography contests, digital exhibitions and origami design.',          date:'April 11',  venue:'Art Pavilion',        prize:'₹10,000', fee:'₹80/person',  color:'#4ade80', day:3, tags:['Canvas','Photo','Digital','Origami'] },
+  { id:'coding',  icon:'💻', name:'Coding',  tagline:'Logic Meets the Universe',   description:'24-hour Hackathon, competitive programming, UI/UX design sprints, and AI showcases.',       date:'April 11',  venue:'Tech Hub',            prize:'₹30,000', fee:'₹200/team',   color:'#60a5fa', day:3, tags:['Hackathon','CP','UI/UX','AI']         },
 ]
 
 export const ROADMAP = [
-  { day:1, date:'March 14', title:'Opening Day', subtitle:'Culture Awakens', color:'#ff88aa',
-    schedule:[ {time:'09:00 AM',event:'Grand Opening Ceremony'}, {time:'11:00 AM',event:'Dance Prelims'}, {time:'02:00 PM',event:'Music – Battle of Bands'}, {time:'05:00 PM',event:'Art Exhibition Opens'}, {time:'07:00 PM',event:'Cultural Night Show'} ] },
-  { day:2, date:'March 15', title:'Battle Day', subtitle:'Legends Clash', color:'#9b59f5',
-    schedule:[ {time:'09:30 AM',event:'Drama Competitions Begin'}, {time:'11:00 AM',event:'Gaming Arena Opens'}, {time:'01:00 PM',event:'Dance Finals'}, {time:'03:00 PM',event:'Hackathon Kickoff'}, {time:'06:00 PM',event:'Semi-Final Showdowns'} ] },
-  { day:3, date:'March 16', title:'Star Night', subtitle:'Champions Rise', color:'#ffd700',
-    schedule:[ {time:'10:00 AM',event:'Art & Coding Finals'}, {time:'12:00 PM',event:'Gaming Championships'}, {time:'03:00 PM',event:'Awards Ceremony'}, {time:'05:00 PM',event:'🌸 Sakura Lantern Release'}, {time:'07:00 PM',event:'⭐ Star Night Grand Concert'} ] },
+  { day:1, date:'April 9', title:'Opening Day', subtitle:'Culture Awakens', color:'#ff88aa',
+    schedule:[ 
+      {time:'8:00 AM',event:'Registration & Inauguration'},
+      {time:'9:00 AM',event:'Inaugural Function'},
+      {time:'10:00 AM',event:'Solo Classical'},
+      {time:'11:00 AM',event:'Solo Western'},
+      {time:'12:00 PM',event:'Lunch Break'},
+      {time:'1:00 PM',event:'Group Classical'},
+      {time:'2:00 PM',event:'Group Western'},
+      {time:'3:00 PM',event:'Dance Finals'},
+      {time:'4:00 PM',event:'Prize Distribution'},
+      {time:'5:00 PM',event:'Band Performance'},
+      {time:'6:00 PM',event:'DJ Night'},
+      {time:'7:00 PM',event:'Cultural Night'},
+      {time:'8:00 PM',event:'Comedy Show'},
+      {time:'9:00 PM',event:'Magic Show'},
+      {time:'10:00 PM',event:'End of Day 1'}
+    ] },
+  { day:2, date:'April 10', title:'Battle Day', subtitle:'Legends Clash', color:'#9b59f5',
+    schedule:[ 
+      {time:'8:00 AM',event:'Registration'},
+      {time:'9:00 AM',event:'Drama Competition'},
+      {time:'10:00 AM',event:'Skit Competition'},
+      {time:'11:00 AM',event:'Mono Act'},
+      {time:'12:00 PM',event:'Lunch Break'},
+      {time:'1:00 PM',event:'Gaming Competition'},
+      {time:'2:00 PM',event:'Technical Events'},
+      {time:'3:00 PM',event:'Singing Competition'},
+      {time:'4:00 PM',event:'Instrumental Performance'},
+      {time:'5:00 PM',event:'Battle of Bands'},
+      {time:'6:00 PM',event:'DJ Night'},
+      {time:'7:00 PM',event:'Cultural Night'},
+      {time:'8:00 PM',event:'Comedy Show'},
+      {time:'9:00 PM',event:'Magic Show'},
+      {time:'10:00 PM',event:'End of Day 2'}
+    ] },
+  { day:3, date:'April 11', title:'Star Night', subtitle:'Champions Rise', color:'#ffd700',
+    schedule:[ 
+      {time:'8:00 AM',event:'Registration'},
+      {time:'9:00 AM',event:'Art Competition'},
+      {time:'10:00 AM',event:'Photography Competition'},
+      {time:'11:00 AM',event:'Mehandi Competition'},
+      {time:'12:00 PM',event:'Lunch Break'},
+      {time:'1:00 PM',event:'Fashion Show'},
+      {time:'2:00 PM',event:'Singing Finals'},
+      {time:'3:00 PM',event:'Dance Finals'},
+      {time:'4:00 PM',event:'Prize Distribution'},
+      {time:'5:00 PM',event:'Band Performance'},
+      {time:'6:00 PM',event:'DJ Night'},
+      {time:'7:00 PM',event:'Cultural Night'},
+      {time:'8:00 PM',event:'Comedy Show'},
+      {time:'9:00 PM',event:'Magic Show'},
+      {time:'10:00 PM',event:'End of Day 3'}
+    ] },
 ]
 
 export const MERCH: MerchItem[] = [
-  { id:'tshirt',   name:'Festival Tee',       description:'Premium cotton tee with the Atulyam galaxy print on the back and star emblem on the chest.',    price:599,  icon:'👕', color:'#00f5ff', tag:'Bestseller', sizes:['XS','S','M','L','XL','XXL'] },
-  { id:'hoodie',   name:'Star Hoodie',         description:'Heavyweight fleece hoodie. Embroidered ATULYAM on the chest, galaxy art on the back.',           price:1299, icon:'🧥', color:'#9b59f5', tag:'Limited',    sizes:['S','M','L','XL','XXL']      },
-  { id:'cap',      name:'Cosmos Cap',          description:'Structured 6-panel cap with embroidered cherry blossom and star constellation badge.',            price:399,  icon:'🧢', color:'#ff88aa', tag:'Popular'                                        },
-  { id:'bag',      name:'Sakura Tote',         description:'Heavy-duty canvas tote with full-colour sakura print. Fits a 15" laptop comfortably.',            price:499,  icon:'👜', color:'#ffd700', tag:'Eco'                                            },
-  { id:'mug',      name:'Haru Mug',            description:'Ceramic 350ml mug with heat-reactive sakura design that blooms when you pour a hot drink.',       price:349,  icon:'☕', color:'#4ade80', tag:'Fan Fav'                                        },
-  { id:'poster',   name:'Galaxy Poster',       description:'A2 high-gloss print of the official Atulyam constellation map. Suitable for framing.',           price:199,  icon:'🖼️', color:'#60a5fa', tag:'Art'                                            },
-  { id:'badge',    name:'Star Pin Set',        description:'Set of 6 enamel pins – one for each event category. Collect all and wear your fandom.',           price:249,  icon:'📌', color:'#ff6b6b', tag:'Collectible'                                    },
-  { id:'notebook', name:'Cosmos Notebook',     description:'A5 hardcover notebook, 200 pages, dot-grid with sakura watermark. Perfect for the creative soul.',price:299,  icon:'📓', color:'#e040fb', tag:'Stationery'                                    },
+  { id:'black-tshirt', name:'Black Festival Tee', description:'Premium black cotton tee with the Atulyam galaxy print on the back and star emblem on the chest.', price:699, icon:'👕', color:'#000000', tag:'Classic', sizes:['S','M','L','XL','XXL'] },
+  { id:'white-tshirt', name:'White Festival Tee', description:'Premium white cotton tee with the Atulyam galaxy print on the back and star emblem on the chest.', price:699, icon:'👤', color:'#ffffff', tag:'Fresh', sizes:['S','M','L','XL','XXL'] },
+  { id:'star-hoodie', name:'Star Hoodie', description:'Heavyweight fleece hoodie. Embroidered ATULYAM on the chest, galaxy art on the back.', price:1299, icon:'🧥', color:'#9b59f5', tag:'Limited', sizes:['S','M','L','XL','XXL'] },
 ]
 
 export const SPONSORS: SponsorItem[] = [

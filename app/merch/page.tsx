@@ -19,11 +19,17 @@ export default function MerchPage() {
   const [cart, setCart] = useState<string[]>([])
   const [selected, setSelected] = useState<MerchItem|null>(null)
   const [added, setAdded] = useState<string|null>(null)
+  const [showComingSoon, setShowComingSoon] = useState(false)
 
   const addToCart = (id: string) => {
     setCart(c => [...c, id])
     setAdded(id)
     setTimeout(() => setAdded(null), 2000)
+  }
+
+  const handleItemClick = (item: MerchItem) => {
+    setShowComingSoon(true)
+    setTimeout(() => setShowComingSoon(false), 3000)
   }
 
   return (
@@ -47,13 +53,14 @@ export default function MerchPage() {
 
         {/* Grid */}
         <section className="py-16 px-6 lg:px-16">
-          <div className="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {MERCH.map((item, i) => (
               <motion.div key={item.id}
                 initial={{opacity:0,y:45}} whileInView={{opacity:1,y:0}} viewport={{once:true,margin:'-40px'}}
                 transition={{duration:.75,delay:i*.06,ease:[0.16,1,0.3,1]}}
                 className="relative glass-card border overflow-hidden cursor-none group hover:-translate-y-2 transition-all duration-300"
                 style={{borderColor:theme.border}}
+                onClick={() => handleItemClick(item)}
                 data-hover>
 
                 {/* Color accent */}
@@ -69,23 +76,23 @@ export default function MerchPage() {
                 </div>
 
                 {/* Icon */}
-                <div className="relative z-10 flex items-center justify-center pt-10 pb-4">
+                <div className="relative z-10 flex items-center justify-center pt-12 pb-6">
                   <motion.div animate={{y:[0,-6,0]}} transition={{duration:3+i*.3,repeat:Infinity,ease:'easeInOut'}}
-                    className="text-7xl filter drop-shadow-[0_0_16px_rgba(255,255,255,0.15)]">
+                    className="text-8xl filter drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                     {item.icon}
                   </motion.div>
                 </div>
 
                 {/* Info */}
-                <div className="relative z-10 px-6 pb-6">
-                  <h3 className="font-cinzel text-base tracking-[2px] mb-1" style={{color:theme.text}}>{item.name}</h3>
-                  <p className="text-[0.85rem] leading-[1.6] font-light mb-4 line-clamp-2" style={{color:theme.textMid}}>{item.description}</p>
+                <div className="relative z-10 px-8 pb-8">
+                  <h3 className="font-cinzel text-lg tracking-[2px] mb-2" style={{color:theme.text}}>{item.name}</h3>
+                  <p className="text-[0.95rem] leading-[1.7] font-light mb-6 line-clamp-2" style={{color:theme.textMid}}>{item.description}</p>
 
                   {/* Sizes */}
                   {item.sizes && (
-                    <div className="flex gap-1.5 flex-wrap mb-4">
+                    <div className="flex gap-2 flex-wrap mb-6">
                       {item.sizes.map(s=>(
-                        <span key={s} className="px-2 py-0.5 font-mono text-[0.52rem] tracking-[1px] border rounded"
+                        <span key={s} className="px-3 py-1 font-mono text-[0.56rem] tracking-[1px] border rounded"
                           style={{color:theme.textDim,borderColor:theme.border}}>{s}</span>
                       ))}
                     </div>
@@ -93,22 +100,22 @@ export default function MerchPage() {
 
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="font-cinzel text-xl" style={{color:item.color}}>₹{item.price}</span>
-                      <span className="font-mono text-[0.52rem] tracking-[1px] ml-1" style={{color:theme.textDim}}>+ GST</span>
+                      <span className="font-cinzel text-2xl" style={{color:item.color}}>₹{item.price}</span>
+                      <span className="font-mono text-[0.54rem] tracking-[1px] ml-1" style={{color:theme.textDim}}>+ GST</span>
                     </div>
                     <div className="flex gap-2">
                       <motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}}
-                        onClick={() => setSelected(item)}
-                        className="px-3 py-2 font-mono text-[0.58rem] tracking-[1px] uppercase cursor-none border transition-all"
+                        onClick={(e) => { e.stopPropagation(); setSelected(item) }}
+                        className="px-4 py-2.5 font-mono text-[0.6rem] tracking-[1px] uppercase cursor-none border transition-all"
                         style={{color:theme.textDim,borderColor:theme.border,background:'transparent'}}>
                         Detail
                       </motion.button>
                       <motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}}
-                        onClick={() => addToCart(item.id)}
-                        className="px-4 py-2 font-mono text-[0.58rem] tracking-[1px] uppercase text-black cursor-none clip transition-all"
+                        onClick={(e) => { e.stopPropagation(); addToCart(item.id) }}
+                        className="px-5 py-2.5 font-mono text-[0.6rem] tracking-[1px] uppercase text-black cursor-none clip transition-all"
                         style={{
                           background: added===item.id ? '#4ade80' : `linear-gradient(135deg,${item.color},${item.color}cc)`,
-                          boxShadow: `0 0 16px ${item.color}44`
+                          boxShadow: `0 0 20px ${item.color}44`
                         }}>
                         {added===item.id ? '✓ Added' : '+ Cart'}
                       </motion.button>
@@ -119,6 +126,40 @@ export default function MerchPage() {
             ))}
           </div>
         </section>
+
+        {/* Coming Soon Notification */}
+        <AnimatePresence>
+          {showComingSoon && (
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[600] px-12 py-10 rounded-3xl glass-card border"
+              style={{ 
+                borderColor: theme.accent,
+                background: `${theme.bg}ee`,
+                boxShadow: `0 0 60px ${theme.accent}66`,
+                minWidth: '400px'
+              }}
+            >
+              <div className="text-center space-y-6">
+                <motion.div 
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  className="text-6xl"
+                >
+                  🚀
+                </motion.div>
+                <h3 className="font-cinzel text-4xl font-bold" style={{ color: theme.accent }}>
+                  Coming Soon
+                </h3>
+                <p className="font-mono text-lg" style={{ color: theme.textMid }}>
+                  Merchandise will be available for purchase soon!
+                </p>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* Info strip */}
         <section className="py-12 px-6 border-t border-b" style={{borderColor:theme.border}}>

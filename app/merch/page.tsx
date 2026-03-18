@@ -219,7 +219,6 @@ export default function MerchPage() {
         )}
       </AnimatePresence>
 
-      <Footer />
     </>
   )
 }

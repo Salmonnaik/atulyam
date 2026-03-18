@@ -325,8 +325,6 @@ export default function Gallery() {
             </motion.div>
           </motion.div>
         )}
-
-        <Footer />
       </main>
     </>
   )

@@ -72,7 +72,6 @@ export default function EventsPage() {
           </Link>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

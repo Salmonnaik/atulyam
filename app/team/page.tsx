@@ -23,69 +23,91 @@ const teamCategories = [
     name: "Faculty Coordinators",
     members: [
       {
-        name: "Dr. Sarah Johnson",
-        role: "Faculty Coordinator",
+        name: "Dr. R. S. Bicholkar",
+        role: "Principal",
+        department: "College Administration",
+        image: "👨‍🏫",
+        description: "Leading the institution with excellence in education and innovation.",
+        social: {
+          instagram: "https://instagram.com/rsbicholkar",
+          linkedin: "https://linkedin.com/in/rsbicholkar"
+        }
+      },
+      {
+        name: "Prof. S. A. Shinde",
+        role: "Head of Department",
         department: "Computer Science",
-        image: "👩‍🏫",
+        image: "�‍🏫",
         description: "Guiding the technical aspects and ensuring academic excellence.",
         social: {
-          instagram: "https://instagram.com/sarahjohnson",
-          linkedin: "https://linkedin.com/in/sarahjohnson"
+          instagram: "https://instagram.com/sashinde",
+          linkedin: "https://linkedin.com/in/sashinde"
         }
       },
       {
-        name: "Prof. Michael Chen",
-        role: "Faculty Coordinator", 
+        name: "Prof. S. M. Nirkhe",
+        role: "Faculty Coordinator",
         department: "Information Technology",
         image: "👨‍🏫",
-        description: "Overseeing infrastructure and technology integration.",
+        description: "Mentoring students and coordinating technical events.",
         social: {
-          instagram: "https://instagram.com/michaelchen",
-          linkedin: "https://linkedin.com/in/michaelchen"
+          instagram: "https://instagram.com/smnirkhe",
+          linkedin: "https://linkedin.com/in/smnirkhe"
         }
       },
       {
-        name: "Dr. Emily Rodriguez",
+        name: "Prof. S. P. Gawande",
         role: "Faculty Coordinator",
-        department: "Design",
-        image: "👩‍🏫",
-        description: "Mentoring creative teams and design innovation.",
+        department: "Computer Science",
+        image: "�‍🏫",
+        description: "Supporting student activities and cultural events.",
         social: {
-          instagram: "https://instagram.com/emilyrodriguez",
-          linkedin: "https://linkedin.com/in/emilyrodriguez"
+          instagram: "https://instagram.com/spgawande",
+          linkedin: "https://linkedin.com/in/spgawande"
         }
       },
       {
-        name: "Prof. David Kim",
+        name: "Prof. V. M. Jadhav",
         role: "Faculty Coordinator",
-        department: "Business Administration",
+        department: "Computer Science",
         image: "👨‍🏫",
-        description: "Managing organizational structure and operations.",
+        description: "Guiding students in technical and creative endeavors.",
         social: {
-          instagram: "https://instagram.com/davidkim",
-          linkedin: "https://linkedin.com/in/davidkim"
+          instagram: "https://instagram.com/vmjadhav",
+          linkedin: "https://linkedin.com/in/vmjadhav"
         }
       },
       {
-        name: "Dr. Lisa Wang",
+        name: "Prof. P. R. Khandekar",
         role: "Faculty Coordinator",
-        department: "Media Studies",
-        image: "👩‍🏫",
-        description: "Guiding media and publicity strategies.",
+        department: "Computer Science",
+        image: "�‍🏫",
+        description: "Coordinating academic and extracurricular activities.",
         social: {
-          instagram: "https://instagram.com/lisawang",
-          linkedin: "https://linkedin.com/in/lisawang"
+          instagram: "https://instagram.com/prkhandekar",
+          linkedin: "https://linkedin.com/in/prkhandekar"
         }
       },
       {
-        name: "Prof. James Miller",
+        name: "Prof. S. D. Jadhav",
         role: "Faculty Coordinator",
-        department: "Finance",
+        department: "Computer Science",
         image: "👨‍🏫",
-        description: "Overseeing budget management and financial planning.",
+        description: "Supporting technical events and student development.",
         social: {
-          instagram: "https://instagram.com/jamesmiller",
-          linkedin: "https://linkedin.com/in/jamesmiller"
+          instagram: "https://instagram.com/sdjadhav",
+          linkedin: "https://linkedin.com/in/sdjadhav"
+        }
+      },
+      {
+        name: "Prof. S. P. Auti",
+        role: "Faculty Coordinator",
+        department: "Computer Science",
+        image: "👨‍🏫",
+        description: "Mentoring students in technical projects and competitions.",
+        social: {
+          instagram: "https://instagram.com/spauti",
+          linkedin: "https://linkedin.com/in/spauti"
         }
       }
     ]
@@ -103,6 +125,45 @@ const teamCategories = [
         social: {
           instagram: "https://instagram.com/ayatanaka",
           linkedin: "https://linkedin.com/in/ayatanaka"
+        }
+      }
+    ]
+  },
+  {
+    id: "assistant-head-coordinator",
+    name: "Assistant Head Coordinator",
+    members: [
+      {
+        name: "Yuki Tanaka",
+        role: "Assistant Head Coordinator",
+        department: "Event Management",
+        image: "👩‍💼",
+        description: "Assisting in overall festival coordination and team management.",
+        social: {
+          instagram: "https://instagram.com/yukitanaka",
+          linkedin: "https://linkedin.com/in/yukitanaka"
+        }
+      },
+      {
+        name: "Raj Patel",
+        role: "Assistant Head Coordinator",
+        department: "Technical Operations",
+        image: "👨‍💼",
+        description: "Supporting technical aspects and venue coordination.",
+        social: {
+          instagram: "https://instagram.com/rajpatel",
+          linkedin: "https://linkedin.com/in/rajpatel"
+        }
+      },
+      {
+        name: "Priya Sharma",
+        role: "Assistant Head Coordinator",
+        department: "Cultural Activities",
+        image: "👩‍💼",
+        description: "Coordinating cultural events and participant management.",
+        social: {
+          instagram: "https://instagram.com/priyasharma",
+          linkedin: "https://linkedin.com/in/priyasharma"
         }
       }
     ]
@@ -431,8 +492,7 @@ export default function Team() {
           </div>
         </section>
 
-        <Footer />
-      </main>
+        </main>
     </>
   )
 }

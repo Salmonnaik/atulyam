@@ -287,7 +287,6 @@ export default function WebTeamPage() {
           </motion.div>
         )}
 
-        <Footer />
       </main>
     </>
   )

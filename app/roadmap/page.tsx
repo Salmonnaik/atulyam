@@ -150,7 +150,6 @@ export default function RoadmapPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

@@ -157,7 +157,6 @@ export default function SponsorsPage() {
           </motion.div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

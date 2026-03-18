@@ -297,14 +297,47 @@ const teamCategories = [
     name: "Marketing & Sponsorship Team",
     members: [
       {
-        name: "Emi Ito",
+        name: "Sarthak Patil",
         role: "Marketing Lead",
         department: "Marketing",
-        image: "👩‍📱",
-        description: "Spreading the word and engaging our community across all platforms.",
+        image: "�‍📱",
+        description: "Leading marketing strategies and campaign management.",
         social: {
-          instagram: "https://instagram.com/emiito",
-          linkedin: "https://linkedin.com/in/emiito"
+          instagram: "https://instagram.com/sarthakpatil",
+          linkedin: "https://linkedin.com/in/sarthakpatil"
+        }
+      },
+      {
+        name: "Yash Chaudhari",
+        role: "Marketing Coordinator",
+        department: "Marketing",
+        image: "👨‍💼",
+        description: "Coordinating promotional activities and social media management.",
+        social: {
+          instagram: "https://instagram.com/yashchaudhari",
+          linkedin: "https://linkedin.com/in/yashchaudhari"
+        }
+      },
+      {
+        name: "Rohit Patil",
+        role: "Marketing Coordinator",
+        department: "Marketing",
+        image: "👨‍💼",
+        description: "Managing marketing materials and outreach programs.",
+        social: {
+          instagram: "https://instagram.com/rohitpatil",
+          linkedin: "https://linkedin.com/in/rohitpatil"
+        }
+      },
+      {
+        name: "Om Patil",
+        role: "Marketing Coordinator",
+        department: "Marketing",
+        image: "👨‍💼",
+        description: "Supporting marketing campaigns and event promotion.",
+        social: {
+          instagram: "https://instagram.com/ompatil",
+          linkedin: "https://linkedin.com/in/ompatil"
         }
       }
     ]

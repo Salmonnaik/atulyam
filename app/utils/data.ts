@@ -68,9 +68,10 @@ export const ROADMAP = [
 ]
 
 export const MERCH: MerchItem[] = [
-  { id:'black-tshirt', name:'Black Festival Tee', description:'Premium black cotton tee with the Atulyam galaxy print on the back and star emblem on the chest.', price:699, icon:'👕', color:'#000000', tag:'Classic', sizes:['S','M','L','XL','XXL'] },
-  { id:'white-tshirt', name:'White Festival Tee', description:'Premium white cotton tee with the Atulyam galaxy print on the back and star emblem on the chest.', price:699, icon:'👤', color:'#ffffff', tag:'Fresh', sizes:['S','M','L','XL','XXL'] },
-  { id:'star-hoodie', name:'Star Hoodie', description:'Heavyweight fleece hoodie. Embroidered ATULYAM on the chest, galaxy art on the back.', price:1299, icon:'🧥', color:'#9b59f5', tag:'Limited', sizes:['S','M','L','XL','XXL'] },
+  { id:'black-tshirt', name:'Black Festival Tee', description:'Premium black cotton tee with the ATULYAM galaxy print on the back and star emblem on the chest.', price:350, icon:'/images/merch/Black_Dragon.jpg__1_-removebg-preview.png', color:'#000000', tag:'Classic', sizes:['S','M','L','XL','XXL'], registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdfc6bbr5Ks9ydlz9DWAK0eHJo3Z0UtgQZU5MpJsAiGzJEhHQ/viewform?usp=header', priceColor: '#ffffff', glowColor: '#ffd700' },
+  { id:'white-tshirt', name:'White Festival Tee', description:'Premium white cotton tee with the ATULYAM galaxy print on the back and star emblem on the chest.', price:350, icon:'/images/merch/White_Fish.jpg-removebg-preview.png', color:'#ffffff', tag:'Fresh', sizes:['S','M','L','XL','XXL'], registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdfc6bbr5Ks9ydlz9DWAK0eHJo3Z0UtgQZU5MpJsAiGzJEhHQ/viewform?usp=header', priceColor: '#ff0000' },
+  { id:'sakura-tshirt', name:'Sakura Festival Tee', description:'Premium cotton tee with ATULYAM sakura design featuring Japanese cherry blossom elements and festival logo.', price:350, icon:'/images/merch/Beige_Sakura.jpg-removebg-preview.png', color:'#be185d', tag:'Spring Edition', sizes:['S','M','L','XL','XXL'], registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdfc6bbr5Ks9ydlz9DWAK0eHJo3Z0UtgQZU5MpJsAiGzJEhHQ/viewform?usp=header' },
+  { id:'galaxy-tshirt', name:'Galaxy Festival Tee', description:'Premium cotton tee with ATULYAM galaxy design featuring stars and cosmic elements on the back.', price:350, icon:'/Beige_Dragon.jpg-removebg-preview.png', color:'#4a5568', tag:'Limited Edition', sizes:['S','M','L','XL','XXL'], registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdfc6bbr5Ks9ydlz9DWAK0eHJo3Z0UtgQZU5MpJsAiGzJEhHQ/viewform?usp=header' },
 ]
 
 export const SPONSORS: SponsorItem[] = [

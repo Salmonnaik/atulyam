@@ -19,7 +19,6 @@ export default function MerchPage() {
   const [cart, setCart] = useState<string[]>([])
   const [selected, setSelected] = useState<MerchItem|null>(null)
   const [added, setAdded] = useState<string|null>(null)
-  const [showComingSoon, setShowComingSoon] = useState(false)
 
   const addToCart = (id: string) => {
     setCart(c => [...c, id])
@@ -28,8 +27,7 @@ export default function MerchPage() {
   }
 
   const handleItemClick = (item: MerchItem) => {
-    setShowComingSoon(true)
-    setTimeout(() => setShowComingSoon(false), 3000)
+    setSelected(item)
   }
 
   return (
@@ -53,13 +51,13 @@ export default function MerchPage() {
 
         {/* Grid */}
         <section className="py-16 px-6 lg:px-16">
-          <div className="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
             {MERCH.map((item, i) => (
               <motion.div key={item.id}
                 initial={{opacity:0,y:45}} whileInView={{opacity:1,y:0}} viewport={{once:true,margin:'-40px'}}
                 transition={{duration:.75,delay:i*.06,ease:[0.16,1,0.3,1]}}
-                className="relative glass-card border overflow-hidden cursor-none group hover:-translate-y-2 transition-all duration-300"
-                style={{borderColor:theme.border}}
+                className="relative border overflow-hidden cursor-none group hover:-translate-y-2 transition-all duration-300"
+                style={{borderColor:theme.border, background:'transparent'}}
                 onClick={() => handleItemClick(item)}
                 data-hover>
 
@@ -75,11 +73,20 @@ export default function MerchPage() {
                   {item.tag}
                 </div>
 
-                {/* Icon */}
-                <div className="relative z-10 flex items-center justify-center pt-12 pb-6">
+                {/* Icon/Image */}
+                <div className="relative z-10 flex items-center justify-center pt-4 pb-2">
                   <motion.div animate={{y:[0,-6,0]}} transition={{duration:3+i*.3,repeat:Infinity,ease:'easeInOut'}}
                     className="text-8xl filter drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-                    {item.icon}
+                    {item.icon.startsWith('/') ? (
+                      <img 
+                        src={item.icon} 
+                        alt={item.name}
+                        className="w-full h-full object-cover rounded-lg"
+                        style={{ maxHeight: '320px', minHeight: '320px' }}
+                      />
+                    ) : (
+                      <span>{item.icon}</span>
+                    )}
                   </motion.div>
                 </div>
 
@@ -100,24 +107,20 @@ export default function MerchPage() {
 
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="font-cinzel text-2xl" style={{color:item.color}}>₹{item.price}</span>
-                      <span className="font-mono text-[0.54rem] tracking-[1px] ml-1" style={{color:theme.textDim}}>+ GST</span>
+                      <span className="font-cinzel text-2xl" style={{color: item.priceColor || item.color }}>₹{item.price}</span>
                     </div>
                     <div className="flex gap-2">
                       <motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}}
-                        onClick={(e) => { e.stopPropagation(); setSelected(item) }}
+                        onClick={(e) => { e.stopPropagation(); window.open(item.registrationLink, '_blank') }}
                         className="px-4 py-2.5 font-mono text-[0.6rem] tracking-[1px] uppercase cursor-none border transition-all"
-                        style={{color:theme.textDim,borderColor:theme.border,background:'transparent'}}>
-                        Detail
-                      </motion.button>
-                      <motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}}
-                        onClick={(e) => { e.stopPropagation(); addToCart(item.id) }}
-                        className="px-5 py-2.5 font-mono text-[0.6rem] tracking-[1px] uppercase text-black cursor-none clip transition-all"
                         style={{
-                          background: added===item.id ? '#4ade80' : `linear-gradient(135deg,${item.color},${item.color}cc)`,
-                          boxShadow: `0 0 20px ${item.color}44`
+                          color:theme.textDim,
+                          borderColor:item.glowColor || item.color,
+                          background:'transparent',
+                          boxShadow: `0 0 15px ${(item.glowColor || item.color)}66, 0 0 25px ${(item.glowColor || item.color)}33`,
+                          textShadow: `0 0 8px ${(item.glowColor || item.color)}88`
                         }}>
-                        {added===item.id ? '✓ Added' : '+ Cart'}
+                        Register
                       </motion.button>
                     </div>
                   </div>
@@ -126,40 +129,6 @@ export default function MerchPage() {
             ))}
           </div>
         </section>
-
-        {/* Coming Soon Notification */}
-        <AnimatePresence>
-          {showComingSoon && (
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[600] px-12 py-10 rounded-3xl glass-card border"
-              style={{ 
-                borderColor: theme.accent,
-                background: `${theme.bg}ee`,
-                boxShadow: `0 0 60px ${theme.accent}66`,
-                minWidth: '400px'
-              }}
-            >
-              <div className="text-center space-y-6">
-                <motion.div 
-                  animate={{ scale: [1, 1.2, 1] }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                  className="text-6xl"
-                >
-                  🚀
-                </motion.div>
-                <h3 className="font-cinzel text-4xl font-bold" style={{ color: theme.accent }}>
-                  Coming Soon
-                </h3>
-                <p className="font-mono text-lg" style={{ color: theme.textMid }}>
-                  Merchandise will be available for purchase soon!
-                </p>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
 
         {/* Info strip */}
         <section className="py-12 px-6 border-t border-b" style={{borderColor:theme.border}}>
@@ -184,12 +153,23 @@ export default function MerchPage() {
             <div className="absolute inset-0 bg-black/80 backdrop-blur-md" />
             <motion.div initial={{scale:.94,y:20}} animate={{scale:1,y:0}} exit={{scale:.94,y:20}}
               transition={{duration:.3,ease:[0.16,1,0.3,1]}}
-              className="relative z-10 max-w-md w-full glass-card p-8 border"
-              style={{borderColor:theme.border}}
+              className="relative z-10 max-w-md w-full p-8 border"
+              style={{borderColor:theme.border, background:'transparent'}}
               onClick={e=>e.stopPropagation()}>
               <button onClick={()=>setSelected(null)} className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center border cursor-none text-sm transition-all"
                 style={{color:theme.textDim,borderColor:theme.border}}>✕</button>
-              <div className="text-6xl text-center mb-4">{selected.icon}</div>
+              <div className="text-center mb-4">
+                {selected.icon.startsWith('/') ? (
+                  <img 
+                    src={selected.icon} 
+                    alt={selected.name}
+                    className="w-full h-full object-cover rounded-lg mx-auto"
+                    style={{ maxHeight: '280px', minHeight: '280px' }}
+                  />
+                ) : (
+                  <div className="text-6xl">{selected.icon}</div>
+                )}
+              </div>
               <div className="absolute top-0 left-0 right-0 h-px" style={{background:`linear-gradient(90deg,transparent,${selected.color},transparent)`}} />
               <h2 className="font-cinzel text-xl text-center tracking-wider mb-1" style={{color:theme.text}}>{selected.name}</h2>
               <p className="font-mono text-[0.6rem] text-center tracking-[2px] mb-4" style={{color:selected.color}}>{selected.tag}</p>
@@ -206,12 +186,18 @@ export default function MerchPage() {
                 </div>
               )}
               <div className="flex items-center justify-between">
-                <span className="font-cinzel text-2xl" style={{color:selected.color}}>₹{selected.price}</span>
+                <span className="font-cinzel text-2xl" style={{color: selected.priceColor || selected.color }}>₹{selected.price}</span>
                 <motion.button whileHover={{scale:1.04}} whileTap={{scale:.96}}
-                  onClick={() => { addToCart(selected.id); setSelected(null) }}
-                  className="px-8 py-3 font-mono text-[0.68rem] tracking-[2px] uppercase text-black cursor-none clip"
-                  style={{background:`linear-gradient(135deg,${selected.color},${selected.color}bb)`}}>
-                  Add to Cart ✦
+                  onClick={() => { window.open(selected.registrationLink, '_blank'); setSelected(null) }}
+                  className="px-8 py-3 font-mono text-[0.68rem] tracking-[2px] uppercase cursor-none border transition-all"
+                  style={{
+                    color:theme.textDim,
+                    borderColor:selected.glowColor || selected.color,
+                    background:'transparent',
+                    boxShadow: `0 0 15px ${(selected.glowColor || selected.color)}66, 0 0 25px ${(selected.glowColor || selected.color)}33`,
+                    textShadow: `0 0 8px ${(selected.glowColor || selected.color)}88`
+                  }}>
+                  Register
                 </motion.button>
               </div>
             </motion.div>

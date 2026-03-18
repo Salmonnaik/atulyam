@@ -8,7 +8,7 @@ export interface EventItem {
 export interface MerchItem {
   id:string; name:string; description:string
   price:number; icon:string; color:string; tag:string
-  sizes?: string[]
+  sizes?: string[]; registrationLink?: string; priceColor?: string; glowColor?: string
 }
 export interface SponsorItem {
   name:string; tier:'title'|'platinum'|'gold'|'associate'; emoji:string; desc:string; logo?: string

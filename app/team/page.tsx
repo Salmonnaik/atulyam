@@ -136,11 +136,6 @@ const teamCategories = [
         role: "Event Head",
         image: "/team/ankit.png",
       },
-      {
-        name: "Harshal Tondare",
-        role: "Event Head",
-        image: "/team/harshal.jpeg",
-      },
     ],
   },
   {
@@ -162,6 +157,11 @@ const teamCategories = [
         name: "Karan Kumar Sah",
         role: "Devolper",
         image: "/team/karan.jpeg",
+      },
+      {
+        name: "Harshal Tondare",
+        role: "Devolper",
+        image: "/team/harshal.jpeg",
       },
     ],
   },

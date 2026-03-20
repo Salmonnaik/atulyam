@@ -102,7 +102,7 @@ const teamCategories = [
       {
         name: "Kipa Gungyo",
         role: "Finance Head",
-        image: "",
+        image: "/team/kipa.jpeg",
       },
     ],
   },
@@ -119,12 +119,12 @@ const teamCategories = [
       {
         name: "Siddhant",
         role: "Event Head",
-        image: "/team/Siddhant.jpg",
+        image: "/team/sidhant .jpeg",
       },
       {
         name: "Ankit Jha",
         role: "Event Head",
-        image: "/team/ankit1.PNG",
+        image: "/team/ankit.png",
       },
     ],
   },
@@ -146,7 +146,7 @@ const teamCategories = [
       {
         name: "Karan Kumar Sah",
         role: "Devolper",
-        image: "/team/karan.jpg",
+        image: "/team/karan.jpeg",
       },
     ],
   },
@@ -163,7 +163,7 @@ const teamCategories = [
       {
         name: "Gerna Panyang",
         role: "Sponsorship Team",
-        image: "",
+        image: "/team/gerna.jpeg",
       },
       {
         name: "Kago Doding",
@@ -236,7 +236,7 @@ const teamCategories = [
       {
         name: "Gerna Panyang",
         role: "Marketing Team",
-        image: "/team/gerna.jpg",
+        image: "/team/gerna.jpeg",
       },
       {
         name: "Meku Tungi",
@@ -263,7 +263,7 @@ const teamCategories = [
       {
         name: "Nabam Tabin",
         role: "Volunteer Head",
-        image: "",
+        image: "/team/tabin.jpg",
       },
       {
         name: "Akshay Tadepalli",

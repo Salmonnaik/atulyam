@@ -85,7 +85,7 @@ const teamCategories = [
       {
         name: "Lishi Teshi",
         role: "Assistant Head Coordinator",
-        image: "/team/lyshi.jpeg",
+        image: "/team/.jpeg",
       },
       {
         name: "Dunga Mosang",
@@ -125,6 +125,11 @@ const teamCategories = [
         name: "Ankit Jha",
         role: "Event Head",
         image: "/team/ankit.png",
+      },
+      {
+        name: "Harshal Tondare",
+        role: "Event Head",
+        image: "/team/harshal.jpeg",
       },
     ],
   },
@@ -183,7 +188,7 @@ const teamCategories = [
     emoji: "📣",
     members: [
       {
-        name: "Abs Sonam",
+        name: "Aba Sonam",
         role: "PR Team",
         image: "/team/sonam.jpeg",
       },

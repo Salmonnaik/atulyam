@@ -212,7 +212,7 @@ const teamCategories = [
       {
         name: "Rahman",
         role: "Media and Graphics Head",
-        image: "/team/rahman.png",
+        image: "/team/rahman.jpeg",
       },
     ],
   },
@@ -258,7 +258,7 @@ const teamCategories = [
       {
         name: "Nayato Mengnia",
         role: "Volunteer Head",
-        image: "",
+        image: "/team/nayto.JPG",
       },
       {
         name: "Nabam Tabin",

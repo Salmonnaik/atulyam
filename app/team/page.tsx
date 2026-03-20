@@ -168,7 +168,7 @@ const teamCategories = [
       {
         name: "Kago Doding",
         role: "Sponsorship Team",
-        image: "",
+        image: "/team/kago.jpeg",
       },
       {
         name: "Uma Shanker",

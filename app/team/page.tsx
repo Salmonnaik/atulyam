@@ -241,6 +241,11 @@ const teamCategories = [
         role: "Design Head",
         image: "/team/karlo.jpeg",
       },
+      {
+        name: "Nabam Agu",
+        role: "Design Head",
+        image: "",
+      },
     ],
   },
   {

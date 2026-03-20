@@ -99,7 +99,7 @@ const teamCategories = [
       {
         name: 'Banoth Charan',
         role: 'Member',
-        image: '/team/cherry.jpg'
+        image: '/team/banothcharan.jpg'
       },
       {
         name: 'Arun Kumar',
@@ -325,14 +325,14 @@ export default function Team() {
                           }}>
                           
                           <div className="text-center space-y-4">
-                            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border group-hover:scale-110 transition-transform duration-300"
+                            <div className="w-28 h-28 mx-auto rounded-md overflow-hidden border group-hover:scale-110 transition-transform duration-300"
                               style={{ borderColor: `${theme.accent}80` }}>
                               {member.image ? (
                                 <Image
                                   src={member.image}
                                   alt={member.name}
-                                  width={96}
-                                  height={96}
+                                  width={112}
+                                  height={112}
                                   className="w-full h-full object-cover"
                                 />
                               ) : (

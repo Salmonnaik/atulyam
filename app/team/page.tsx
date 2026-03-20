@@ -263,7 +263,7 @@ const teamCategories = [
       {
         name: "Johnson Ngi",
         role: "Management Head",
-        image: "",
+        image: "/team/jhonson.jpeg",
       },
       {
         name: "Himanshu Ranjan",

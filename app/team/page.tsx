@@ -117,28 +117,6 @@ const teamCategories = [
     ],
   },
   {
-    key: "event_coordinators",
-    title: "Event Head",
-    emoji: "🎯",
-    members: [
-      {
-        name: "Bashu Singh",
-        role: "Event Head",
-        image: "/team/bashu.jpeg",
-      },
-      {
-        name: "Siddhant",
-        role: "Event Head",
-        image: "/team/sidhant .jpeg",
-      },
-      {
-        name: "Ankit Jha",
-        role: "Event Head",
-        image: "/team/ankit.png",
-      },
-    ],
-  },
-  {
     key: "web",
     title: "Web Team",
     emoji: "💻",
@@ -162,6 +140,28 @@ const teamCategories = [
         name: "Harshal Tondare",
         role: "Devolper",
         image: "/team/harshal.jpeg",
+      },
+    ],
+  },
+  {
+    key: "event_coordinators",
+    title: "Event Head",
+    emoji: "🎯",
+    members: [
+      {
+        name: "Bashu Singh",
+        role: "Event Head",
+        image: "/team/bashu.jpeg",
+      },
+      {
+        name: "Siddhant",
+        role: "Event Head",
+        image: "/team/sidhant .jpeg",
+      },
+      {
+        name: "Ankit Jha",
+        role: "Event Head",
+        image: "/team/ankit.png",
       },
     ],
   },

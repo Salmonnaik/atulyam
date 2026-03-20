@@ -114,7 +114,7 @@ const teamCategories = [
       {
         name: "Bashu Singh",
         role: "Event Head",
-        image: "",
+        image: "/team/bashu.jpeg",
       },
       {
         name: "Siddhant",
@@ -285,7 +285,7 @@ const teamCategories = [
       {
         name: "Himanshu Ranjan",
         role: "Management Head",
-        image: "",
+        image: "/team/himanshu.jpeg",
       },
     ],
   },

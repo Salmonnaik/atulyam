@@ -229,23 +229,6 @@ const teamCategories = [
     ],
   },
   {
-    key: "marketing",
-    title: "Marketing Team",
-    emoji: "📈",
-    members: [
-      {
-        name: "Gerna Panyang",
-        role: "Marketing Team",
-        image: "/team/gerna.jpeg",
-      },
-      {
-        name: "Meku Tungi",
-        role: "Marketing Team",
-        image: "/team/meku.jpg",
-      },
-    ],
-  },
-  {
     key: "volunteer_incharge",
     title: "Volunteer Head",
     emoji: "🧑‍🤝‍🧑",

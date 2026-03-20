@@ -222,9 +222,9 @@ const teamCategories = [
     emoji: "🧑‍🎨",
     members: [
       {
-        name: "Dungwa mossang",
+        name: "Nada Karlo",
         role: "Design Head",
-        image: "/team/Dungwamossang.jpg",
+        image: "/team/dunga.jpg",
       },
     ],
   },

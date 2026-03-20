@@ -244,7 +244,7 @@ const teamCategories = [
       {
         name: "Nabam Agu",
         role: "Design Head",
-        image: "",
+        image: "/team/nabam agu.jpeg",
       },
     ],
   },

@@ -95,7 +95,7 @@ const teamCategories = [
       {
         name: "Lishi Teshi",
         role: "Assistant Head Coordinator",
-        image: "/team/.jpeg",
+        image: "/team/lishi.jpeg",
       },
       {
         name: "Dunga Mosang",
@@ -188,7 +188,7 @@ const teamCategories = [
       {
         name: "Uma Shanker",
         role: "Sponsorship Team",
-        image: "",
+        image: "/team/uma.png",
       },
     ],
   },
@@ -210,7 +210,7 @@ const teamCategories = [
       {
         name: "Chaiput Pansa",
         role: "PR Team",
-        image: "",
+        image: "/team/pansa.jpeg",
       },
     ],
   },

@@ -224,7 +224,7 @@ const teamCategories = [
       {
         name: "Nada Karlo",
         role: "Design Head",
-        image: "/team/dunga.jpg",
+        image: "/team/karlo.jpeg",
       },
     ],
   },
@@ -251,7 +251,7 @@ const teamCategories = [
       {
         name: "Akshay Tadepalli",
         role: "Volunteer Head",
-        image: "",
+        image: "/team/akshay.jpeg",
       },
     ],
   },

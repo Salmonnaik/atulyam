@@ -1,271 +1,349 @@
-'use client'
+"use client";
 
-import dynamic from 'next/dynamic'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import Navbar from '../components/Navbar'
-import CustomCursor from '../components/CustomCursor'
-import SakuraPetals from '../components/SakuraPetals'
-import Footer from '../components/Footer'
-import { useTheme } from '../context/ThemeContext'
+import dynamic from "next/dynamic";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Navbar from "../components/Navbar";
+import CustomCursor from "../components/CustomCursor";
+import SakuraPetals from "../components/SakuraPetals";
+import Footer from "../components/Footer";
+import { useTheme } from "../context/ThemeContext";
 
-const GalaxyCanvas = dynamic(() => import('../components/GalaxyCanvas'), { ssr: false, loading: () => null })
+const GalaxyCanvas = dynamic(() => import("../components/GalaxyCanvas"), {
+  ssr: false,
+  loading: () => null,
+});
 
 const fade = (d = 0) => ({
   initial: { opacity: 0, y: 36 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 1.1, delay: d, ease: [0.16, 1, 0.3, 1] }
-})
+  transition: { duration: 1.1, delay: d, ease: [0.16, 1, 0.3, 1] },
+});
 
 const teamCategories = [
   {
-    key: 'chairman',
-    title: 'Addovedi Chairman',
-    emoji: '👨‍💼',
+    key: "chairman",
+    title: "Addovedi Chairman",
+    emoji: "👨‍💼",
     members: [
       {
-        name: 'Dr. Abhik Banerjee',
-        role: 'Chairman',
-        image: '/faculty/Dr. Abhik Banerjee.jpg'
-      }
-    ]
+        name: "Dr. Abhik Banerjee",
+        role: "Chairman",
+        image: "/faculty/Dr. Abhik Banerjee.jpg",
+      },
+    ],
   },
   {
-    key: 'faculty_coordinator',
-    title: 'Faculty Coordinator',
-    emoji: '🧑‍🏫',
+    key: "faculty_coordinator",
+    title: "Faculty Coordinator",
+    emoji: "🧑‍🏫",
     members: [
       {
-        name: 'Dr. Brajagopal Datta',
-        role: 'Faculty Coordinator',
-        image: '/faculty/Dr. Brajagopal Datta.jpg'
+        name: "Dr. Brajagopal Datta",
+        role: "Faculty Coordinator",
+        image: "/faculty/Dr. Brajagopal Datta.jpg",
       },
       {
-        name: 'Dr. Jayakesh K',
-        role: 'Faculty Coordinator',
-        image: '/faculty/Dr. Jayakesh K.jpg'
+        name: "Dr. Jayakesh K",
+        role: "Faculty Coordinator",
+        image: "/faculty/Dr. Jayakesh K.jpg",
       },
       {
-        name: 'Dr. Sahadev Roy',
-        role: 'Faculty Coordinator',
-        image: '/faculty/Dr. Sahadev Roy.jpg'
+        name: "Dr. Sahadev Roy",
+        role: "Faculty Coordinator",
+        image: "/faculty/Dr. Sahadev Roy.jpg",
       },
       {
-        name: 'Dr. Subhasish Banerjee',
-        role: 'Faculty Coordinator',
-        image: '/faculty/Dr. Subhasish Banerjee.jpg'
+        name: "Dr. Subhasish Banerjee",
+        role: "Faculty Coordinator",
+        image: "/faculty/Dr. Subhasish Banerjee.jpg",
       },
       {
-        name: 'Dr. Sandip Kumar Mandal',
-        role: 'Faculty Coordinator',
-        image: '/faculty/Dr. Sandip Kumar Mandal.jpg'
-      }
-    ]
+        name: "Dr. Sandip Kumar Mandal",
+        role: "Faculty Coordinator",
+        image: "/faculty/Dr. Sandip Kumar Mandal.jpg",
+      },
+    ],
   },
   {
-    key: 'head_coordinator',
-    title: 'Head Coordinator',
-    emoji: '⭐',
+    key: "head_coordinator",
+    title: "Head Coordinator",
+    emoji: "⭐",
     members: [
       {
-        name: 'Rahul Mengnia',
-        role: 'Head Coordinator',
-        image: '/team/rahul.jpg'
-      }
-    ]
+        name: "Rahul Mengnia",
+        role: "Head Coordinator",
+        image: "/team/rahul.JPG",
+      },
+    ],
   },
   {
-    key: 'event_coordinators',
-    title: 'Event Organizers',
-    emoji: '🎯',
+    key: "assistant_head_coordinator",
+    title: "Assistant Head Coordinator",
+    emoji: "✨",
     members: [
       {
-        name: 'Siddhant',
-        role: 'Member',
-        image: '/team/Siddhant.jpg'
+        name: "Lishi Teshi",
+        role: "Assistant Head Coordinator",
+        image: "/team/lyshi.jpeg",
       },
       {
-        name: 'Ankit Jha',
-        role: 'Member',
-        image: '/team/ankit1.PNG'
-      }
-    ]
+        name: "Dunga Mosang",
+        role: "Assistant Head Coordinator",
+        image: "/team/Dungwamossang.jpg",
+      },
+    ],
   },
   {
-    key: 'web',
-    title: 'Web Team',
-    emoji: '💻',
+    key: "finance_head",
+    title: "Finance Head",
+    emoji: "💰",
     members: [
       {
-        name: 'Banoth Charan',
-        role: 'Member',
-        image: '/team/banothcharan.jpg'
+        name: "Kipa Gungyo",
+        role: "Finance Head",
+        image: "",
       },
-      {
-        name: 'Arun Kumar',
-        role: 'Member',
-        image: '/team/yash.jpg'
-      },
-      {
-        name: 'Karan Kumar Sah',
-        role: 'Member',
-        image: '/team/karan.jpg'
-      }
-    ]
+    ],
   },
   {
-    key: 'sponsorship',
-    title: 'Sponsorship Team',
-    emoji: '🏆',
+    key: "event_coordinators",
+    title: "Event Head",
+    emoji: "🎯",
     members: [
       {
-        name: 'Rishav Dev Raj',
-        role: 'Member',
-        image: '/team/rishav.png'
+        name: "Bashu Singh",
+        role: "Event Head",
+        image: "",
       },
       {
-        name: 'Umashankar Sahu',
-        role: 'Member',
-        image: '/team/umashankar.png'
-      }
-    ]
+        name: "Siddhant",
+        role: "Event Head",
+        image: "/team/Siddhant.jpg",
+      },
+      {
+        name: "Ankit Jha",
+        role: "Event Head",
+        image: "/team/ankit1.PNG",
+      },
+    ],
   },
   {
-    key: 'pr',
-    title: 'PR Team',
-    emoji: '📣',
+    key: "web",
+    title: "Web Team",
+    emoji: "💻",
     members: [
       {
-        name: 'Saloni Muskan',
-        role: 'Member',
-        image: '/team/saloni.jpg'
+        name: "Banoth Charan",
+        role: "Devolper",
+        image: "/team/banothcharan.jpg",
       },
       {
-        name: 'James Raj Tamang',
-        role: 'Member',
-        image: '/team/james.jpg'
+        name: "Salmon Naik",
+        role: "Devolper",
+        image: "/team/salmon.jpeg",
       },
       {
-        name: 'Harshit Srivastava',
-        role: 'Member',
-        image: '/team/harshitsrivastava.jpg'
-      }
-    ]
+        name: "Karan Kumar Sah",
+        role: "Devolper",
+        image: "/team/karan.jpg",
+      },
+    ],
   },
   {
-    key: 'editing',
-    title: 'Editing Team',
-    emoji: '✂️',
+    key: "sponsorship",
+    title: "Sponsorship Team",
+    emoji: "🏆",
     members: [
       {
-        name: 'Nong Own Emphum',
-        role: 'Member',
-        image: '/team/nong.jpg'
+        name: "John Dalbera",
+        role: "Sponsorship Team",
+        image: "/team/jhon.jpeg",
       },
       {
-        name: 'Rahman',
-        role: 'Member',
-        image: '/team/rahman.png'
-      }
-    ]
+        name: "Gerna Panyang",
+        role: "Sponsorship Team",
+        image: "",
+      },
+      {
+        name: "Kago Doding",
+        role: "Sponsorship Team",
+        image: "",
+      },
+      {
+        name: "Uma Shanker",
+        role: "Sponsorship Team",
+        image: "",
+      },
+    ],
   },
   {
-    key: 'editing11',
-    title: 'Design Head',
-    emoji: '🧑‍🎨',
+    key: "pr",
+    title: "PR Team",
+    emoji: "📣",
     members: [
       {
-        name: 'Dungwa mossang',
-        role: 'Member',
-        image: '/team/dunga.jpg'
-      }
-    ]
+        name: "Abs Sonam",
+        role: "PR Team",
+        image: "/team/sonam.jpeg",
+      },
+      {
+        name: "James Tamang",
+        role: "PR Team",
+        image: "/team/james.jpg",
+      },
+      {
+        name: "Chaiput Pansa",
+        role: "PR Team",
+        image: "",
+      },
+    ],
   },
   {
-    key: 'marketing',
-    title: 'Marketing Team',
-    emoji: '📈',
+    key: "editing",
+    title: "Media and Graphics Head",
+    emoji: "✂️",
     members: [
       {
-        name: 'Gerna Panyang',
-        role: 'Member',
-        image: '/team/gerna.jpg'
+        name: "Nong Own Emphum",
+        role: "Media and Graphics Head",
+        image: "/team/nong.jpg",
       },
       {
-        name: 'Meku Tungi',
-        role: 'Member',
-        image: '/team/meku.jpg'
-      }
-    ]
+        name: "Rahman",
+        role: "Media and Graphics Head",
+        image: "/team/rahman.png",
+      },
+    ],
   },
   {
-    key: 'volunteer_incharge',
-    title: 'Volunteer In-Charge',
-    emoji: '🧑‍🤝‍🧑',
+    key: "editing11",
+    title: "Design Head",
+    emoji: "🧑‍🎨",
     members: [
       {
-        name: 'Yomte Karlo',
-        role: 'Member',
-        image: '/team/yomte.jpg'
+        name: "Dungwa mossang",
+        role: "Design Head",
+        image: "/team/Dungwamossang.jpg",
       },
-      {
-        name: 'Modi jini',
-        role: 'Member',
-        image: '/team/modi.jpg'
-      }
-    ]
+    ],
   },
   {
-    key: 'management',
-    title: 'Management & Hospitality Team',
-    emoji: '🧭',
+    key: "marketing",
+    title: "Marketing Team",
+    emoji: "📈",
     members: [
       {
-        name: 'Nabam Tabin',
-        role: 'Member',
-        image: '/team/tabin.jpg'
+        name: "Gerna Panyang",
+        role: "Marketing Team",
+        image: "/team/gerna.jpg",
       },
       {
-        name: 'Siro Bagang',
-        role: 'Member',
-        image: '/team/siro.jpg'
+        name: "Meku Tungi",
+        role: "Marketing Team",
+        image: "/team/meku.jpg",
+      },
+    ],
+  },
+  {
+    key: "volunteer_incharge",
+    title: "Volunteer Head",
+    emoji: "🧑‍🤝‍🧑",
+    members: [
+      {
+        name: "Sagar Yadav",
+        role: "Volunteer Head",
+        image: "",
       },
       {
-        name: 'Nyato Mengnia',
-        role: 'Member',
-        image: '/team/gentlemen1.jpg'
-      }
-    ]
-  }
-]
+        name: "Nayato Mengnia",
+        role: "Volunteer Head",
+        image: "",
+      },
+      {
+        name: "Nabam Tabin",
+        role: "Volunteer Head",
+        image: "",
+      },
+      {
+        name: "Akshay Tadepalli",
+        role: "Volunteer Head",
+        image: "",
+      },
+    ],
+  },
+  {
+    key: "management",
+    title: "Management Head",
+    emoji: "🧭",
+    members: [
+      {
+        name: "Johnson Ngi",
+        role: "Management Head",
+        image: "",
+      },
+      {
+        name: "Himanshu Ranjan",
+        role: "Management Head",
+        image: "",
+      },
+    ],
+  },
+];
 
 export default function Team() {
-  const { theme } = useTheme()
+  const { theme } = useTheme();
 
   return (
     <>
-      <CustomCursor /><GalaxyCanvas /><SakuraPetals />
+      <CustomCursor />
+      <GalaxyCanvas />
+      <SakuraPetals />
       <Navbar />
       <main className="relative z-10 min-h-screen">
-        
         {/* ── HERO ── */}
         <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] rounded-full opacity-20"
-              style={{ background: `radial-gradient(ellipse,${theme.bg2},transparent 70%)` }} />
-            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[350px] rounded-full opacity-10"
-              style={{ background: `radial-gradient(ellipse,${theme.accent}44,transparent 70%)` }} />
+            <div
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] rounded-full opacity-20"
+              style={{
+                background: `radial-gradient(ellipse,${theme.bg2},transparent 70%)`,
+              }}
+            />
+            <div
+              className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[350px] rounded-full opacity-10"
+              style={{
+                background: `radial-gradient(ellipse,${theme.accent}44,transparent 70%)`,
+              }}
+            />
           </div>
-          
-          <motion.p {...fade(.12)} className="font-jp text-sm tracking-[10px] mb-5" style={{ color: `${theme.accent2}80` }}>
+
+          <motion.p
+            {...fade(0.12)}
+            className="font-jp text-sm tracking-[10px] mb-5"
+            style={{ color: `${theme.accent2}80` }}
+          >
             私たちのチーム
           </motion.p>
-          <motion.h1 {...fade(.42)} className="font-cinzel font-black t-hero leading-[0.9] tracking-[5px]"
-            style={{ fontSize: 'clamp(3.2rem,11vw,10rem)', filter: `drop-shadow(0 0 50px ${theme.accent}25)` }}>
+          <motion.h1
+            {...fade(0.42)}
+            className="font-cinzel font-black t-hero leading-[0.9] tracking-[5px]"
+            style={{
+              fontSize: "clamp(3.2rem,11vw,10rem)",
+              filter: `drop-shadow(0 0 50px ${theme.accent}25)`,
+            }}
+          >
             TEAM
           </motion.h1>
-          <motion.p {...fade(.72)} className="font-jp font-light tracking-[14px] mt-4"
-            style={{ fontSize: 'clamp(1rem,3vw,2rem)', color: `${theme.accent2}cc`, textShadow: `0 0 28px ${theme.accent2}55` }}>
+          <motion.p
+            {...fade(0.72)}
+            className="font-jp font-light tracking-[14px] mt-4"
+            style={{
+              fontSize: "clamp(1rem,3vw,2rem)",
+              color: `${theme.accent2}cc`,
+              textShadow: `0 0 28px ${theme.accent2}55`,
+            }}
+          >
             チーム
           </motion.p>
         </section>
@@ -273,13 +351,20 @@ export default function Team() {
         {/* ── TEAM SECTION ── */}
         <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto">
-            <motion.div {...fade(.2)} className="text-center mb-16">
-              <h2 className="font-cinzel font-bold text-4xl tracking-wider mb-6" style={{ color: theme.accent }}>
+            <motion.div {...fade(0.2)} className="text-center mb-16">
+              <h2
+                className="font-cinzel font-bold text-4xl tracking-wider mb-6"
+                style={{ color: theme.accent }}
+              >
                 Meet Our Team
               </h2>
-              <p className="text-lg max-w-3xl mx-auto" style={{ color: theme.text }}>
-                The brilliant minds behind ATULYAM – Haru no Stars. Each member brings unique expertise 
-                and passion to make this festival unforgettable.
+              <p
+                className="text-lg max-w-3xl mx-auto"
+                style={{ color: theme.text }}
+              >
+                The brilliant minds behind ATULYAM – Haru no Stars. Each member
+                brings unique expertise and passion to make this festival
+                unforgettable.
               </p>
             </motion.div>
 
@@ -288,66 +373,86 @@ export default function Team() {
               {teamCategories.map((category, categoryIndex) => (
                 <motion.div
                   key={category.key}
-                  {...fade(.3 + categoryIndex * 0.1)}
+                  {...fade(0.3 + categoryIndex * 0.1)}
                   className="space-y-8"
                 >
-                  <h3 className="font-cinzel font-bold text-2xl text-center" style={{ color: theme.accent2 }}>
+                  <h3
+                    className="font-cinzel font-bold text-2xl text-center"
+                    style={{ color: theme.accent2 }}
+                  >
                     {category.emoji} {category.title}
                   </h3>
-                  
-                  <div className={`grid gap-6 ${
-                    category.members.length === 1 
-                      ? 'grid-cols-1 max-w-md mx-auto' 
-                      : category.members.length === 3
-                      ? 'grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto'
-                      : 'md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'
-                  }`}>
+
+                  <div
+                    className={`grid gap-6 items-stretch ${
+                      category.members.length === 1
+                        ? "grid-cols-1 max-w-md mx-auto"
+                        : category.members.length === 2
+                          ? "grid-cols-1 md:grid-cols-2 max-w-3xl mx-auto"
+                          : category.members.length === 3
+                            ? "grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto"
+                            : "md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                    }`}
+                  >
                     {category.members.map((member, memberIndex) => (
                       <motion.div
                         key={member.name}
-                        {...fade(.4 + memberIndex * 0.05)}
+                        {...fade(0.4 + memberIndex * 0.05)}
                         whileHover={{ y: -8, scale: 1.02 }}
-                        className="group cursor-pointer"
+                        className="group cursor-pointer h-full"
                       >
-                        <div className="p-6 rounded-lg border transition-all duration-300"
-                          style={{ 
-                            borderColor: theme.border, 
+                        <div
+                          className="p-8 rounded-lg border transition-all duration-300 h-full flex flex-col"
+                          style={{
+                            borderColor: theme.border,
                             backgroundColor: `${theme.bg}22`,
-                            boxShadow: `0 0 0 1px ${theme.border}22`
+                            boxShadow: `0 0 0 1px ${theme.border}22`,
                           }}
                           onMouseEnter={(e) => {
-                            e.currentTarget.style.boxShadow = `0 0 30px ${theme.accent}44`
-                            e.currentTarget.style.borderColor = theme.accent
+                            e.currentTarget.style.boxShadow = `0 0 30px ${theme.accent}44`;
+                            e.currentTarget.style.borderColor = theme.accent;
                           }}
                           onMouseLeave={(e) => {
-                            e.currentTarget.style.boxShadow = `0 0 0 1px ${theme.border}22`
-                            e.currentTarget.style.borderColor = theme.border
-                          }}>
-                          
-                          <div className="text-center space-y-4">
-                            <div className="w-28 h-28 mx-auto rounded-md overflow-hidden border group-hover:scale-110 transition-transform duration-300"
-                              style={{ borderColor: `${theme.accent}80` }}>
+                            e.currentTarget.style.boxShadow = `0 0 0 1px ${theme.border}22`;
+                            e.currentTarget.style.borderColor = theme.border;
+                          }}
+                        >
+                          <div className="text-center space-y-4 flex-1 flex flex-col items-center justify-start">
+                            <div
+                              className="w-36 h-36 lg:w-48 lg:h-48 xl:w-52 xl:h-52 mx-auto rounded-md overflow-hidden border group-hover:scale-110 transition-transform duration-300"
+                              style={{ borderColor: `${theme.accent}80` }}
+                            >
                               {member.image ? (
                                 <Image
                                   src={member.image}
                                   alt={member.name}
-                                  width={112}
-                                  height={112}
+                                  width={208}
+                                  height={208}
                                   className="w-full h-full object-cover"
                                 />
                               ) : (
-                                <div className="w-full h-full flex items-center justify-center text-3xl"
-                                  style={{ backgroundColor: `${theme.accent}22` }}>
+                                <div
+                                  className="w-full h-full flex items-center justify-center text-3xl"
+                                  style={{
+                                    backgroundColor: `${theme.accent}22`,
+                                  }}
+                                >
                                   {category.emoji}
                                 </div>
                               )}
                             </div>
-                            
+
                             <div>
-                              <h4 className="font-bold text-xl mb-1" style={{ color: theme.accent2 }}>
+                              <h4
+                                className="font-bold text-2xl mb-1"
+                                style={{ color: theme.accent2 }}
+                              >
                                 {member.name}
                               </h4>
-                              <p className="font-semibold text-sm mb-1" style={{ color: theme.accent }}>
+                              <p
+                                className="font-semibold text-base mb-1"
+                                style={{ color: theme.accent }}
+                              >
                                 {member.role}
                               </p>
                             </div>
@@ -361,8 +466,7 @@ export default function Team() {
             </div>
           </div>
         </section>
-
-        </main>
+      </main>
     </>
-  )
+  );
 }

@@ -39,29 +39,39 @@ const teamCategories = [
     emoji: "🧑‍🏫",
     members: [
       {
+        name: "Dr. Koji Sambyo",
+        role: "Faculty Coordinator",
+        image: "",
+      },
+      {
+        name: "Dr. Jumrik Taipodia",
+        role: "Faculty Coordinator",
+        image: "",
+      },
+      {
+        name: "Dr. Nabam Rich",
+        role: "Faculty Coordinator",
+        image: "",
+      },
+      {
         name: "Dr. Brajagopal Datta",
         role: "Faculty Coordinator",
         image: "/faculty/Dr. Brajagopal Datta.jpg",
       },
       {
-        name: "Dr. Jayakesh K",
+        name: "Dr. Yang Saring",
         role: "Faculty Coordinator",
-        image: "/faculty/Dr. Jayakesh K.jpg",
+        image: "",
       },
       {
-        name: "Dr. Sahadev Roy",
+        name: "Dr. Vijayakumar",
         role: "Faculty Coordinator",
-        image: "/faculty/Dr. Sahadev Roy.jpg",
+        image: "",
       },
       {
-        name: "Dr. Subhasish Banerjee",
+        name: "Dr. Kimjolly Lhouvum",
         role: "Faculty Coordinator",
-        image: "/faculty/Dr. Subhasish Banerjee.jpg",
-      },
-      {
-        name: "Dr. Sandip Kumar Mandal",
-        role: "Faculty Coordinator",
-        image: "/faculty/Dr. Sandip Kumar Mandal.jpg",
+        image: "",
       },
     ],
   },

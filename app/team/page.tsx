@@ -1,8 +1,8 @@
 'use client'
 
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import CustomCursor from '../components/CustomCursor'
 import SakuraPetals from '../components/SakuraPetals'
@@ -19,343 +19,221 @@ const fade = (d = 0) => ({
 
 const teamCategories = [
   {
-    id: "faculty-coordinators",
-    name: "Faculty Coordinators",
+    key: 'chairman',
+    title: 'Addovedi Chairman',
+    emoji: '👨‍💼',
     members: [
       {
-        name: "Dr. R. S. Bicholkar",
-        role: "Principal",
-        department: "College Administration",
-        image: "👨‍🏫",
-        description: "Leading the institution with excellence in education and innovation.",
-        social: {
-          instagram: "https://instagram.com/rsbicholkar",
-          linkedin: "https://linkedin.com/in/rsbicholkar"
-        }
-      },
-      {
-        name: "Prof. S. A. Shinde",
-        role: "Head of Department",
-        department: "Computer Science",
-        image: "�‍🏫",
-        description: "Guiding the technical aspects and ensuring academic excellence.",
-        social: {
-          instagram: "https://instagram.com/sashinde",
-          linkedin: "https://linkedin.com/in/sashinde"
-        }
-      },
-      {
-        name: "Prof. S. M. Nirkhe",
-        role: "Faculty Coordinator",
-        department: "Information Technology",
-        image: "👨‍🏫",
-        description: "Mentoring students and coordinating technical events.",
-        social: {
-          instagram: "https://instagram.com/smnirkhe",
-          linkedin: "https://linkedin.com/in/smnirkhe"
-        }
-      },
-      {
-        name: "Prof. S. P. Gawande",
-        role: "Faculty Coordinator",
-        department: "Computer Science",
-        image: "�‍🏫",
-        description: "Supporting student activities and cultural events.",
-        social: {
-          instagram: "https://instagram.com/spgawande",
-          linkedin: "https://linkedin.com/in/spgawande"
-        }
-      },
-      {
-        name: "Prof. V. M. Jadhav",
-        role: "Faculty Coordinator",
-        department: "Computer Science",
-        image: "👨‍🏫",
-        description: "Guiding students in technical and creative endeavors.",
-        social: {
-          instagram: "https://instagram.com/vmjadhav",
-          linkedin: "https://linkedin.com/in/vmjadhav"
-        }
-      },
-      {
-        name: "Prof. P. R. Khandekar",
-        role: "Faculty Coordinator",
-        department: "Computer Science",
-        image: "�‍🏫",
-        description: "Coordinating academic and extracurricular activities.",
-        social: {
-          instagram: "https://instagram.com/prkhandekar",
-          linkedin: "https://linkedin.com/in/prkhandekar"
-        }
-      },
-      {
-        name: "Prof. S. D. Jadhav",
-        role: "Faculty Coordinator",
-        department: "Computer Science",
-        image: "👨‍🏫",
-        description: "Supporting technical events and student development.",
-        social: {
-          instagram: "https://instagram.com/sdjadhav",
-          linkedin: "https://linkedin.com/in/sdjadhav"
-        }
-      },
-      {
-        name: "Prof. S. P. Auti",
-        role: "Faculty Coordinator",
-        department: "Computer Science",
-        image: "👨‍🏫",
-        description: "Mentoring students in technical projects and competitions.",
-        social: {
-          instagram: "https://instagram.com/spauti",
-          linkedin: "https://linkedin.com/in/spauti"
-        }
+        name: 'Dr. Abhik Banerjee',
+        role: 'Chairman',
+        image: '/faculty/Dr. Abhik Banerjee.jpg'
       }
     ]
   },
   {
-    id: "head-coordinator",
-    name: "Head Coordinator",
+    key: 'faculty_coordinator',
+    title: 'Faculty Coordinator',
+    emoji: '🧑‍🏫',
     members: [
       {
-        name: "Aya Tanaka",
-        role: "Head Coordinator",
-        department: "Computer Science",
-        image: "👩‍💻",
-        description: "Leading the vision and execution of ATULYAM with passion and creativity.",
-        social: {
-          instagram: "https://instagram.com/ayatanaka",
-          linkedin: "https://linkedin.com/in/ayatanaka"
-        }
-      }
-    ]
-  },
-  {
-    id: "assistant-head-coordinator",
-    name: "Assistant Head Coordinator",
-    members: [
-      {
-        name: "Yuki Tanaka",
-        role: "Assistant Head Coordinator",
-        department: "Event Management",
-        image: "👩‍💼",
-        description: "Assisting in overall festival coordination and team management.",
-        social: {
-          instagram: "https://instagram.com/yukitanaka",
-          linkedin: "https://linkedin.com/in/yukitanaka"
-        }
+        name: 'Dr. Brajagopal Datta',
+        role: 'Faculty Coordinator',
+        image: '/faculty/Dr. Brajagopal Datta.jpg'
       },
       {
-        name: "Raj Patel",
-        role: "Assistant Head Coordinator",
-        department: "Technical Operations",
-        image: "👨‍💼",
-        description: "Supporting technical aspects and venue coordination.",
-        social: {
-          instagram: "https://instagram.com/rajpatel",
-          linkedin: "https://linkedin.com/in/rajpatel"
-        }
+        name: 'Dr. Jayakesh K',
+        role: 'Faculty Coordinator',
+        image: '/faculty/Dr. Jayakesh K.jpg'
       },
       {
-        name: "Priya Sharma",
-        role: "Assistant Head Coordinator",
-        department: "Cultural Activities",
-        image: "👩‍💼",
-        description: "Coordinating cultural events and participant management.",
-        social: {
-          instagram: "https://instagram.com/priyasharma",
-          linkedin: "https://linkedin.com/in/priyasharma"
-        }
-      }
-    ]
-  },
-  {
-    id: "web-team",
-    name: "Web Team",
-    members: [
-      {
-        name: "Dr. Sarah Johnson",
-        role: "Faculty Coordinator",
-        department: "Computer Science",
-        image: "👩‍🏫",
-        description: "Guiding the technical aspects and ensuring academic excellence.",
-        social: {
-          instagram: "https://instagram.com/sarahjohnson",
-          linkedin: "https://linkedin.com/in/sarahjohnson"
-        }
+        name: 'Dr. Sahadev Roy',
+        role: 'Faculty Coordinator',
+        image: '/faculty/Dr. Sahadev Roy.jpg'
       },
       {
-        name: "Kenji Yamamoto",
-        role: "Technical Lead",
-        department: "Information Technology",
-        image: "👨‍💻",
-        description: "Ensuring all tech aspects run smoothly from web to interactive installations.",
-        social: {
-          instagram: "https://instagram.com/kenjiyamamoto",
-          linkedin: "https://linkedin.com/in/kenjiyamamoto"
-        }
+        name: 'Dr. Subhasish Banerjee',
+        role: 'Faculty Coordinator',
+        image: '/faculty/Dr. Subhasish Banerjee.jpg'
       },
       {
-        name: "Takeshi Watanabe",
-        role: "Web Developer",
-        department: "Computer Science",
-        image: "👨‍💻",
-        description: "Building and maintaining the festival website and digital platforms.",
-        social: {
-          instagram: "https://instagram.com/takeshiwatanabe",
-          linkedin: "https://linkedin.com/in/takeshiwatanabe"
-        }
+        name: 'Dr. Sandip Kumar Mandal',
+        role: 'Faculty Coordinator',
+        image: '/faculty/Dr. Sandip Kumar Mandal.jpg'
       }
     ]
   },
   {
-    id: "events-management",
-    name: "Events Management",
+    key: 'head_coordinator',
+    title: 'Head Coordinator',
+    emoji: '⭐',
     members: [
       {
-        name: "Ryu Nakamura",
-        role: "Events Manager",
-        department: "Business Administration",
-        image: "👨‍💼",
-        description: "Coordinating all events and ensuring seamless festival operations.",
-        social: {
-          instagram: "https://instagram.com/ryunakamura",
-          linkedin: "https://linkedin.com/in/ryunakamura"
-        }
+        name: 'Rahul Mengnia',
+        role: 'Head Coordinator',
+        image: '/team/rahul.jpg'
       }
     ]
   },
   {
-    id: "decoration-team",
-    name: "Decoration Team",
+    key: 'event_coordinators',
+    title: 'Event Organizers',
+    emoji: '🎯',
     members: [
       {
-        name: "Yuki Sato",
-        role: "Decoration Lead",
-        department: "Japanese Studies",
-        image: "👩‍🎨",
-        description: "Creating stunning visual experiences and ambiance.",
-        social: {
-          instagram: "https://instagram.com/yukisato",
-          linkedin: "https://linkedin.com/in/yukisato"
-        }
-      }
-    ]
-  },
-  {
-    id: "show-security",
-    name: "Show & Security Management",
-    members: [
-      {
-        name: "Daigo Hayashi",
-        role: "Security Head",
-        department: "Operations Management",
-        image: "👨‍🔧",
-        description: "Ensuring safety and smooth event execution.",
-        social: {
-          instagram: "https://instagram.com/daigohayashi",
-          linkedin: "https://linkedin.com/in/daigohayashi"
-        }
-      }
-    ]
-  },
-  {
-    id: "sponsor-team",
-    name: "Sponsor Team",
-    members: [
-      {
-        name: "Emi Ito",
-        role: "Sponsor Lead",
-        department: "Marketing",
-        image: "👩‍💰",
-        description: "Managing sponsor relationships and partnerships.",
-        social: {
-          instagram: "https://instagram.com/emiito",
-          linkedin: "https://linkedin.com/in/emiito"
-        }
-      }
-    ]
-  },
-  {
-    id: "media-publicity",
-    name: "Media & Publicity Team",
-    members: [
-      {
-        name: "Hana Suzuki",
-        role: "Media Lead",
-        department: "Graphic Design",
-        image: "👩‍🎨",
-        description: "Creating stunning visuals that capture the essence of Haru no Stars.",
-        social: {
-          instagram: "https://instagram.com/hanasuzuki",
-          linkedin: "https://linkedin.com/in/hanasuzuki"
-        }
-      }
-    ]
-  },
-  {
-    id: "marketing-sponsorship",
-    name: "Marketing & Sponsorship Team",
-    members: [
-      {
-        name: "Sarthak Patil",
-        role: "Marketing Lead",
-        department: "Marketing",
-        image: "�‍📱",
-        description: "Leading marketing strategies and campaign management.",
-        social: {
-          instagram: "https://instagram.com/sarthakpatil",
-          linkedin: "https://linkedin.com/in/sarthakpatil"
-        }
+        name: 'Siddhant',
+        role: 'Member',
+        image: '/team/Siddhant.jpg'
       },
       {
-        name: "Yash Chaudhari",
-        role: "Marketing Coordinator",
-        department: "Marketing",
-        image: "👨‍💼",
-        description: "Coordinating promotional activities and social media management.",
-        social: {
-          instagram: "https://instagram.com/yashchaudhari",
-          linkedin: "https://linkedin.com/in/yashchaudhari"
-        }
-      },
-      {
-        name: "Rohit Patil",
-        role: "Marketing Coordinator",
-        department: "Marketing",
-        image: "👨‍💼",
-        description: "Managing marketing materials and outreach programs.",
-        social: {
-          instagram: "https://instagram.com/rohitpatil",
-          linkedin: "https://linkedin.com/in/rohitpatil"
-        }
-      },
-      {
-        name: "Om Patil",
-        role: "Marketing Coordinator",
-        department: "Marketing",
-        image: "👨‍💼",
-        description: "Supporting marketing campaigns and event promotion.",
-        social: {
-          instagram: "https://instagram.com/ompatil",
-          linkedin: "https://linkedin.com/in/ompatil"
-        }
+        name: 'Ankit Jha',
+        role: 'Member',
+        image: '/team/ankit1.PNG'
       }
     ]
   },
   {
-    id: "design-team",
-    name: "Design Team",
+    key: 'web',
+    title: 'Web Team',
+    emoji: '💻',
     members: [
       {
-        name: "Hana Suzuki",
-        role: "Design Head",
-        department: "Graphic Design",
-        image: "👩‍🎨",
-        description: "Creating stunning visuals that capture the essence of Haru no Stars.",
-        social: {
-          instagram: "https://instagram.com/hanasuzuki",
-          linkedin: "https://linkedin.com/in/hanasuzuki"
-        }
+        name: 'Banoth Charan',
+        role: 'Member',
+        image: '/team/cherry.jpg'
+      },
+      {
+        name: 'Arun Kumar',
+        role: 'Member',
+        image: '/team/yash.jpg'
+      },
+      {
+        name: 'Karan Kumar Sah',
+        role: 'Member',
+        image: '/team/karan.jpg'
+      }
+    ]
+  },
+  {
+    key: 'sponsorship',
+    title: 'Sponsorship Team',
+    emoji: '🏆',
+    members: [
+      {
+        name: 'Rishav Dev Raj',
+        role: 'Member',
+        image: '/team/rishav.png'
+      },
+      {
+        name: 'Umashankar Sahu',
+        role: 'Member',
+        image: '/team/umashankar.png'
+      }
+    ]
+  },
+  {
+    key: 'pr',
+    title: 'PR Team',
+    emoji: '📣',
+    members: [
+      {
+        name: 'Saloni Muskan',
+        role: 'Member',
+        image: '/team/saloni.jpg'
+      },
+      {
+        name: 'James Raj Tamang',
+        role: 'Member',
+        image: '/team/james.jpg'
+      },
+      {
+        name: 'Harshit Srivastava',
+        role: 'Member',
+        image: '/team/harshitsrivastava.jpg'
+      }
+    ]
+  },
+  {
+    key: 'editing',
+    title: 'Editing Team',
+    emoji: '✂️',
+    members: [
+      {
+        name: 'Nong Own Emphum',
+        role: 'Member',
+        image: '/team/nong.jpg'
+      },
+      {
+        name: 'Rahman',
+        role: 'Member',
+        image: '/team/rahman.png'
+      }
+    ]
+  },
+  {
+    key: 'editing11',
+    title: 'Design Head',
+    emoji: '🧑‍🎨',
+    members: [
+      {
+        name: 'Dungwa mossang',
+        role: 'Member',
+        image: '/team/dunga.jpg'
+      }
+    ]
+  },
+  {
+    key: 'marketing',
+    title: 'Marketing Team',
+    emoji: '📈',
+    members: [
+      {
+        name: 'Gerna Panyang',
+        role: 'Member',
+        image: '/team/gerna.jpg'
+      },
+      {
+        name: 'Meku Tungi',
+        role: 'Member',
+        image: '/team/meku.jpg'
+      }
+    ]
+  },
+  {
+    key: 'volunteer_incharge',
+    title: 'Volunteer In-Charge',
+    emoji: '🧑‍🤝‍🧑',
+    members: [
+      {
+        name: 'Yomte Karlo',
+        role: 'Member',
+        image: '/team/yomte.jpg'
+      },
+      {
+        name: 'Modi jini',
+        role: 'Member',
+        image: '/team/modi.jpg'
+      }
+    ]
+  },
+  {
+    key: 'management',
+    title: 'Management & Hospitality Team',
+    emoji: '🧭',
+    members: [
+      {
+        name: 'Nabam Tabin',
+        role: 'Member',
+        image: '/team/tabin.jpg'
+      },
+      {
+        name: 'Siro Bagang',
+        role: 'Member',
+        image: '/team/siro.jpg'
+      },
+      {
+        name: 'Nyato Mengnia',
+        role: 'Member',
+        image: '/team/gentlemen1.jpg'
       }
     ]
   }
@@ -409,12 +287,12 @@ export default function Team() {
             <div className="space-y-20">
               {teamCategories.map((category, categoryIndex) => (
                 <motion.div
-                  key={category.id}
+                  key={category.key}
                   {...fade(.3 + categoryIndex * 0.1)}
                   className="space-y-8"
                 >
                   <h3 className="font-cinzel font-bold text-2xl text-center" style={{ color: theme.accent2 }}>
-                    {category.name}
+                    {category.emoji} {category.title}
                   </h3>
                   
                   <div className={`grid gap-6 ${
@@ -447,8 +325,22 @@ export default function Team() {
                           }}>
                           
                           <div className="text-center space-y-4">
-                            <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                              {member.image}
+                            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border group-hover:scale-110 transition-transform duration-300"
+                              style={{ borderColor: `${theme.accent}80` }}>
+                              {member.image ? (
+                                <Image
+                                  src={member.image}
+                                  alt={member.name}
+                                  width={96}
+                                  height={96}
+                                  className="w-full h-full object-cover"
+                                />
+                              ) : (
+                                <div className="w-full h-full flex items-center justify-center text-3xl"
+                                  style={{ backgroundColor: `${theme.accent}22` }}>
+                                  {category.emoji}
+                                </div>
+                              )}
                             </div>
                             
                             <div>
@@ -458,61 +350,6 @@ export default function Team() {
                               <p className="font-semibold text-sm mb-1" style={{ color: theme.accent }}>
                                 {member.role}
                               </p>
-                              <p className="text-xs opacity-70" style={{ color: theme.text }}>
-                                {member.department}
-                              </p>
-                            </div>
-                            
-                            <p className="text-sm leading-relaxed" style={{ color: theme.text }}>
-                              {member.description}
-                            </p>
-                            
-                            {/* Social Media Links */}
-                            <div className="flex justify-center space-x-3 pt-2">
-                              <a
-                                href={member.social.instagram}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-2 rounded-full transition-all duration-300 hover:scale-110"
-                                style={{
-                                  backgroundColor: `${theme.accent}20`,
-                                  color: '#E1306C'
-                                }}
-                                onMouseEnter={(e) => {
-                                  e.currentTarget.style.backgroundColor = '#E1306C'
-                                  e.currentTarget.style.color = 'white'
-                                }}
-                                onMouseLeave={(e) => {
-                                  e.currentTarget.style.backgroundColor = `${theme.accent}20`
-                                  e.currentTarget.style.color = '#E1306C'
-                                }}
-                              >
-                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
-                                </svg>
-                              </a>
-                              <a
-                                href={member.social.linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-2 rounded-full transition-all duration-300 hover:scale-110"
-                                style={{
-                                  backgroundColor: `${theme.accent}20`,
-                                  color: '#0077B5'
-                                }}
-                                onMouseEnter={(e) => {
-                                  e.currentTarget.style.backgroundColor = '#0077B5'
-                                  e.currentTarget.style.color = 'white'
-                                }}
-                                onMouseLeave={(e) => {
-                                  e.currentTarget.style.backgroundColor = `${theme.accent}20`
-                                  e.currentTarget.style.color = '#0077B5'
-                                }}
-                              >
-                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                </svg>
-                              </a>
                             </div>
                           </div>
                         </div>

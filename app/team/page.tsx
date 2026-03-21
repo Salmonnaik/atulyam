@@ -208,7 +208,7 @@ const teamCategories = [
         image: "/team/james.jpg",
       },
       {
-        name: "Chaiput Pansa",
+        name: "Pansa Bhai",
         role: "PR Team",
         image: "/team/pansa.jpeg",
       },

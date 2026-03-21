@@ -35,37 +35,37 @@ const teamCategories = [
   },
   {
     key: "faculty_coordinator",
-    title: "Faculty Coordinator",
+    title: "Faculty Committee",
     emoji: "🧑‍🏫",
     members: [
       {
         name: "Dr. Jumrik Taipodia",
-        role: "Faculty Coordinator",
+        role: "Dance Club",
         image: "/factuly/Dr. Jumrik Taipodia.jpg",
       },
       {
         name: "Dr. Nabam Rich",
-        role: "Faculty Coordinator",
+        role: "Theatre Club",
         image: "/factuly/Dr. Nabam Rich.jpg",
       },
       {
         name: "Dr. Brajagopal Datta",
-        role: "Faculty Coordinator",
+        role: "Media and Photography Club",
         image: "/factuly/Dr. Brajagopal Datta.jpg",
       },
       {
         name: "Dr. Yang Saring",
-        role: "Faculty Coordinator",
+        role: "Art Club (Painting, Drawing, Classical Art, Fashion)",
         image: "/factuly/Dr. Yang Saring.jpg",
       },
       {
         name: "Dr. Vijayakumar",
-        role: "Faculty Coordinator",
+        role: "Literary Club (Book, Poetry, Oratory, Humour, Writing, Debate)",
         image: "",
       },
       {
         name: "Dr. Kimjolly Lhouvum",
-        role: "Faculty Coordinator",
+        role: "Nodal Officer, Cultural Clubs",
         image: "",
       },
     ],

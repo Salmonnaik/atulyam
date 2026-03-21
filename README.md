@@ -52,3 +52,30 @@ Full team directory available at [/team](/team)
 ```bash
 npx vercel --prod
 ```
+
+## Tech Stack
+
+- **Framework:** Next.js 14 with App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + Custom CSS
+- **Animation:** Framer Motion
+- **Components:** React (Client & Server Components)
+- **Deployment:** Vercel
+
+## Project Structure
+
+```
+atulyam/
+├── app/
+│   ├── components/        # Reusable UI components
+│   ├── context/          # React contexts (Theme, Loading)
+│   ├── events/           # Events page & components
+│   ├── team/             # Team page
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Home page
+├── public/
+│   ├── factuly/          # Faculty photos
+│   ├── team/             # Team member photos
+│   └── images/           # Other assets
+└── types/                # TypeScript definitions
+```

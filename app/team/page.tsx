@@ -27,9 +27,9 @@ const teamCategories = [
     emoji: "👨‍💼",
     members: [
       {
-        name: "Dr. Abhik Banerjee",
+        name: "Dr. Koji Sambyo",
         role: "Chairman",
-        image: "/faculty/Dr. Abhik Banerjee.jpg",
+        image: "",
       },
     ],
   },
@@ -38,11 +38,6 @@ const teamCategories = [
     title: "Faculty Coordinator",
     emoji: "🧑‍🏫",
     members: [
-      {
-        name: "Dr. Koji Sambyo",
-        role: "Faculty Coordinator",
-        image: "",
-      },
       {
         name: "Dr. Jumrik Taipodia",
         role: "Faculty Coordinator",

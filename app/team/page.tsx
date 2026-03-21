@@ -251,7 +251,7 @@ const teamCategories = [
       {
         name: "Sagar Yadav",
         role: "Volunteer Head",
-        image: "",
+        image: "/team/sagar.jpeg",
       },
       {
         name: "Nayato Mengnia",

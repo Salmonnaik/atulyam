@@ -40,6 +40,7 @@ npm run build      # production build
 ## Team Committee
 
 The ATULYAM 2026 organizing committee consists of:
+
 - **Chairman:** Dr. Koji Sambyo
 - **Faculty Committee:** Dance Club, Theatre Club, Media & Photography, Art Club, Literary Club
 - **Head Coordinator:** Rahul Mengnia
@@ -79,3 +80,21 @@ atulyam/
 │   └── images/           # Other assets
 └── types/                # TypeScript definitions
 ```
+
+## Contributing
+
+This is the official ATULYAM 2026 website. For contributions or bugs:
+
+1. Create an issue on GitHub
+2. Submit a PR with detailed description
+3. Ensure code follows project conventions
+
+## Contact
+
+- **Festival Coordinator:** Rahul Mengnia
+- **Web Development Lead:** Banoth Charan
+- **Event:** ATULYAM 2026 | NIT Arunachal Pradesh
+
+---
+
+Built with 💜 for **ATULYAM 2026** | © NIT Arunachal Pradesh

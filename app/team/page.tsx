@@ -29,7 +29,7 @@ const teamCategories = [
       {
         name: "Dr. Koji Sambyo",
         role: "Chairman",
-        image: "",
+        image: "/factuly/Dr. Koj Sambyo.jpg",
       },
     ],
   },
@@ -41,22 +41,22 @@ const teamCategories = [
       {
         name: "Dr. Jumrik Taipodia",
         role: "Faculty Coordinator",
-        image: "",
+        image: "/factuly/Dr. Jumrik Taipodia.jpg",
       },
       {
         name: "Dr. Nabam Rich",
         role: "Faculty Coordinator",
-        image: "",
+        image: "/factuly/Dr. Nabam Rich.jpg",
       },
       {
         name: "Dr. Brajagopal Datta",
         role: "Faculty Coordinator",
-        image: "/faculty/Dr. Brajagopal Datta.jpg",
+        image: "/factuly/Dr. Brajagopal Datta.jpg",
       },
       {
         name: "Dr. Yang Saring",
         role: "Faculty Coordinator",
-        image: "",
+        image: "/factuly/Dr. Yang Saring.jpg",
       },
       {
         name: "Dr. Vijayakumar",

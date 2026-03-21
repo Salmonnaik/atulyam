@@ -1,4 +1,16 @@
-# 🌸 ATULYAM – Haru no Stars v3
+# 🌸 ATULYAM – Haru no Stars 2026
+
+A dynamic and immersive web experience for ATULYAM 2026, the cultural festival celebrating Japanese culture at NIT Arunachal Pradesh. Built with Next.js, TypeScript, and Tailwind CSS.
+
+**Event Dates:** 16-18 April 2026
+
+## Features
+- 🎨 Dynamic theme system with 6 color schemes
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- ✨ Smooth animations with Framer Motion
+- 🖱️ Custom cursor with theme-aware styling
+- 🎭 Interactive event categories and schedule
+- 👥 Complete team directory with photos
 
 ## Pages
 | Route | Description |

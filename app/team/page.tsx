@@ -49,8 +49,8 @@ const teamCategories: TeamCategory[] = [
         image: "/factuly/Dr. Koj Sambyo.jpg",
         social: {
           instagram: "https://instagram.com/kojisambyo",
-          linkedin: "https://linkedin.com/in/kojisambyo"
-        }
+          linkedin: "https://linkedin.com/in/kojisambyo",
+        },
       },
     ],
   },
@@ -60,85 +60,40 @@ const teamCategories: TeamCategory[] = [
     emoji: "🧑‍🏫",
     members: [
       {
-        name: "Dr. Abhik Banerjee",
-        role: "Faculty Coordinator",
-        image: "",
-        social: {
-          instagram: "https://instagram.com/abhikbanerjee",
-          linkedin: "https://linkedin.com/in/abhikbanerjee"
-        }
-      },
-      {
         name: "Dr. Jumrik Taipodia",
-        role: "Faculty Coordinator",
-        image: "",
-        social: {
-          instagram: "https://instagram.com/jumriktaipodia",
-          linkedin: "https://linkedin.com/in/jumriktaipodia"
-        }
-      },
-      {
-        name: "Dr. Nabam Rich",
-        role: "Faculty Coordinator",
-        image: "",
-        social: {
-          instagram: "https://instagram.com/nabamrich",
-          linkedin: "https://linkedin.com/in/nabamrich"
-        }
-      },
-      {
-        name: "Dr. Brajagopal Datta",
-        role: "Faculty Coordinator",
-        image: "/factuly/Dr. Brajagopal Datta.jpg",
-        social: {
-          instagram: "https://instagram.com/brajagopaldatta",
-          linkedin: "https://linkedin.com/in/brajagopaldatta"
-        }
-      },
-      {
-        name: "Dr. Yang Saring",
-        role: "Faculty Coordinator",
-        image: "",
-        social: {
-          instagram: "https://instagram.com/yangsaring",
-          linkedin: "https://linkedin.com/in/yangsaring"
-        }
-      },
-      {
-        name: "Dr. Jumrik Taipodia",
-        role: "Dance Club",
+        role: "Faculty Coordinator, Dance Club",
         image: "/factuly/Dr. Jumrik Taipodia.jpg",
         social: {
           instagram: "https://instagram.com/jumriktaipodia",
-          linkedin: "https://linkedin.com/in/jumriktaipodia"
-        }
+          linkedin: "https://linkedin.com/in/jumriktaipodia",
+        },
       },
       {
         name: "Dr. Nabam Rich",
-        role: "Theatre Club",
+        role: "Faculty Coordinator, Theatre Club",
         image: "/factuly/Dr. Nabam Rich.jpg",
         social: {
           instagram: "https://instagram.com/nabamrich",
-          linkedin: "https://linkedin.com/in/nabamrich"
-        }
+          linkedin: "https://linkedin.com/in/nabamrich",
+        },
       },
       {
         name: "Dr. Brajagopal Datta",
-        role: "Media and Photography Club",
+        role: "Faculty Coordinator, Media and Photography Club",
         image: "/factuly/Dr. Brajagopal Datta.jpg",
         social: {
           instagram: "https://instagram.com/brajagopaldatta",
-          linkedin: "https://linkedin.com/in/brajagopaldatta"
-        }
+          linkedin: "https://linkedin.com/in/brajagopaldatta",
+        },
       },
       {
         name: "Dr. Yang Saring",
-        role: "Art Club (Painting, Drawing, Classical Art, Fashion)",
+        role: "Faculty Coordinator, Art Club (Painting, Drawing, Classical Art, Fashion)",
         image: "/factuly/Dr. Yang Saring.jpg",
         social: {
           instagram: "https://instagram.com/yangsaring",
-          linkedin: "https://linkedin.com/in/yangsaring"
-        }
+          linkedin: "https://linkedin.com/in/yangsaring",
+        },
       },
       {
         name: "Dr. Vijayakumar",
@@ -146,8 +101,8 @@ const teamCategories: TeamCategory[] = [
         image: "",
         social: {
           instagram: "https://instagram.com/vijayakumar",
-          linkedin: "https://linkedin.com/in/vijayakumar"
-        }
+          linkedin: "https://linkedin.com/in/vijayakumar",
+        },
       },
       {
         name: "Dr. Kimjolly Lhouvum",
@@ -155,8 +110,8 @@ const teamCategories: TeamCategory[] = [
         image: "",
         social: {
           instagram: "https://instagram.com/kimjollylhouvum",
-          linkedin: "https://linkedin.com/in/kimjollylhouvum"
-        }
+          linkedin: "https://linkedin.com/in/kimjollylhouvum",
+        },
       },
     ],
   },
@@ -171,8 +126,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/rahul.JPG",
         social: {
           instagram: "https://instagram.com/rahulmengnia",
-          linkedin: "https://linkedin.com/in/rahulmengnia"
-        }
+          linkedin: "https://linkedin.com/in/rahulmengnia",
+        },
       },
     ],
   },
@@ -187,8 +142,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/lishi.jpeg",
         social: {
           instagram: "https://instagram.com/lishiteshi",
-          linkedin: "https://linkedin.com/in/lishiteshi"
-        }
+          linkedin: "https://linkedin.com/in/lishiteshi",
+        },
       },
       {
         name: "Dunga Mosang",
@@ -196,8 +151,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/Dungwamossang.jpg",
         social: {
           instagram: "https://instagram.com/dungamosang",
-          linkedin: "https://linkedin.com/in/dungamosang"
-        }
+          linkedin: "https://linkedin.com/in/dungamosang",
+        },
       },
     ],
   },
@@ -211,9 +166,11 @@ const teamCategories: TeamCategory[] = [
         role: "Devolper",
         image: "/team/banothcharan.jpg",
         social: {
-          instagram: "https://instagram.com/banothcharan",
-          linkedin: "https://linkedin.com/in/banothcharan"
-        }
+          instagram:
+            "https://www.instagram.com/charan_cherry_212?igsh=MWpyZHR1MnVvbnlrNw==",
+          linkedin:
+            "https://www.linkedin.com/in/banoth-charan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
       },
       {
         name: "Salmon Naik",
@@ -221,8 +178,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/salmon.jpeg",
         social: {
           instagram: "https://instagram.com/salmonnaik",
-          linkedin: "https://linkedin.com/in/salmonnaik"
-        }
+          linkedin: "https://linkedin.com/in/salmonnaik",
+        },
       },
       {
         name: "Karan Kumar Sah",
@@ -230,8 +187,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/karan.jpeg",
         social: {
           instagram: "https://instagram.com/karankumarsah",
-          linkedin: "https://linkedin.com/in/karankumarsah"
-        }
+          linkedin: "https://linkedin.com/in/karankumarsah",
+        },
       },
       {
         name: "Harshal Tondare",
@@ -239,8 +196,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/harshal.jpeg",
         social: {
           instagram: "https://instagram.com/harshaltondare",
-          linkedin: "https://linkedin.com/in/harshaltondare"
-        }
+          linkedin: "https://linkedin.com/in/harshaltondare",
+        },
       },
     ],
   },
@@ -255,8 +212,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/kipa.jpeg",
         social: {
           instagram: "https://instagram.com/kipagungyo",
-          linkedin: "https://linkedin.com/in/kipagungyo"
-        }
+          linkedin: "https://linkedin.com/in/kipagungyo",
+        },
       },
     ],
   },
@@ -271,8 +228,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/bashu.jpeg",
         social: {
           instagram: "https://instagram.com/bashusingh",
-          linkedin: "https://linkedin.com/in/bashusingh"
-        }
+          linkedin: "https://linkedin.com/in/bashusingh",
+        },
       },
       {
         name: "Siddhant",
@@ -280,8 +237,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/sidhant .jpeg",
         social: {
           instagram: "https://instagram.com/siddhant",
-          linkedin: "https://linkedin.com/in/siddhant"
-        }
+          linkedin: "https://linkedin.com/in/siddhant",
+        },
       },
       {
         name: "Ankit Jha",
@@ -289,8 +246,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/ankit.png",
         social: {
           instagram: "https://instagram.com/ankitjha",
-          linkedin: "https://linkedin.com/in/ankitjha"
-        }
+          linkedin: "https://linkedin.com/in/ankitjha",
+        },
       },
     ],
   },
@@ -305,8 +262,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/jhon.jpeg",
         social: {
           instagram: "https://instagram.com/johndalbera",
-          linkedin: "https://linkedin.com/in/johndalbera"
-        }
+          linkedin: "https://linkedin.com/in/johndalbera",
+        },
       },
       {
         name: "Gerna Panyang",
@@ -314,8 +271,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/gerna.jpeg",
         social: {
           instagram: "https://instagram.com/gernapanyang",
-          linkedin: "https://linkedin.com/in/gernapanyang"
-        }
+          linkedin: "https://linkedin.com/in/gernapanyang",
+        },
       },
       {
         name: "Kago Doding",
@@ -323,8 +280,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/kago.jpeg",
         social: {
           instagram: "https://instagram.com/kagododing",
-          linkedin: "https://linkedin.com/in/kagododing"
-        }
+          linkedin: "https://linkedin.com/in/kagododing",
+        },
       },
       {
         name: "Uma Shanker",
@@ -332,8 +289,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/uma.png",
         social: {
           instagram: "https://instagram.com/umashanker",
-          linkedin: "https://linkedin.com/in/umashanker"
-        }
+          linkedin: "https://linkedin.com/in/umashanker",
+        },
       },
     ],
   },
@@ -348,8 +305,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/sonam.jpeg",
         social: {
           instagram: "https://instagram.com/abasonam",
-          linkedin: "https://linkedin.com/in/abasonam"
-        }
+          linkedin: "https://linkedin.com/in/abasonam",
+        },
       },
       {
         name: "James Tamang",
@@ -357,8 +314,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/james.jpg",
         social: {
           instagram: "https://instagram.com/jamestamang",
-          linkedin: "https://linkedin.com/in/jamestamang"
-        }
+          linkedin: "https://linkedin.com/in/jamestamang",
+        },
       },
       {
         name: "Pansa Bhai",
@@ -366,8 +323,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/pansa.jpeg",
         social: {
           instagram: "https://instagram.com/chaiputpansa",
-          linkedin: "https://linkedin.com/in/chaiputpansa"
-        }
+          linkedin: "https://linkedin.com/in/chaiputpansa",
+        },
       },
     ],
   },
@@ -382,8 +339,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/nong.jpg",
         social: {
           instagram: "https://instagram.com/nongownemphum",
-          linkedin: "https://linkedin.com/in/nongownemphum"
-        }
+          linkedin: "https://linkedin.com/in/nongownemphum",
+        },
       },
       {
         name: "Rahman",
@@ -391,8 +348,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/rahman.jpeg",
         social: {
           instagram: "https://instagram.com/rahman",
-          linkedin: "https://linkedin.com/in/rahman"
-        }
+          linkedin: "https://linkedin.com/in/rahman",
+        },
       },
     ],
   },
@@ -407,8 +364,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/karlo.jpeg",
         social: {
           instagram: "https://instagram.com/nadakarlo",
-          linkedin: "https://linkedin.com/in/nadakarlo"
-        }
+          linkedin: "https://linkedin.com/in/nadakarlo",
+        },
       },
       {
         name: "Nabam Agu",
@@ -416,8 +373,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/nabam agu.jpeg",
         social: {
           instagram: "https://instagram.com/nabamagu",
-          linkedin: "https://linkedin.com/in/nabamagu"
-        }
+          linkedin: "https://linkedin.com/in/nabamagu",
+        },
       },
     ],
   },
@@ -432,8 +389,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/sagar.jpeg",
         social: {
           instagram: "https://instagram.com/sagaryadav",
-          linkedin: "https://linkedin.com/in/sagaryadav"
-        }
+          linkedin: "https://linkedin.com/in/sagaryadav",
+        },
       },
       {
         name: "Nayato Mengnia",
@@ -441,8 +398,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/nayto.JPG",
         social: {
           instagram: "https://instagram.com/nayatomengnia",
-          linkedin: "https://linkedin.com/in/nayatomengnia"
-        }
+          linkedin: "https://linkedin.com/in/nayatomengnia",
+        },
       },
       {
         name: "Nabam Tabin",
@@ -450,8 +407,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/tabin.jpg",
         social: {
           instagram: "https://instagram.com/nabamtabin",
-          linkedin: "https://linkedin.com/in/nabamtabin"
-        }
+          linkedin: "https://linkedin.com/in/nabamtabin",
+        },
       },
       {
         name: "Akshay Tadepalli",
@@ -459,8 +416,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/akshay.jpeg",
         social: {
           instagram: "https://instagram.com/akshaytadepalli",
-          linkedin: "https://linkedin.com/in/akshaytadepalli"
-        }
+          linkedin: "https://linkedin.com/in/akshaytadepalli",
+        },
       },
     ],
   },
@@ -475,8 +432,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/jhonson.jpeg",
         social: {
           instagram: "https://instagram.com/johnsonngi",
-          linkedin: "https://linkedin.com/in/johnsonngi"
-        }
+          linkedin: "https://linkedin.com/in/johnsonngi",
+        },
       },
       {
         name: "Himanshu Ranjan",
@@ -484,8 +441,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/himanshu.jpeg",
         social: {
           instagram: "https://instagram.com/himanshuranjan",
-          linkedin: "https://linkedin.com/in/himanshuranjan"
-        }
+          linkedin: "https://linkedin.com/in/himanshuranjan",
+        },
       },
     ],
   },
@@ -655,7 +612,7 @@ export default function Team() {
                               >
                                 {member.role}
                               </p>
-                              
+
                               {/* Social Media Links */}
                               {member.social && (
                                 <div className="flex justify-center gap-3">
@@ -670,8 +627,12 @@ export default function Team() {
                                       style={{ color: theme.accent2 }}
                                       title="Instagram"
                                     >
-                                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                                      <svg
+                                        className="w-4 h-4"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
                                       </svg>
                                     </motion.a>
                                   )}
@@ -686,8 +647,12 @@ export default function Team() {
                                       style={{ color: theme.accent2 }}
                                       title="LinkedIn"
                                     >
-                                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                      <svg
+                                        className="w-4 h-4"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                       </svg>
                                     </motion.a>
                                   )}

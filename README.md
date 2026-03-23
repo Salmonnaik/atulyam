@@ -54,6 +54,23 @@ Full team directory available at [/team](/team)
 npx vercel --prod
 ```
 
+## Docker
+
+Run the app in Docker with one command:
+
+```bash
+docker compose up -d --build
+```
+
+Open: `http://localhost:3000`
+
+Useful commands:
+
+```bash
+docker compose logs -f
+docker compose down
+```
+
 ## Tech Stack
 
 - **Framework:** Next.js 14 with App Router

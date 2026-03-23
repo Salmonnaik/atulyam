@@ -56,13 +56,42 @@ export default function EventCard({ event, index }: { event:EventItem; index:num
           ))}
         </div>
         <div className="grid grid-cols-2 gap-3 p-4 mb-6 border" style={{borderColor:theme.border,background:theme.surface}}>
-          {[['📅 Date',event.date],['📍 Venue',event.venue],['🏆 Prize',event.prize],['💳 Fee',event.fee]].map(([l,v])=>(
+          {[
+            ['📅 Date', event.date],
+            ['📍 Venue', event.dayTimeVenue || event.venue],
+            ['🏆 Prize', event.prize],
+            ['👥 Team', event.teamSize || 'TBA'],
+          ].map(([l,v])=>(
             <div key={l}>
               <div className="font-mono text-[0.52rem] tracking-[2px] uppercase mb-1" style={{color:theme.textDim}}>{l}</div>
               <div className="text-sm" style={{color:l.includes('Prize')?'#ffd700':theme.textMid}}>{v}</div>
             </div>
           ))}
         </div>
+        {(event.rules?.length || event.guidelines?.length) ? (
+          <div className="space-y-3 mb-6">
+            {event.rules?.length ? (
+              <details className="border p-3" style={{borderColor:theme.border, background:theme.surface}}>
+                <summary className="font-mono text-[0.62rem] tracking-[2px] uppercase cursor-pointer" style={{color:theme.text}}>Rules ({event.rules.length})</summary>
+                <ul className="mt-3 space-y-2 text-[0.82rem] list-disc pl-5" style={{color:theme.textMid}}>
+                  {event.rules.map((rule, idx) => (
+                    <li key={`rule-${idx}`}>{rule}</li>
+                  ))}
+                </ul>
+              </details>
+            ) : null}
+            {event.guidelines?.length ? (
+              <details className="border p-3" style={{borderColor:theme.border, background:theme.surface}}>
+                <summary className="font-mono text-[0.62rem] tracking-[2px] uppercase cursor-pointer" style={{color:theme.text}}>Guidelines ({event.guidelines.length})</summary>
+                <ul className="mt-3 space-y-2 text-[0.82rem] list-disc pl-5" style={{color:theme.textMid}}>
+                  {event.guidelines.map((guideline, idx) => (
+                    <li key={`guideline-${idx}`}>{guideline}</li>
+                  ))}
+                </ul>
+              </details>
+            ) : null}
+          </div>
+        ) : null}
         <motion.a 
           href="https://forms.google.com/example" 
           target="_blank" 

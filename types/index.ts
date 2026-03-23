@@ -12,6 +12,11 @@ export interface EventItem {
   color: string;
   day: 1 | 2 | 3;
   tags: string[];
+  teamSize?: string;
+  resultAnnouncement?: string | null;
+  rules?: string[];
+  guidelines?: string[];
+  dayTimeVenue?: string | null;
 }
 export interface MerchItem {
   id: string;

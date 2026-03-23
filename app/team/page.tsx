@@ -62,6 +62,11 @@ const teamCategories: TeamCategory[] = [
       {
         name: "Dr. Abhik Banerjee",
         role: "Faculty Coordinator",
+        image: "",
+        social: {
+          instagram: "https://instagram.com/abhikbanerjee",
+          linkedin: "https://linkedin.com/in/abhikbanerjee"
+        }
       },
       {
         name: "Dr. Jumrik Taipodia",
@@ -84,7 +89,7 @@ const teamCategories: TeamCategory[] = [
       {
         name: "Dr. Brajagopal Datta",
         role: "Faculty Coordinator",
-        image: "/faculty/Dr. Brajagopal Datta.jpg",
+        image: "/factuly/Dr. Brajagopal Datta.jpg",
         social: {
           instagram: "https://instagram.com/brajagopaldatta",
           linkedin: "https://linkedin.com/in/brajagopaldatta"
@@ -102,7 +107,7 @@ const teamCategories: TeamCategory[] = [
       {
         name: "Dr. Jumrik Taipodia",
         role: "Dance Club",
-        image: "/factulty/Dr. Jumrik Taipodia.jpg",
+        image: "/factuly/Dr. Jumrik Taipodia.jpg",
         social: {
           instagram: "https://instagram.com/jumriktaipodia",
           linkedin: "https://linkedin.com/in/jumriktaipodia"
@@ -111,7 +116,7 @@ const teamCategories: TeamCategory[] = [
       {
         name: "Dr. Nabam Rich",
         role: "Theatre Club",
-        image: "/factulty/Dr. Nabam Rich.jpg",
+        image: "/factuly/Dr. Nabam Rich.jpg",
         social: {
           instagram: "https://instagram.com/nabamrich",
           linkedin: "https://linkedin.com/in/nabamrich"
@@ -120,7 +125,7 @@ const teamCategories: TeamCategory[] = [
       {
         name: "Dr. Brajagopal Datta",
         role: "Media and Photography Club",
-        image: "/factulty/Dr. Brajagopal Datta.jpg",
+        image: "/factuly/Dr. Brajagopal Datta.jpg",
         social: {
           instagram: "https://instagram.com/brajagopaldatta",
           linkedin: "https://linkedin.com/in/brajagopaldatta"
@@ -129,7 +134,7 @@ const teamCategories: TeamCategory[] = [
       {
         name: "Dr. Yang Saring",
         role: "Art Club (Painting, Drawing, Classical Art, Fashion)",
-        image: "/factulty/Dr. Yang Saring.jpg",
+        image: "/factuly/Dr. Yang Saring.jpg",
         social: {
           instagram: "https://instagram.com/yangsaring",
           linkedin: "https://linkedin.com/in/yangsaring"

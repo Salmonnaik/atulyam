@@ -315,7 +315,6 @@ export default function HallOfAttraction() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

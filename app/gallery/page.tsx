@@ -148,36 +148,9 @@ const galleryImages = [
   }
 ]
 
-const categories = [
-  { id: 'all', name: 'All Photos' },
-  { id: 'ceremony', name: 'Ceremony' },
-  { id: 'dance', name: 'Dance' },
-  { id: 'music', name: 'Music' },
-  { id: 'art', name: 'Art' },
-  { id: 'gaming', name: 'Gaming' },
-  { id: 'coding', name: 'Coding' },
-  { id: 'drama', name: 'Drama' },
-  { id: 'culture', name: 'Culture' },
-  { id: 'fashion', name: 'Fashion' },
-  { id: 'tech', name: 'Tech' },
-  { id: 'food', name: 'Food' }
-]
-
-const years = [
-  { id: '2025', name: '2025' }
-]
-
 export default function Gallery() {
   const { theme } = useTheme()
-  const [selectedCategory, setSelectedCategory] = useState('all')
-  const [selectedYear, setSelectedYear] = useState('2025')
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null)
-
-  const filteredImages = galleryImages.filter(image => {
-    const categoryMatch = selectedCategory === 'all' || image.category === selectedCategory
-    const yearMatch = image.year.toString() === selectedYear
-    return categoryMatch && yearMatch
-  })
 
   return (
     <>
@@ -207,80 +180,27 @@ export default function Gallery() {
           </motion.p>
         </section>
 
-        {/* ── FILTER SECTION ── */}
-        <section className="py-12 px-6">
-          <div className="max-w-4xl mx-auto">
-            <motion.div {...fade(.2)} className="space-y-6">
-              {/* Category Filter */}
-              <div>
-                <h3 className="text-center font-semibold mb-4" style={{ color: theme.accent2 }}>
-                  Filter by Category
-                </h3>
-                <div className="flex flex-wrap justify-center gap-2">
-                  {categories.map((category) => (
-                    <motion.button
-                      key={category.id}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      onClick={() => setSelectedCategory(category.id)}
-                      className={`px-4 py-2 rounded-full font-medium transition-all ${
-                        selectedCategory === category.id ? 'font-bold' : ''
-                      }`}
-                      style={{
-                        backgroundColor: selectedCategory === category.id 
-                          ? theme.accent 
-                          : 'transparent',
-                        color: selectedCategory === category.id 
-                          ? theme.bg 
-                          : theme.accent2,
-                        border: `1px solid ${theme.accent2}`
-                      }}
-                    >
-                      {category.name}
-                    </motion.button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Year Filter */}
-              <div>
-                <h3 className="text-center font-semibold mb-4" style={{ color: theme.accent2 }}>
-                  Filter by Year
-                </h3>
-                <div className="flex flex-wrap justify-center gap-2">
-                  {years.map((year) => (
-                    <motion.button
-                      key={year.id}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      onClick={() => setSelectedYear(year.id)}
-                      className={`px-4 py-2 rounded-full font-medium transition-all ${
-                        selectedYear === year.id ? 'font-bold' : ''
-                      }`}
-                      style={{
-                        backgroundColor: selectedYear === year.id 
-                          ? theme.accent 
-                          : 'transparent',
-                        color: selectedYear === year.id 
-                          ? theme.bg 
-                          : theme.accent2,
-                        border: `1px solid ${theme.accent2}`
-                      }}
-                    >
-                      {year.name}
-                    </motion.button>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
         {/* ── GALLERY GRID ── */}
         <section className="py-12 px-6">
           <div className="max-w-7xl mx-auto">
+            <motion.div {...fade(0.2)} className="text-center mb-12">
+              <h2
+                className="font-cinzel font-bold text-3xl tracking-wider mb-4"
+                style={{ color: theme.accent }}
+              >
+                ATULYAM 2025 Memories
+              </h2>
+              <p
+                className="text-lg max-w-2xl mx-auto"
+                style={{ color: theme.text }}
+              >
+                Relive the magical moments from last year's festival. From electrifying performances 
+                to heartfelt celebrations, these captures tell the story of ATULYAM 2025.
+              </p>
+            </motion.div>
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {filteredImages.map((image, index) => (
+              {galleryImages.map((image, index) => (
                 <motion.div
                   key={image.id}
                   {...fade(.3 + index * 0.05)}
@@ -308,14 +228,6 @@ export default function Gallery() {
                 </motion.div>
               ))}
             </div>
-
-            {filteredImages.length === 0 && (
-              <motion.div {...fade(.4)} className="text-center py-20">
-                <p className="text-xl" style={{ color: theme.text }}>
-                  No photos found for the selected filters.
-                </p>
-              </motion.div>
-            )}
           </div>
         </section>
 

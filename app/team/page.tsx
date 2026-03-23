@@ -44,29 +44,24 @@ const teamCategories: TeamCategory[] = [
     emoji: "👨‍💼",
     members: [
       {
-        name: "Dr. Abhik Banerjee",
+        name: "Dr. Koji Sambyo",
         role: "Chairman",
-        image: "/faculty/Dr. Abhik Banerjee.jpg",
+        image: "/factuly/Dr. Koj Sambyo.jpg",
         social: {
-          instagram: "https://instagram.com/abhikbanerjee",
-          linkedin: "https://linkedin.com/in/abhikbanerjee"
+          instagram: "https://instagram.com/kojisambyo",
+          linkedin: "https://linkedin.com/in/kojisambyo"
         }
       },
     ],
   },
   {
     key: "faculty_coordinator",
-    title: "Faculty Coordinator",
+    title: "Faculty Committee",
     emoji: "🧑‍🏫",
     members: [
       {
-        name: "Dr. Koji Sambyo",
+        name: "Dr. Abhik Banerjee",
         role: "Faculty Coordinator",
-        image: "",
-        social: {
-          instagram: "https://instagram.com/kojisambyo",
-          linkedin: "https://linkedin.com/in/kojisambyo"
-        }
       },
       {
         name: "Dr. Jumrik Taipodia",
@@ -105,8 +100,44 @@ const teamCategories: TeamCategory[] = [
         }
       },
       {
+        name: "Dr. Jumrik Taipodia",
+        role: "Dance Club",
+        image: "/factulty/Dr. Jumrik Taipodia.jpg",
+        social: {
+          instagram: "https://instagram.com/jumriktaipodia",
+          linkedin: "https://linkedin.com/in/jumriktaipodia"
+        }
+      },
+      {
+        name: "Dr. Nabam Rich",
+        role: "Theatre Club",
+        image: "/factulty/Dr. Nabam Rich.jpg",
+        social: {
+          instagram: "https://instagram.com/nabamrich",
+          linkedin: "https://linkedin.com/in/nabamrich"
+        }
+      },
+      {
+        name: "Dr. Brajagopal Datta",
+        role: "Media and Photography Club",
+        image: "/factulty/Dr. Brajagopal Datta.jpg",
+        social: {
+          instagram: "https://instagram.com/brajagopaldatta",
+          linkedin: "https://linkedin.com/in/brajagopaldatta"
+        }
+      },
+      {
+        name: "Dr. Yang Saring",
+        role: "Art Club (Painting, Drawing, Classical Art, Fashion)",
+        image: "/factulty/Dr. Yang Saring.jpg",
+        social: {
+          instagram: "https://instagram.com/yangsaring",
+          linkedin: "https://linkedin.com/in/yangsaring"
+        }
+      },
+      {
         name: "Dr. Vijayakumar",
-        role: "Faculty Coordinator",
+        role: "Literary Club (Book, Poetry, Oratory, Humour, Writing, Debate)",
         image: "",
         social: {
           instagram: "https://instagram.com/vijayakumar",
@@ -115,7 +146,7 @@ const teamCategories: TeamCategory[] = [
       },
       {
         name: "Dr. Kimjolly Lhouvum",
-        role: "Faculty Coordinator",
+        role: "Nodal Officer, Cultural Clubs",
         image: "",
         social: {
           instagram: "https://instagram.com/kimjollylhouvum",
@@ -325,7 +356,7 @@ const teamCategories: TeamCategory[] = [
         }
       },
       {
-        name: "Chaiput Pansa",
+        name: "Pansa Bhai",
         role: "PR Team",
         image: "/team/pansa.jpeg",
         social: {
@@ -393,7 +424,7 @@ const teamCategories: TeamCategory[] = [
       {
         name: "Sagar Yadav",
         role: "Volunteer Head",
-        image: "",
+        image: "/team/sagar.jpeg",
         social: {
           instagram: "https://instagram.com/sagaryadav",
           linkedin: "https://linkedin.com/in/sagaryadav"

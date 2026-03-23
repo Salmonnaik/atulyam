@@ -10,6 +10,7 @@ export const LINKS = [
   { label:'Home',    href:'/'         },
   { label:'Events',  href:'/events'   },
   { label:'Schedule',href:'/roadmap'  },
+  { label:'Artists', href:'/hall-of-attraction' },
   { label:'Sponsors',href:'/sponsors' },
   { label:'Merch',   href:'/merch'    },
   { label:'Team',    href:'/team'     },

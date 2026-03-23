@@ -20,99 +20,131 @@ const fade = (d = 0) => ({
 const galleryImages = [
   {
     id: 1,
-    src: '/images/gallery/atulyam-2023-1.jpg',
-    alt: 'Opening Ceremony ATULYAM 2023',
+    src: '/images/gallery/atulyam-2025-1.jpg',
+    alt: 'Opening Ceremony ATULYAM 2025',
     category: 'ceremony',
-    year: 2023,
+    year: 2025,
     title: 'Grand Opening'
   },
   {
     id: 2,
-    src: '/images/gallery/atulyam-2023-2.jpg',
+    src: '/images/gallery/atulyam-2025-2.jpg',
     alt: 'Dance Competition Finals',
     category: 'dance',
-    year: 2023,
+    year: 2025,
     title: 'Dance Finals'
   },
   {
     id: 3,
-    src: '/images/gallery/atulyam-2023-3.jpg',
+    src: '/images/gallery/atulyam-2025-3.jpg',
     alt: 'Music Battle of Bands',
     category: 'music',
-    year: 2023,
+    year: 2025,
     title: 'Battle of Bands'
   },
   {
     id: 4,
-    src: '/images/gallery/atulyam-2023-4.jpg',
+    src: '/images/gallery/atulyam-2025-4.jpg',
     alt: 'Art Exhibition',
     category: 'art',
-    year: 2023,
+    year: 2025,
     title: 'Art Showcase'
   },
   {
     id: 5,
-    src: '/images/gallery/atulyam-2023-5.jpg',
+    src: '/images/gallery/atulyam-2025-5.jpg',
     alt: 'Gaming Tournament',
     category: 'gaming',
-    year: 2023,
+    year: 2025,
     title: 'Gaming Arena'
   },
   {
     id: 6,
-    src: '/images/gallery/atulyam-2023-6.jpg',
+    src: '/images/gallery/atulyam-2025-6.jpg',
     alt: 'Coding Hackathon',
     category: 'coding',
-    year: 2023,
+    year: 2025,
     title: 'Hackathon'
   },
   {
     id: 7,
-    src: '/images/gallery/atulyam-2022-1.jpg',
+    src: '/images/gallery/atulyam-2025-7.jpg',
     alt: 'Cultural Night Performance',
     category: 'culture',
-    year: 2022,
+    year: 2025,
     title: 'Cultural Night'
   },
   {
     id: 8,
-    src: '/images/gallery/atulyam-2022-2.jpg',
+    src: '/images/gallery/atulyam-2025-8.jpg',
     alt: 'Drama Competition',
     category: 'drama',
-    year: 2022,
+    year: 2025,
     title: 'Drama Fest'
   },
   {
     id: 9,
-    src: '/images/gallery/atulyam-2022-3.jpg',
+    src: '/images/gallery/atulyam-2025-9.jpg',
     alt: 'Sakura Lantern Release',
     category: 'culture',
-    year: 2022,
+    year: 2025,
     title: 'Lantern Release'
   },
   {
     id: 10,
-    src: '/images/gallery/atulyam-2022-4.jpg',
+    src: '/images/gallery/atulyam-2025-10.jpg',
     alt: 'Star Night Concert',
     category: 'music',
-    year: 2022,
+    year: 2025,
     title: 'Star Night'
   },
   {
     id: 11,
-    src: '/images/gallery/atulyam-2021-1.jpg',
+    src: '/images/gallery/atulyam-2025-11.jpg',
     alt: 'Awards Ceremony',
     category: 'ceremony',
-    year: 2021,
+    year: 2025,
     title: 'Awards Ceremony'
   },
   {
     id: 12,
-    src: '/images/gallery/atulyam-2021-2.jpg',
+    src: '/images/gallery/atulyam-2025-12.jpg',
     alt: 'Team Celebration',
     category: 'culture',
-    year: 2021,
+    year: 2025,
     title: 'Team Victory'
+  },
+  {
+    id: 13,
+    src: '/images/gallery/atulyam-2025-13.jpg',
+    alt: 'Fashion Show',
+    category: 'fashion',
+    year: 2025,
+    title: 'Fashion Showcase'
+  },
+  {
+    id: 14,
+    src: '/images/gallery/atulyam-2025-14.jpg',
+    alt: 'Photography Exhibition',
+    category: 'art',
+    year: 2025,
+    title: 'Photo Exhibit'
+  },
+  {
+    id: 15,
+    src: '/images/gallery/atulyam-2025-15.jpg',
+    alt: 'Robotics Competition',
+    category: 'tech',
+    year: 2025,
+    title: 'Robo Wars'
+  },
+  {
+    id: 16,
+    src: '/images/gallery/atulyam-2025-16.jpg',
+    alt: 'Food Festival',
+    category: 'food',
+    year: 2025,
+    title: 'Food Fest'
   }
 ]
 
@@ -125,25 +157,25 @@ const categories = [
   { id: 'gaming', name: 'Gaming' },
   { id: 'coding', name: 'Coding' },
   { id: 'drama', name: 'Drama' },
-  { id: 'culture', name: 'Culture' }
+  { id: 'culture', name: 'Culture' },
+  { id: 'fashion', name: 'Fashion' },
+  { id: 'tech', name: 'Tech' },
+  { id: 'food', name: 'Food' }
 ]
 
 const years = [
-  { id: 'all', name: 'All Years' },
-  { id: '2023', name: '2023' },
-  { id: '2022', name: '2022' },
-  { id: '2021', name: '2021' }
+  { id: '2025', name: '2025' }
 ]
 
 export default function Gallery() {
   const { theme } = useTheme()
   const [selectedCategory, setSelectedCategory] = useState('all')
-  const [selectedYear, setSelectedYear] = useState('all')
+  const [selectedYear, setSelectedYear] = useState('2025')
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null)
 
   const filteredImages = galleryImages.filter(image => {
     const categoryMatch = selectedCategory === 'all' || image.category === selectedCategory
-    const yearMatch = selectedYear === 'all' || image.year.toString() === selectedYear
+    const yearMatch = image.year.toString() === selectedYear
     return categoryMatch && yearMatch
   })
 

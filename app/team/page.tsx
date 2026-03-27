@@ -49,8 +49,8 @@ const teamCategories: TeamCategory[] = [
         role: "Chairman",
         image: "/factuly/Dr. Koj Sambyo.jpg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/kojisambyo",
+          linkedin: "https://linkedin.com/in/kojisambyo",
         },
       },
     ],
@@ -65,8 +65,8 @@ const teamCategories: TeamCategory[] = [
         role: "Faculty Coordinator, Dance Club",
         image: "/factuly/Dr. Jumrik Taipodia.jpg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/jumriktaipodia",
+          linkedin: "https://linkedin.com/in/jumriktaipodia",
         },
       },
       {
@@ -74,8 +74,8 @@ const teamCategories: TeamCategory[] = [
         role: "Faculty Coordinator, Theatre Club",
         image: "/factuly/Dr. Nabam Rich.jpg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/nabamrich",
+          linkedin: "https://linkedin.com/in/nabamrich",
         },
       },
       {
@@ -83,8 +83,8 @@ const teamCategories: TeamCategory[] = [
         role: "Faculty Coordinator, Media and Photography Club",
         image: "/factuly/Dr. Brajagopal Datta.jpg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/brajagopaldatta",
+          linkedin: "https://linkedin.com/in/brajagopaldatta",
         },
       },
       {
@@ -92,8 +92,8 @@ const teamCategories: TeamCategory[] = [
         role: "Faculty Coordinator, Art Club (Painting, Drawing, Classical Art, Fashion)",
         image: "/factuly/Dr. Yang Saring.jpg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/yangsaring",
+          linkedin: "https://linkedin.com/in/yangsaring",
         },
       },
       {
@@ -101,8 +101,8 @@ const teamCategories: TeamCategory[] = [
         role: "Literary Club (Book, Poetry, Oratory, Humour, Writing, Debate)",
         image: "",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/vijayakumar",
+          linkedin: "https://linkedin.com/in/vijayakumar",
         },
       },
       {
@@ -110,8 +110,8 @@ const teamCategories: TeamCategory[] = [
         role: "Nodal Officer, Cultural Clubs",
         image: "",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/kimjollylhouvum",
+          linkedin: "https://linkedin.com/in/kimjollylhouvum",
         },
       },
     ],
@@ -126,8 +126,8 @@ const teamCategories: TeamCategory[] = [
         role: "Head Coordinator",
         image: "/team/rahul.JPG",
         social: {
-          instagram: "https://www.instagram.com/t.mengnia?igsh=MWhmOHFvdGR1bGI1cg==",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/rahulmengnia",
+          linkedin: "https://linkedin.com/in/rahulmengnia",
         },
       },
     ],
@@ -142,8 +142,8 @@ const teamCategories: TeamCategory[] = [
         role: "Assistant Head Coordinator",
         image: "/team/lishi.jpeg",
         social: {
-          instagram: "https://www.instagram.com/lishi_teshi?igsh=Nm9zMzA1emtyZg==",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/lishiteshi",
+          linkedin: "https://linkedin.com/in/lishiteshi",
         },
       },
       {
@@ -151,8 +151,8 @@ const teamCategories: TeamCategory[] = [
         role: "Assistant Head Coordinator",
         image: "/team/Dungwamossang.jpg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/dungamosang",
+          linkedin: "https://linkedin.com/in/dungamosang",
         },
       },
     ],
@@ -167,9 +167,11 @@ const teamCategories: TeamCategory[] = [
         role: "Devolper",
         image: "/team/banothcharan.jpg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
-          github: "https://www.github.com",
+          instagram:
+            "https://www.instagram.com/charan_cherry_212?igsh=MWpyZHR1MnVvbnlrNw==",
+          linkedin:
+            "https://www.linkedin.com/in/banoth-charan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          github: "https://github.com/Charancherry-code",
         },
       },
       {
@@ -177,9 +179,10 @@ const teamCategories: TeamCategory[] = [
         role: "Devolper",
         image: "/team/salmon.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
-          github: "https://www.github.com",
+          instagram:
+            "https://www.instagram.com/dream_boy_salmon?igsh=MW1pMDBncnRzMm1xbw==",
+          linkedin: "https://www.linkedin.com/in/salmon-naik-boda",
+          github: "https://github.com/Salmonnaik",
         },
       },
       {
@@ -187,9 +190,9 @@ const teamCategories: TeamCategory[] = [
         role: "Devolper",
         image: "/team/karan.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
-          github: "https://www.github.com",
+          instagram: "https://instagram.com/karankumarsah",
+          linkedin: "https://linkedin.com/in/karankumarsah",
+          github: "https://github.com/karankumarsah",
         },
       },
       {
@@ -197,9 +200,9 @@ const teamCategories: TeamCategory[] = [
         role: "Devolper",
         image: "/team/harshal.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
-          github: "https://www.github.com",
+          instagram: "https://instagram.com/harshaltondare",
+          linkedin: "https://linkedin.com/in/harshaltondare",
+          github: "https://github.com/harshaltondare",
         },
       },
     ],
@@ -214,8 +217,8 @@ const teamCategories: TeamCategory[] = [
         role: "Finance Head",
         image: "/team/kipa.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/kipagungyo",
+          linkedin: "https://linkedin.com/in/kipagungyo",
         },
       },
     ],
@@ -230,8 +233,8 @@ const teamCategories: TeamCategory[] = [
         role: "Event Head",
         image: "/team/bashu.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/bashusingh",
+          linkedin: "https://linkedin.com/in/bashusingh",
         },
       },
       {
@@ -239,8 +242,8 @@ const teamCategories: TeamCategory[] = [
         role: "Event Head",
         image: "/team/sidhant .jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/siddhant",
+          linkedin: "https://linkedin.com/in/siddhant",
         },
       },
       {
@@ -248,8 +251,8 @@ const teamCategories: TeamCategory[] = [
         role: "Event Head",
         image: "/team/ankit.png",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/ankitjha",
+          linkedin: "https://linkedin.com/in/ankitjha",
         },
       },
     ],
@@ -264,8 +267,8 @@ const teamCategories: TeamCategory[] = [
         role: "Sponsorship Team",
         image: "/team/jhon.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/johndalbera",
+          linkedin: "https://linkedin.com/in/johndalbera",
         },
       },
       {
@@ -273,8 +276,8 @@ const teamCategories: TeamCategory[] = [
         role: "Sponsorship Team",
         image: "/team/gerna.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/gernapanyang",
+          linkedin: "https://linkedin.com/in/gernapanyang",
         },
       },
       {
@@ -282,8 +285,8 @@ const teamCategories: TeamCategory[] = [
         role: "Sponsorship Team",
         image: "/team/kago.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/kagododing",
+          linkedin: "https://linkedin.com/in/kagododing",
         },
       },
       {
@@ -291,8 +294,8 @@ const teamCategories: TeamCategory[] = [
         role: "Sponsorship Team",
         image: "/team/uma.png",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com/in/umashankar-sahu-2027ce?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+          instagram: "https://instagram.com/umashanker",
+          linkedin: "https://linkedin.com/in/umashanker",
         },
       },
     ],
@@ -307,8 +310,8 @@ const teamCategories: TeamCategory[] = [
         role: "PR Team",
         image: "/team/sonam.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/abasonam",
+          linkedin: "https://linkedin.com/in/abasonam",
         },
       },
       {
@@ -316,8 +319,8 @@ const teamCategories: TeamCategory[] = [
         role: "PR Team",
         image: "/team/james.jpg",
         social: {
-          instagram: "https://www.instagram.com/james_____tamang?igsh=MWV4MnNlanUwMHVuMA==",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/jamestamang",
+          linkedin: "https://linkedin.com/in/jamestamang",
         },
       },
       {
@@ -325,8 +328,8 @@ const teamCategories: TeamCategory[] = [
         role: "PR Team",
         image: "/team/pansa.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/chaiputpansa",
+          linkedin: "https://linkedin.com/in/chaiputpansa",
         },
       },
     ],
@@ -341,8 +344,8 @@ const teamCategories: TeamCategory[] = [
         role: "Media and Graphics Head",
         image: "/team/nong.jpg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/nongownemphum",
+          linkedin: "https://linkedin.com/in/nongownemphum",
         },
       },
       {
@@ -350,8 +353,8 @@ const teamCategories: TeamCategory[] = [
         role: "Media and Graphics Head",
         image: "/team/rahman.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/rahman",
+          linkedin: "https://linkedin.com/in/rahman",
         },
       },
     ],
@@ -366,8 +369,8 @@ const teamCategories: TeamCategory[] = [
         role: "Design Head",
         image: "/team/karlo.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/nadakarlo",
+          linkedin: "https://linkedin.com/in/nadakarlo",
         },
       },
       {
@@ -375,8 +378,8 @@ const teamCategories: TeamCategory[] = [
         role: "Design Head",
         image: "/team/nabam agu.jpeg",
         social: {
-          instagram: "https://www.instagram.com/agu_nabam_27?igsh=a3cwNjVuc29pNjV3",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/nabamagu",
+          linkedin: "https://linkedin.com/in/nabamagu",
         },
       },
     ],
@@ -391,8 +394,8 @@ const teamCategories: TeamCategory[] = [
         role: "Volunteer Head",
         image: "/team/sagar.jpeg",
         social: {
-          instagram: "https://www.instagram.com/lifeof_sgr",
-          linkedin: "https://www.linkedin.com/in/sagar-yadav-43b561325/",
+          instagram: "https://instagram.com/sagaryadav",
+          linkedin: "https://linkedin.com/in/sagaryadav",
         },
       },
       {
@@ -400,8 +403,8 @@ const teamCategories: TeamCategory[] = [
         role: "Volunteer Head",
         image: "/team/nayto.JPG",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/nayatomengnia",
+          linkedin: "https://linkedin.com/in/nayatomengnia",
         },
       },
       {
@@ -409,8 +412,8 @@ const teamCategories: TeamCategory[] = [
         role: "Volunteer Head",
         image: "/team/tabin.jpg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/nabamtabin",
+          linkedin: "https://linkedin.com/in/nabamtabin",
         },
       },
       {
@@ -418,8 +421,8 @@ const teamCategories: TeamCategory[] = [
         role: "Volunteer Head",
         image: "/team/akshay.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/akshaytadepalli",
+          linkedin: "https://linkedin.com/in/akshaytadepalli",
         },
       },
     ],
@@ -434,8 +437,8 @@ const teamCategories: TeamCategory[] = [
         role: "Management Head",
         image: "/team/jhonson.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/johnsonngi",
+          linkedin: "https://linkedin.com/in/johnsonngi",
         },
       },
       {
@@ -443,8 +446,8 @@ const teamCategories: TeamCategory[] = [
         role: "Management Head",
         image: "/team/himanshu.jpeg",
         social: {
-          instagram: "https://www.instagram.com",
-          linkedin: "https://www.linkedin.com",
+          instagram: "https://instagram.com/himanshuranjan",
+          linkedin: "https://linkedin.com/in/himanshuranjan",
         },
       },
     ],
@@ -624,33 +627,19 @@ export default function Team() {
                                       href={member.social.instagram}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      whileHover={{ 
-                                        scale: 1.2, 
-                                        y: -4,
-                                        rotate: [0, -5, 5, 0],
-                                        transition: { duration: 0.3 }
-                                      }}
-                                      whileTap={{ scale: 0.9 }}
-                                      initial={{ opacity: 0, scale: 0.5 }}
-                                      animate={{ opacity: 1, scale: 1 }}
-                                      transition={{ 
-                                        duration: 0.5,
-                                        delay: 0.8 + memberIndex * 0.1
-                                      }}
+                                      whileHover={{ scale: 1.1, y: -2 }}
+                                      whileTap={{ scale: 0.95 }}
                                       className="cursor-none transition-all"
                                       style={{ color: theme.accent2 }}
                                       title="Instagram"
                                     >
-                                      <motion.svg
+                                      <svg
                                         className="w-4 h-4"
                                         fill="currentColor"
                                         viewBox="0 0 24 24"
-                                        whileHover={{ 
-                                          filter: "drop-shadow(0 0 8px rgba(255, 105, 180, 0.6))"
-                                        }}
                                       >
                                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
-                                      </motion.svg>
+                                      </svg>
                                     </motion.a>
                                   )}
                                   {member.social.linkedin && (
@@ -658,33 +647,19 @@ export default function Team() {
                                       href={member.social.linkedin}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      whileHover={{ 
-                                        scale: 1.2, 
-                                        y: -4,
-                                        rotate: [0, -5, 5, 0],
-                                        transition: { duration: 0.3 }
-                                      }}
-                                      whileTap={{ scale: 0.9 }}
-                                      initial={{ opacity: 0, scale: 0.5 }}
-                                      animate={{ opacity: 1, scale: 1 }}
-                                      transition={{ 
-                                        duration: 0.5,
-                                        delay: 0.9 + memberIndex * 0.1
-                                      }}
+                                      whileHover={{ scale: 1.1, y: -2 }}
+                                      whileTap={{ scale: 0.95 }}
                                       className="cursor-none transition-all"
                                       style={{ color: theme.accent2 }}
                                       title="LinkedIn"
                                     >
-                                      <motion.svg
+                                      <svg
                                         className="w-4 h-4"
                                         fill="currentColor"
                                         viewBox="0 0 24 24"
-                                        whileHover={{ 
-                                          filter: "drop-shadow(0 0 8px rgba(0, 119, 181, 0.6))"
-                                        }}
                                       >
                                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                      </motion.svg>
+                                      </svg>
                                     </motion.a>
                                   )}
                                   {member.social.github && (
@@ -692,33 +667,19 @@ export default function Team() {
                                       href={member.social.github}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      whileHover={{ 
-                                        scale: 1.2, 
-                                        y: -4,
-                                        rotate: [0, -5, 5, 0],
-                                        transition: { duration: 0.3 }
-                                      }}
-                                      whileTap={{ scale: 0.9 }}
-                                      initial={{ opacity: 0, scale: 0.5 }}
-                                      animate={{ opacity: 1, scale: 1 }}
-                                      transition={{ 
-                                        duration: 0.5,
-                                        delay: 1.0 + memberIndex * 0.1
-                                      }}
+                                      whileHover={{ scale: 1.1, y: -2 }}
+                                      whileTap={{ scale: 0.95 }}
                                       className="cursor-none transition-all"
                                       style={{ color: theme.accent2 }}
                                       title="GitHub"
                                     >
-                                      <motion.svg
+                                      <svg
                                         className="w-4 h-4"
                                         fill="currentColor"
                                         viewBox="0 0 24 24"
-                                        whileHover={{ 
-                                          filter: "drop-shadow(0 0 8px rgba(51, 51, 51, 0.6))"
-                                        }}
                                       >
                                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                      </motion.svg>
+                                      </svg>
                                     </motion.a>
                                   )}
                                 </div>

@@ -241,7 +241,7 @@ export const EVENTS: EventItem[] = [
       "Evaluation: Track selection, mixing skills, crowd engagement.",
     ],
   },
-  ];
+];
 
 export const ROADMAP = [
   {

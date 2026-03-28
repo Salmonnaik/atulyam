@@ -47,9 +47,9 @@ const webTeamMembers = [
     role: 'Developer',
     image: '/team/karan.jpeg',
     social: {
-      instagram: 'https://instagram.com/karankumarsah',
-      linkedin: 'https://linkedin.com/in/karankumarsah',
-      github: 'https://github.com/karankumarsah'
+      instagram: 'https://instagram.com/krotrn.ks',
+      linkedin: 'https://linkedin.com/in/krotrn',
+      github: 'https://github.com/krotrn',
     }
   },
   {

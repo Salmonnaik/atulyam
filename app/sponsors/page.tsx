@@ -1,6 +1,7 @@
 // app/sponsors/page.tsx
 "use client";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Navbar from "@/app/components/Navbar";
 import CustomCursor from "@/app/components/CustomCursor";
@@ -292,23 +293,22 @@ export default function SponsorsPage() {
 
                       {/* Card content */}
                       <div className="p-8 text-center">
-                        {/* Text block instead of logo */}
-                        <div className="flex justify-center mb-6">
-                          <div
-                            className="w-24 h-24 rounded-2xl flex items-center justify-center text-center px-2 flex-shrink-0 border-2 shadow-lg"
-                            style={{
-                              background: `${accentColor}15`,
-                              borderColor: `${accentColor}30`,
-                            }}
-                          >
-                            <span
-                              className="font-mono text-[0.58rem] tracking-[1px] uppercase"
-                              style={{ color: accentColor }}
-                            >
-                              {s.name}
-                            </span>
+                        {/* Logo image */}
+                        {s.logo && (
+                          <div className="flex justify-center mb-6 h-32">
+                            <div className="relative w-full max-w-[120px]">
+                              <Image
+                                src={s.logo}
+                                alt={s.name}
+                                fill
+                                className="object-contain"
+                                onError={(e) => {
+                                  e.currentTarget.style.display = "none";
+                                }}
+                              />
+                            </div>
                           </div>
-                        </div>
+                        )}
 
                         {/* Sponsor name */}
                         <h3

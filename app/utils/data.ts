@@ -475,6 +475,20 @@ export const SPONSORS: SponsorItem[] = [
     desc: "Partner",
     logo: "/sponers-logo/renu.jpeg",
   },
+  {
+    name: "Horizon Sponsor Group",
+    tier: "associate",
+    emoji: "🌅",
+    desc: "Partner",
+    logo: "/sponsers/horizon sponser group.png",
+  },
+  {
+    name: "LEO PS",
+    tier: "associate",
+    emoji: "🦁",
+    desc: "Partner",
+    logo: "/sponsers/LEO PS PNG.PNG",
+  },
 ];
 
 export const TIER_COLOR: Record<string, string> = {

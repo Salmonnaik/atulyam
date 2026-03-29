@@ -108,7 +108,7 @@ const teamCategories: TeamCategory[] = [
       {
         name: "Dr. Kimjolly Lhouvum",
         role: "Nodal Officer, Cultural Clubs",
-        image: "",
+        image: "/factuly/Dr Kimjolly Lhouvum.jpg",
         social: {
           instagram: "https://instagram.com/kimjollylhouvum",
           linkedin: "https://linkedin.com/in/kimjollylhouvum",
@@ -147,7 +147,7 @@ const teamCategories: TeamCategory[] = [
         },
       },
       {
-        name: "DUNGWA MOSSANG",
+        name: "Dungwa Mossang",
         role: "Assistant Head Coordinator",
         image: "/team/Dungwamossang.jpg",
         social: {

@@ -248,7 +248,9 @@ export default function Landing() {
           
           <div className="overflow-hidden">
             <div className="flex gap-6 w-max animate-slide-l">
-              {['🎤 Ash King', '🎧 DJ NYK', '📹 CarryMinati', '🎤 Divya Kumar', '🎧 DJ Chetas', '📹 Bhuvan Bam', '🎤 Akruti', '🎧 DJ RUKH', '📹 Mumbiker Nikhil', '🎤 Sonu Nigam', '🎧 Nucleya', '📹 Technical Guruji', '🎤 Shreya Ghoshal', '🎧 DJ Shaan', '📹 Ashish Chanchlani', '🎤 Arijit Singh', '🎧 DJ Sunita', '📹 BB Ki Vines', '🎤 Neha Kakkar', '🎧 DJ Aqeel', '🎤 Badshah'].concat(['🎤 Ash King', '🎧 DJ NYK', '📹 CarryMinati', '🎤 Divya Kumar', '🎧 DJ Chetas', '📹 Bhuvan Bam', '🎤 Akruti', '🎧 DJ RUKH', '📹 Mumbiker Nikhil', '🎤 Sonu Nigam', '🎧 Nucleya', '📹 Technical Guruji', '🎤 Shreya Ghoshal', '🎧 DJ Shaan', '📹 Ashish Chanchlani', '🎤 Arijit Singh', '🎧 DJ Sunita', '📹 BB Ki Vines', '🎤 Neha Kakkar', '🎧 DJ Aqeel', '🎤 Badshah']).map((artist, i) => (
+              {['🎤 Javed Ali', '🎧 DJ Girl', '🎤 Local Artist']
+                .concat(['🎤 Javed Ali', '🎧 DJ Girl', '🎤 Local Artist'])
+                .map((artist, i) => (
                 <div key={i} className="relative flex items-center gap-3 px-8 py-4 border glass whitespace-nowrap cursor-none group overflow-hidden transition-all"
                   style={{borderColor:theme.border, minWidth:250}}>
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400"

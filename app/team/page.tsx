@@ -147,7 +147,7 @@ const teamCategories: TeamCategory[] = [
         },
       },
       {
-        name: "DUNGWA MOSSANG",
+        name: "Dungwa Moossang",
         role: "Assistant Head Coordinator",
         image: "/team/Dungwamossang.jpg",
         social: {

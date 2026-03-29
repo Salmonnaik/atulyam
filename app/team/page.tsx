@@ -202,7 +202,7 @@ const teamCategories: TeamCategory[] = [
         social: {
           instagram: "https://instagram.com/harshaltondare",
           linkedin: "https://linkedin.com/in/harshaltondare",
-          github: "https://github.com/harshaltondare",
+          github: "https://github.com/Harshal-Tondare",
         },
       },
     ],

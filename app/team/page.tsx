@@ -126,7 +126,8 @@ const teamCategories: TeamCategory[] = [
         role: "Head Coordinator",
         image: "/team/rahul.JPG",
         social: {
-          instagram: "https://instagram.com/rahulmengnia",
+          instagram:
+            "https://www.instagram.com/t.mengnia?igsh=MWhmOHFvdGR1bGI1cg==",
           linkedin: "https://linkedin.com/in/rahulmengnia",
         },
       },
@@ -142,7 +143,8 @@ const teamCategories: TeamCategory[] = [
         role: "Assistant Head Coordinator",
         image: "/team/lishi.jpeg",
         social: {
-          instagram: "https://instagram.com/lishiteshi",
+          instagram:
+            "https://www.instagram.com/lishi_teshi?igsh=Nm9zMzA1emtyZg==",
           linkedin: "https://linkedin.com/in/lishiteshi",
         },
       },
@@ -242,7 +244,8 @@ const teamCategories: TeamCategory[] = [
         role: "Event Head",
         image: "/team/sidhant .jpeg",
         social: {
-          instagram: "https://instagram.com/siddhant",
+          instagram:
+            "https://www.instagram.com/siddhant_hendry?igsh=N2VsNDR1a2s5am52",
           linkedin: "https://linkedin.com/in/siddhant",
         },
       },
@@ -295,7 +298,8 @@ const teamCategories: TeamCategory[] = [
         image: "/team/uma.png",
         social: {
           instagram: "https://instagram.com/umashanker",
-          linkedin: "https://linkedin.com/in/umashanker",
+          linkedin:
+            "https://www.linkedin.com/in/umashankar-sahu-2027ce?utm_source=share_via&utm_content=profile&utm_medium=member_android",
         },
       },
     ],
@@ -319,7 +323,8 @@ const teamCategories: TeamCategory[] = [
         role: "PR Team",
         image: "/team/james.jpg",
         social: {
-          instagram: "https://instagram.com/jamestamang",
+          instagram:
+            "https://www.instagram.com/james_____tamang?igsh=MWV4MnNlanUwMHVuMA==",
           linkedin: "https://linkedin.com/in/jamestamang",
         },
       },
@@ -353,7 +358,8 @@ const teamCategories: TeamCategory[] = [
         role: "Media and Graphics Head",
         image: "/team/rahman.jpeg",
         social: {
-          instagram: "https://instagram.com/rahman",
+          instagram:
+            "https://www.instagram.com/attaur515?igsh=MTY1NW5rdmxjZDlsbQ%3D%3D&utm_source=qr",
           linkedin: "https://linkedin.com/in/rahman",
         },
       },
@@ -378,7 +384,8 @@ const teamCategories: TeamCategory[] = [
         role: "Design Head",
         image: "/team/nabam agu.jpeg",
         social: {
-          instagram: "https://instagram.com/nabamagu",
+          instagram:
+            "https://www.instagram.com/agu_nabam_27?igsh=a3cwNjVuc29pNjV3",
           linkedin: "https://linkedin.com/in/nabamagu",
         },
       },
@@ -394,8 +401,8 @@ const teamCategories: TeamCategory[] = [
         role: "Volunteer Head",
         image: "/team/sagar.jpeg",
         social: {
-          instagram: "https://instagram.com/sagaryadav",
-          linkedin: "https://linkedin.com/in/sagaryadav",
+          instagram: "https://www.instagram.com/lifeof_sgr/",
+          linkedin: "https://linkedin.com/in/sagar-yadav-43b561325/",
         },
       },
       {
@@ -560,7 +567,6 @@ export default function Team() {
                     {category.members.map((member, memberIndex) => (
                       <motion.div
                         key={member.name}
-                        {...fade(0.4 + memberIndex * 0.05)}
                         whileHover={{ y: -8, scale: 1.02 }}
                         className="group cursor-pointer h-full"
                       >

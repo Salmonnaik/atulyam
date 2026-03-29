@@ -35,75 +35,39 @@ interface Artist {
 
 const artists: Artist[] = [
   {
-    name: "Arijit Singh",
+    name: "Javed Ali",
     role: "Headline Performer",
-    genre: "Bollywood, Romantic",
-    image: "/artists/arijit-singh.jpg",
-    description: "The voice of a generation, bringing soulful melodies to ATULYAM 2026.",
+    genre: "Bollywood, Playback",
+    image: "/artists/javed-ali.jpg",
+    description: "Renowned playback singer performing live at ATULYAM 2026.",
     social: {
-      instagram: "https://instagram.com/arijitsingh",
-      youtube: "https://youtube.com/arijitsingh",
-      spotify: "https://spotify.com/artist/arijitsingh"
+      instagram: "https://instagram.com/javedali4u",
+      youtube: "https://youtube.com/@javedali",
+      spotify: "https://spotify.com/artist/javedali"
     }
   },
   {
-    name: "Nucleya",
+    name: "DJ Girl",
     role: "Electronic Music Artist",
-    genre: "EDM, Bass Music",
-    image: "/artists/nucleya.jpg",
-    description: "Pioneering Indian electronic music with his unique bass-heavy sound.",
+    genre: "EDM, Dance",
+    image: "/artists/dj-girl.jpg",
+    description: "High-energy DJ set with festival beats and crowd-hyping mixes.",
     social: {
-      instagram: "https://instagram.com/nucleya",
-      youtube: "https://youtube.com/nucleya",
-      spotify: "https://spotify.com/artist/nucleya"
+      instagram: "https://instagram.com/djgirl",
+      youtube: "https://youtube.com/@djgirl",
+      spotify: "https://spotify.com/artist/djgirl"
     }
   },
   {
-    name: "The Local Train",
-    role: "Rock Band",
-    genre: "Alternative Rock, Indie",
-    image: "/artists/local-train.jpg",
-    description: "Indie rock sensations known for their electrifying live performances.",
+    name: "Local Artist",
+    role: "Special Guest",
+    genre: "Fusion",
+    image: "/artists/local-artist.jpg",
+    description: "A local artist bringing fresh talent and vibrant energy to ATULYAM 2026.",
     social: {
-      instagram: "https://instagram.com/thelocaltrain",
-      youtube: "https://youtube.com/thelocaltrain",
-      spotify: "https://spotify.com/artist/thelocaltrain"
-    }
-  },
-  {
-    name: "Prateek Kuhad",
-    role: "Indie Folk Artist",
-    genre: "Indie Folk, Acoustic",
-    image: "/artists/prateek-kuhad.jpg",
-    description: "Heart-touching indie folk melodies that resonate with the soul.",
-    social: {
-      instagram: "https://instagram.com/prateekkuhad",
-      youtube: "https://youtube.com/prateekkuhad",
-      spotify: "https://spotify.com/artist/prateekkuhad"
-    }
-  },
-  {
-    name: "Divine",
-    role: "Hip Hop Artist",
-    genre: "Hip Hop, Rap",
-    image: "/artists/divine.jpg",
-    description: "India's hip hop ambassador bringing raw street poetry to the stage.",
-    social: {
-      instagram: "https://instagram.com/divine",
-      youtube: "https://youtube.com/divine",
-      spotify: "https://spotify.com/artist/divine"
-    }
-  },
-  {
-    name: "When Chai Met Toast",
-    role: "Indie Pop Band",
-    genre: "Indie Pop, Folk",
-    image: "/artists/wcmt.jpg",
-    description: "Feel-good indie pop that spreads joy and positivity.",
-    social: {
-      instagram: "https://instagram.com/whenchaimettoast",
-      youtube: "https://youtube.com/whenchaimettoast",
-      spotify: "https://spotify.com/artist/whenchaimettoast"
+      instagram: "https://instagram.com/localartist",
+      youtube: "https://youtube.com/@localartist",
+      spotify: "https://spotify.com/artist/localartist"
     }
   }
 ];

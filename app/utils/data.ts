@@ -384,6 +384,13 @@ export const SPONSORS: SponsorItem[] = [
     logo: "/sponsers/dopamine store.jpeg",
   },
   {
+    name: "Coca Cola",
+    tier: "associate",
+    emoji: "🥤",
+    desc: "Partner",
+    logo: "/sponsers/coca cola.jpg",
+  },
+  {
     name: "Fashon Point",
     tier: "associate",
     emoji: "👗",
@@ -410,6 +417,20 @@ export const SPONSORS: SponsorItem[] = [
     emoji: "🦁",
     desc: "Partner",
     logo: "/sponsers/LEO PS PNG.PNG",
+  },
+  {
+    name: "Zippy",
+    tier: "associate",
+    emoji: "⚡",
+    desc: "Partner",
+    logo: "/sponsers/zippy.jpg",
+  },
+  {
+    name: "Annex",
+    tier: "associate",
+    emoji: "⭐",
+    desc: "Partner",
+    logo: "/sponsers/annex.png",
   },
 ];
 

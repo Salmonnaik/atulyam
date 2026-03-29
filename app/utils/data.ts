@@ -398,6 +398,13 @@ export const SPONSORS: SponsorItem[] = [
     logo: "/sponsers/horizon sponser group.png",
   },
   {
+    name: "Huto",
+    tier: "associate",
+    emoji: "🤝",
+    desc: "Partner",
+    logo: "/sponsers/huto.jpeg",
+  },
+  {
     name: "LEO PS",
     tier: "associate",
     emoji: "🦁",

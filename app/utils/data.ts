@@ -432,6 +432,20 @@ export const SPONSORS: SponsorItem[] = [
     desc: "Partner",
     logo: "/sponsers/annex.png",
   },
+  {
+    name: "Infinity Saloon",
+    tier: "associate",
+    emoji: "💇",
+    desc: "Partner",
+    logo: "/sponsers/infinity saloon.jpeg",
+  },
+  {
+    name: "Nada Music and Instrumental House",
+    tier: "associate",
+    emoji: "🎵",
+    desc: "Partner",
+    logo: "/sponsers/nada music and instrumental house.jpeg",
+  },
 ];
 
 export const TIER_COLOR: Record<string, string> = {

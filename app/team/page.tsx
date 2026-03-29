@@ -99,7 +99,7 @@ const teamCategories: TeamCategory[] = [
       {
         name: "Dr. Vijayakumar",
         role: "Literary Club (Book, Poetry, Oratory, Humour, Writing, Debate)",
-        image: "",
+        image: "/factuly/vijay-kumar.jpeg",
         social: {
           instagram: "https://instagram.com/vijayakumar",
           linkedin: "https://linkedin.com/in/vijayakumar",

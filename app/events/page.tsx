@@ -11,7 +11,6 @@ import EventCard from "./components/EventCard";
 import Footer from "@/app/components/Footer";
 import { EVENTS } from "@/app/utils/data";
 import { useTheme } from "@/app/context/ThemeContext";
-import Link from "next/link";
 
 const GalaxyCanvas = dynamic(() => import("@/app/components/GalaxyCanvas"), {
   ssr: false,
@@ -155,29 +154,7 @@ export default function EventsPage() {
           </div>
         </section>
 
-        {/* Link to roadmap */}
-        <section className="py-14 text-center px-6">
-          <p
-            className="font-jp text-sm tracking-[4px] mb-6"
-            style={{ color: theme.textDim }}
-          >
-            See the full festival schedule
-          </p>
-          <Link href="/roadmap">
-            <motion.div
-              whileHover={{ scale: 1.04, y: -2 }}
-              whileTap={{ scale: 0.97 }}
-              className="inline-block px-12 py-4 font-mono text-[0.72rem] tracking-[3px] uppercase cursor-none clip border transition-all"
-              style={{
-                color: theme.accent2,
-                borderColor: `${theme.accent2}44`,
-                background: "transparent",
-              }}
-            >
-              View 3-Day Roadmap →
-            </motion.div>
-          </Link>
-        </section>
+
       </main>
     </>
   );

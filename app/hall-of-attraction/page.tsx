@@ -35,7 +35,7 @@ interface Artist {
 
 const artists: Artist[] = [
   {
-    name: "Javed Ali",
+    name: "Singer",
     role: "Headline Performer",
     genre: "Bollywood, Playback",
     image: "/artists/javed-ali.jpg",

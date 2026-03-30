@@ -162,7 +162,7 @@ const teamCategories: TeamCategory[] = [
   {
     key: "web",
     title: "Web Team",
-    emoji: "�",
+    emoji: "💻",
     members: [
       {
         name: "Banoth Charan",
@@ -203,7 +203,7 @@ const teamCategories: TeamCategory[] = [
         image: "/team/harshal.jpeg",
         social: {
           instagram: "https://instagram.com/harshaltondare",
-          linkedin: "https://linkedin.com/in/harshaltondare",
+          linkedin: "https://www.linkedin.com/in/harshal-tondare/",
           github: "https://github.com/Harshal-Tondare",
         },
       },

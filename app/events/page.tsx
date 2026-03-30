@@ -153,8 +153,6 @@ export default function EventsPage() {
             ))}
           </div>
         </section>
-
-
       </main>
     </>
   );

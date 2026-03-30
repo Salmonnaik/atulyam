@@ -41,7 +41,7 @@ const fade = (d = 0) => ({
 const teamCategories: TeamCategory[] = [
   {
     key: "chairman",
-    title: "Addovedi Chairman",
+    title: "Atulyam Chairman",
     emoji: "👨‍💼",
     members: [
       {

@@ -22,7 +22,7 @@ const DAY_EVENT_PHOTOS: Record<1 | 2 | 3, string[]> = {
   1: [
     "/events/face_painting.jpg.jpeg",
     "/events/Debate.jpg.jpeg",
-    "/events/poetry.jpg.jpeg",
+    "/events/Poetry.jpg.jpeg",
     "/events/pottery.jpg.jpeg",
     "/events/soloduo_dance.jpg.jpeg",
     "/events/Battle_of_Bands.jpg.jpeg",

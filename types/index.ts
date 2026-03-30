@@ -4,6 +4,7 @@ export interface EventItem {
   icon: string;
   name: string;
   tagline: string;
+  image?: string;
   description: string;
   date: string;
   venue: string;

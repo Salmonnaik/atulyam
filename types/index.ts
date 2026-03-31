@@ -15,8 +15,6 @@ export interface EventItem {
   tags: string[];
   teamSize?: string;
   resultAnnouncement?: string | null;
-  rules?: string[];
-  guidelines?: string[];
   dayTimeVenue?: string | null;
 }
 export interface MerchItem {

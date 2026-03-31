@@ -66,13 +66,11 @@ export default function Navbar() {
       {/* Right: ThemeSwitcher + Register */}
       <div className="hidden lg:flex items-center gap-4">
         <ThemeSwitcher />
-        <a href="https://forms.google.com/example" 
-          target="_blank" 
-          rel="noopener noreferrer"
+        <Link href="/events"
           className="px-5 py-2 font-mono text-[0.62rem] tracking-[2px] uppercase text-black cursor-none clip transition-all duration-200 hover:scale-105 no-underline block"
           style={{ background:`linear-gradient(135deg,${theme.accent},${theme.accent}bb)`, boxShadow:`0 0 20px ${theme.accent}44` }}>
           Register
-        </a>
+        </Link>
       </div>
 
       {/* Mobile right */}
@@ -100,6 +98,11 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+          <Link href="/events" onClick={() => setOpen(false)}
+            className="block px-8 py-3 font-mono text-[0.68rem] tracking-[3px] uppercase text-black cursor-none transition-all"
+            style={{ background:`linear-gradient(135deg,${theme.accent},${theme.accent}bb)`, margin: '0 16px', borderRadius: '4px' }}>
+            Register
+          </Link>
         </div>
       )}
     </nav>

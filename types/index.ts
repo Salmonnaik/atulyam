@@ -16,6 +16,7 @@ export interface EventItem {
   teamSize?: string;
   resultAnnouncement?: string | null;
   dayTimeVenue?: string | null;
+  registrationLink?: string;
 }
 export interface MerchItem {
   id: string;

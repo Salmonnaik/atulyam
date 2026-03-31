@@ -14,7 +14,6 @@ export default function EventCard({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
-  const [isFlipped, setIsFlipped] = useState(false);
 
   const onMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const r = ref.current?.getBoundingClientRect();
@@ -25,8 +24,10 @@ export default function EventCard({
     });
   };
 
-  const handleCardClick = () => {
-    setIsFlipped(!isFlipped);
+  const handleRegisterClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    const link = event.registrationLink || 'https://forms.google.com/example';
+    window.open(link, '_blank');
   };
 
   return (
@@ -47,23 +48,20 @@ export default function EventCard({
       }}
       style={{
         rotateX: tilt.x,
-        rotateY: tilt.y + (isFlipped ? 180 : 0),
+        rotateY: tilt.y,
         transformStyle: "preserve-3d",
       }}
       onMouseMove={onMove}
       onMouseLeave={() => {
         setTilt({ x: 0, y: 0 });
       }}
-      onClick={handleCardClick}
       className="relative overflow-hidden cursor-pointer group transition-all duration-300 glass-card rounded-xl border-2 border-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md hover:border-white/30 shadow-lg hover:shadow-2xl"
       data-hover
     >
-      {/* Front of card */}
       <motion.div 
-        className="w-full bg-black/20 relative backface-hidden"
+        className="w-full bg-black/20 relative"
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.3 }}
-        style={{ backfaceVisibility: 'hidden' }}
       >
         {/* Shimmer effect on hover */}
         <motion.div
@@ -96,36 +94,25 @@ export default function EventCard({
           />
         )}
       </motion.div>
-
-      {/* Back of card */}
-      <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md border-2 border-white/30 rounded-xl p-6 flex flex-col justify-center items-center text-center backface-hidden"
-        style={{ 
-          backfaceVisibility: 'hidden',
-          rotateY: 180 
-        }}
+      
+      {/* Register Button Overlay */}
+      <motion.div
+        className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        initial={{ opacity: 0 }}
+        whileHover={{ opacity: 1 }}
       >
-        <div className="text-4xl mb-4">{event.icon}</div>
-        <h3 className="text-xl font-bold text-white mb-2">{event.name}</h3>
-        <p className="text-sm text-white/80 mb-4">{event.tagline}</p>
-        <div className="space-y-2 text-xs text-white/70">
-          <p><span className="font-semibold">Date:</span> {event.date}</p>
-          <p><span className="font-semibold">Venue:</span> {event.venue}</p>
-          <p><span className="font-semibold">Time:</span> {event.dayTimeVenue}</p>
-          <p><span className="font-semibold">Team Size:</span> {event.teamSize}</p>
-          <p><span className="font-semibold">Fee:</span> {event.fee}</p>
-          {event.prize !== "TBA" && <p><span className="font-semibold">Prize:</span> {event.prize}</p>}
-        </div>
-        <div className="mt-4 flex flex-wrap gap-1 justify-center">
-          {event.tags.map((tag, i) => (
-            <span 
-              key={i}
-              className="px-2 py-1 text-xs rounded-full bg-white/20 text-white/80"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
+        <motion.button
+          onClick={handleRegisterClick}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="w-full px-4 py-2 font-mono text-[0.65rem] font-bold tracking-[2px] uppercase text-black cursor-pointer rounded-lg transition-all duration-200"
+          style={{
+            background: `linear-gradient(135deg, ${event.color}, ${event.color}cc)`,
+            boxShadow: `0 0 20px ${event.color}44`,
+          }}
+        >
+          Register Now ✦
+        </motion.button>
       </motion.div>
     </motion.article>
   );

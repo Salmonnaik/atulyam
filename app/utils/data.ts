@@ -17,7 +17,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 1"],
+    tags: ["Day 1"],
+
   },
   {
     id: "day1-gallery-2",
@@ -34,7 +35,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 1"],
+    tags: ["Day 1"],
+
   },
   {
     id: "day1-gallery-3",
@@ -51,7 +53,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 1"],
+    tags: ["Day 1"],
+
   },
   {
     id: "day1-gallery-4",
@@ -68,7 +71,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 1"],
+    tags: ["Day 1"],
+
   },
   {
     id: "day1-gallery-5",
@@ -85,7 +89,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 1"],
+    tags: ["Day 1"],
+
   },
   {
     id: "day1-gallery-6",
@@ -102,7 +107,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 1"],
+    tags: ["Day 1"],
+
   },
   {
     id: "day1-gallery-7",
@@ -119,7 +125,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 1"],
+    tags: ["Day 1"],
+
   },
   {
     id: "day1-gallery-8",
@@ -136,7 +143,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 1"],
+    tags: ["Day 1"],
+
   },
   {
     id: "day2-gallery-1",
@@ -153,7 +161,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 2"],
+    tags: ["Day 2"],
+
   },
   {
     id: "day2-gallery-2",
@@ -170,7 +179,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 2"],
+    tags: ["Day 2"],
+
   },
   {
     id: "day2-gallery-3",
@@ -187,7 +197,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 2"],
+    tags: ["Day 2"],
+
   },
   {
     id: "day2-gallery-4",
@@ -204,7 +215,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 2"],
+    tags: ["Day 2"],
+
   },
   {
     id: "day2-gallery-5",
@@ -221,7 +233,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 2"],
+    tags: ["Day 2"],
+
   },
   {
     id: "day2-gallery-6",
@@ -238,7 +251,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 2"],
+    tags: ["Day 2"],
+
   },
   {
     id: "day2-gallery-7",
@@ -255,7 +269,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 2"],
+    tags: ["Day 2"],
+
   },
   {
     id: "day2-gallery-8",
@@ -272,7 +287,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "All",
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
-    tags: ["Day 2"],
+    tags: ["Day 2"],
+
   },
   {
     id: "art-club-competition",
@@ -290,7 +306,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "Individual participation",
     resultAnnouncement: null,
     dayTimeVenue: "09:00 AM - 10:30 AM",
-    tags: ["Art", "Competition", "Creative"],
+    tags: ["Art", "Competition", "Creative"],
+
   },
   {
     id: "photography-competition",
@@ -308,7 +325,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "Individual participation",
     resultAnnouncement: null,
     dayTimeVenue: "10:30 AM - 1:00 PM",
-    tags: ["Photography", "Competition", "Visual"],
+    tags: ["Photography", "Competition", "Visual"],
+
   },
   {
     id: "mehandi-competition",
@@ -326,7 +344,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "Individual participation",
     resultAnnouncement: null,
     dayTimeVenue: "02:00 PM - 03:30 PM",
-    tags: ["Mehandi", "Traditional", "Art"],
+    tags: ["Mehandi", "Traditional", "Art"],
+
   },
   {
     id: "fashion-show",
@@ -344,7 +363,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "Individual and team participation",
     resultAnnouncement: null,
     dayTimeVenue: "03:30 PM - 05:00 PM",
-    tags: ["Fashion", "Design", "Runway"],
+    tags: ["Fashion", "Design", "Runway"],
+
   },
   {
     id: "singing-competition",
@@ -362,7 +382,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "Individual participation",
     resultAnnouncement: null,
     dayTimeVenue: "05:00 PM - 06:30 PM",
-    tags: ["Singing", "Music", "Vocal"],
+    tags: ["Singing", "Music", "Vocal"],
+
   },
   {
     id: "dance-competition",
@@ -380,7 +401,8 @@ export const EVENTS: EventItem[] = [
     teamSize: "Individual and group participation",
     resultAnnouncement: null,
     dayTimeVenue: "06:30 PM - 08:00 PM",
-    tags: ["Dance", "Choreography", "Performance"],
+    tags: ["Dance", "Choreography", "Performance"],
+
   },
   {
     id: "prize-distribution",
@@ -398,15 +420,16 @@ export const EVENTS: EventItem[] = [
     teamSize: "All participants",
     resultAnnouncement: "Final Results",
     dayTimeVenue: "08:00 PM - 09:30 PM",
-    tags: ["Awards", "Ceremony", "Closing"],
+    tags: ["Awards", "Ceremony", "Closing"],
+
   },
   {
     id: "dj-night",
     icon: "🎧",
-    name: "DJ Night",
+    name: "Grand DJ Finale - Closing Night",
     tagline: "Beats till Dawn",
     description:
-      "DJs showcase their mixing skills and keep the energy high with the latest tracks.",
+      "DJs showcase their mixing skills and keep the energy high with the latest tracks for the grand finale.",
     date: "Day 3",
     venue: "TBA",
     prize: "TBA",
@@ -415,8 +438,9 @@ export const EVENTS: EventItem[] = [
     day: 3,
     teamSize: "DJ performance",
     resultAnnouncement: null,
-    dayTimeVenue: "09:30 PM - 10:00 PM",
-    tags: ["Music", "DJ", "Party"],
+    dayTimeVenue: "09:45 PM - Late Night",
+    tags: ["Music", "DJ", "Party", "Finale"],
+
   },
 ];
 
@@ -463,7 +487,7 @@ export const ROADMAP = [
   {
     day: 3,
     date: "April 11",
-    title: "Star Night",
+    title: "DJ Night",
     subtitle: "Champions Rise",
     color: "#ffd700",
     schedule: [

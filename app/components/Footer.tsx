@@ -39,7 +39,7 @@ export default function Footer() {
               <br />
               April 9-11, 2026
               <br />
-              College of Engineering
+              NIT ARUNACHAL PRADESH
             </p>
           </div>
 
@@ -158,7 +158,7 @@ export default function Footer() {
                 },
                 {
                   name: "Instagram",
-                  url: "https://instagram.com/atulyam",
+                  url: "https://www.instagram.com/nitap_atulyam?igsh=MXB4d3A3aTBkem9hMA==",
                   svg: (
                     <svg
                       className="w-5 h-5"
@@ -197,7 +197,7 @@ export default function Footer() {
                 },
                 {
                   name: "YouTube",
-                  url: "https://youtube.com/@atulyam",
+                  url: "https://youtube.com/@atulyamofficial?si=cUlm0sq9q8ILjaKU",
                   svg: (
                     <svg
                       className="w-5 h-5"

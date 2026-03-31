@@ -464,8 +464,8 @@ export default function Landing() {
 
               <div className="overflow-hidden">
                 <div className="flex gap-6 w-max animate-slide-l">
-                  {["🎤 Singer", "🎧 DJ Girl", "🎤 Local Artist"]
-                    .concat(["🎤 Singer", "🎧 DJ Girl", "🎤 Local Artist"])
+                  {["🎤 Taba Chake", "🎧 Dj Jennie", "🎤 Ngurang Julie"]
+                    .concat(["🎤 Taba Chake", "🎧 Dj Jennie", "🎤 Ngurang Julie"])
                     .map((artist, i) => (
                       <div
                         key={i}

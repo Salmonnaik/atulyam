@@ -35,11 +35,11 @@ interface Artist {
 
 const artists: Artist[] = [
   {
-    name: "Singer",
+    name: "Taba Chake",
     role: "Headline Performer",
     genre: "Bollywood, Playback",
     image: "/artists/javed-ali.jpg",
-    description: "Renowned playback singer performing live at ATULYAM 2026.",
+    description: "Renowned artist performing live at ATULYAM 2026.",
     social: {
       instagram: "https://instagram.com/javedali4u",
       youtube: "https://youtube.com/@javedali",
@@ -47,7 +47,7 @@ const artists: Artist[] = [
     },
   },
   {
-    name: "DJ Girl",
+    name: "Dj Jennie",
     role: "Electronic Music Artist",
     genre: "EDM, Dance",
     image: "/artists/dj-girl.jpg",
@@ -60,12 +60,12 @@ const artists: Artist[] = [
     },
   },
   {
-    name: "Local Artist",
+    name: "Ngurang Julie",
     role: "Special Guest",
     genre: "Fusion",
     image: "/artists/local-artist.jpg",
     description:
-      "A local artist bringing fresh talent and vibrant energy to ATULYAM 2026.",
+      "A special guest artist bringing fresh talent and vibrant energy to ATULYAM 2026.",
     social: {
       instagram: "https://instagram.com/localartist",
       youtube: "https://youtube.com/@localartist",

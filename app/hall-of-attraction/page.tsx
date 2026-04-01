@@ -50,7 +50,7 @@ const artists: Artist[] = [
     name: "Dj Jennie",
     role: "Electronic Music Artist",
     genre: "EDM, Dance",
-    image: "/artists/dj-girl.jpg",
+    image: "/artist/Dj jenee.png",
     description:
       "High-energy DJ set with festival beats and crowd-hyping mixes.",
     social: {

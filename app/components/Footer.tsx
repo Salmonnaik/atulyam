@@ -39,7 +39,7 @@ export default function Footer() {
               <br />
               April 9-11, 2026
               <br />
-              NIT ARUNACHAL PRADESH
+              College of Engineering
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function Footer() {
               Contact
             </h4>
             <div className="space-y-1 mb-3">
-              <p className="text-xs" style={{ color: theme.textMid }}>
+                   <p className="text-xs" style={{ color: theme.textMid }}>
                 📧 atulyam@nitap.ac.in
               </p>
               <p className="text-xs" style={{ color: theme.textMid }}>
@@ -158,7 +158,7 @@ export default function Footer() {
                 },
                 {
                   name: "Instagram",
-                  url: "https://www.instagram.com/nitap_atulyam?igsh=MXB4d3A3aTBkem9hMA==",
+                  url: "https://instagram.com/atulyam",
                   svg: (
                     <svg
                       className="w-5 h-5"
@@ -197,7 +197,7 @@ export default function Footer() {
                 },
                 {
                   name: "YouTube",
-                  url: "https://youtube.com/@atulyamofficial?si=cUlm0sq9q8ILjaKU",
+                  url: "https://youtube.com/@atulyam",
                   svg: (
                     <svg
                       className="w-5 h-5"

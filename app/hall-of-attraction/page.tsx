@@ -162,7 +162,7 @@ export default function HallOfAttraction() {
                   className="group cursor-pointer h-full"
                 >
                   <div
-                    className="p-6 rounded-lg border transition-all duration-300 h-full flex flex-col"
+                    className="p-6 rounded-lg border transition-all duration-300 h-full flex flex-col overflow-hidden"
                     style={{
                       borderColor: theme.border,
                       backgroundColor: `${theme.bg}22`,
@@ -177,17 +177,28 @@ export default function HallOfAttraction() {
                       e.currentTarget.style.borderColor = theme.border;
                     }}
                   >
+                    {/* Full Poster Image */}
+                    <div className="w-full h-64 mb-4 rounded overflow-hidden -m-6">
+                      <Image
+                        src={artist.image}
+                        alt={artist.name}
+                        width={400}
+                        height={300}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
                     <div className="text-center space-y-4 flex-1 flex flex-col items-center justify-start">
-                      {/* Artist Image */}
+                      {/* Artist Profile Image */}
                       <div
-                        className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 group-hover:scale-110 transition-transform duration-300"
+                        className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 group-hover:scale-110 transition-transform duration-300 flex-shrink-0"
                         style={{ borderColor: `${theme.accent}80` }}
                       >
                         <Image
                           src={artist.image}
                           alt={artist.name}
-                          width={160}
-                          height={160}
+                          width={128}
+                          height={128}
                           className="w-full h-full object-cover"
                         />
                       </div>

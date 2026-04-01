@@ -183,14 +183,13 @@ export default function HallOfAttraction() {
                         className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 group-hover:scale-110 transition-transform duration-300"
                         style={{ borderColor: `${theme.accent}80` }}
                       >
-                        <div
-                          className="w-full h-full flex items-center justify-center text-4xl"
-                          style={{
-                            backgroundColor: `${theme.accent}22`,
-                          }}
-                        >
-                          🎤
-                        </div>
+                        <Image
+                          src={artist.image}
+                          alt={artist.name}
+                          width={160}
+                          height={160}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
 
                       {/* Artist Info */}

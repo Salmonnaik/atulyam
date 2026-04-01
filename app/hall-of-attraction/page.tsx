@@ -177,13 +177,30 @@ export default function HallOfAttraction() {
                       e.currentTarget.style.borderColor = theme.border;
                     }}
                   >
-                    <div className="relative w-full h-[520px] bg-black">
+                    <div className="relative w-full h-[540px] bg-black">
                       <Image
                         src={artist.image}
                         alt={artist.name}
                         fill
-                        className="object-contain"
+                        className="object-contain p-3"
                       />
+                    </div>
+                    <div
+                      className="px-5 py-4 text-center border-t"
+                      style={{ borderColor: `${theme.border}66` }}
+                    >
+                      <p
+                        className="font-cinzel text-lg tracking-[4px] uppercase"
+                        style={{
+                          color: index === 1 ? theme.accent2 : theme.textDim,
+                          textShadow:
+                            index === 1
+                              ? `0 0 18px ${theme.accent2}55`
+                              : "none",
+                        }}
+                      >
+                        {index === 1 ? "Dj Jennie" : "Coming Soon"}
+                      </p>
                     </div>
                   </div>
                 </motion.div>

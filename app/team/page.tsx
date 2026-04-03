@@ -171,7 +171,7 @@ const teamCategories: TeamCategory[] = [
         role: "Devolper",
         image: "/team/harshal.jpeg",
         social: {
-          instagram: "https://instagram.com/harshaltondare",
+          instagram: "https://www.instagram.com/harsh_3/",
           linkedin: "https://www.linkedin.com/in/harshal-tondare/",
           github: "https://github.com/Harshal-Tondare",
         },
@@ -188,7 +188,8 @@ const teamCategories: TeamCategory[] = [
         role: "Finance Head",
         image: "/team/kipa.jpeg",
         social: {
-          instagram: "https://instagram.com/kipagungyo",
+          instagram:
+            "https://www.instagram.com/kipagungyo?igsh=MXV4bzQxeXpoc2ltaw==",
         },
       },
     ],
@@ -203,7 +204,8 @@ const teamCategories: TeamCategory[] = [
         role: "Event Head",
         image: "/team/bashu.jpeg",
         social: {
-          instagram: "https://instagram.com/bashusingh",
+          instagram:
+            "https://www.instagram.com/vashu._.irl?igsh=aGloODE4Z3JtZzM1",
         },
       },
       {
@@ -235,7 +237,8 @@ const teamCategories: TeamCategory[] = [
         role: "Sponsorship Team",
         image: "/team/jhon.jpeg",
         social: {
-          instagram: "https://instagram.com/johndalbera",
+          instagram:
+            "https://www.instagram.com/johndalbera?igsh=MWw3ODUzdXgxeDJ4Zg%3D%3D&utm_source=qr",
         },
       },
       {
@@ -274,7 +277,8 @@ const teamCategories: TeamCategory[] = [
         role: "PR Team",
         image: "/team/sonam.jpeg",
         social: {
-          instagram: "https://instagram.com/abasonam",
+          instagram:
+            "https://www.instagram.com/sonams_journal?igsh=MThnaXV1NTQweThrbQ%3D%3D&utm_source=qr",
         },
       },
       {
@@ -401,7 +405,8 @@ const teamCategories: TeamCategory[] = [
         role: "Management Head",
         image: "/team/himanshu.jpeg",
         social: {
-          instagram: "https://instagram.com/himanshuranjan",
+          instagram:
+            "https://www.instagram.com/hiim_anshuu_?igsh=MThvcWRuMDRxMTB0cw==",
         },
       },
     ],

@@ -30,13 +30,8 @@ export const EVENTS: EventItem[] = [
     description:
       "Showcase your oratory skills and logical reasoning in our competitive debate event",
     date: "Day 1",
-<<<<<<< HEAD
-    venue: "NIT CAMPUS",
+venue: "NIT CAMPUS",
     prize: "Rs. 3,000+",
-=======
-    venue: "TBA",
-    prize: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
     fee: "TBA",
     color: "#ff88aa",
     day: 1,
@@ -55,13 +50,8 @@ export const EVENTS: EventItem[] = [
     description:
       "Express your poetic talent with anime-themed verses and creative writing",
     date: "Day 2",
-<<<<<<< HEAD
-    venue: "NIT CAMPUS",
+venue: "NIT CAMPUS",
     prize: "Rs. 2,500+",
-=======
-    venue: "TBA",
-    prize: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
     fee: "TBA",
     color: "#9b59f5",
     day: 2,
@@ -73,7 +63,6 @@ export const EVENTS: EventItem[] = [
       "https://docs.google.com/forms/d/e/1FAIpQLSdlVGCcEdgp086V3D5yEnBfUY6L7dqaViVfFszTEjj8LqtsPw/viewform",
   },
   {
-<<<<<<< HEAD
     id: "solo-duo-dance-competition",
     icon: "⚡",
     name: "Solo/Duo Sparks Dance Competition",
@@ -114,8 +103,6 @@ export const EVENTS: EventItem[] = [
       "https://docs.google.com/forms/d/e/1FAIpQLSfq4ojiyuifzq1bjzcHzWQew4SP6baRkrSb3BRzdWb8TdjYEg/viewform",
   },
   {
-=======
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
     id: "day1-gallery-4",
     icon: "🎸",
     name: "Day 1 Gallery",
@@ -344,13 +331,8 @@ export const EVENTS: EventItem[] = [
     description:
       "Participants showcase their artistic talents in various mediums and compete for recognition.",
     date: "Day 3",
-<<<<<<< HEAD
     venue: "NIT CAMPUS",
-    prize: "Rs. 3,500+",
-=======
-    venue: "TBA",
-    prize: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
+    prize: "Rs. 3,000+",
     fee: "TBA",
     color: "#ff69b4",
     day: 3,
@@ -367,13 +349,8 @@ export const EVENTS: EventItem[] = [
     description:
       "Photographers compete to capture the best moments following given themes and criteria.",
     date: "Day 3",
-<<<<<<< HEAD
     venue: "NIT CAMPUS",
-    prize: "Rs. 3,500+",
-=======
-    venue: "TBA",
-    prize: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
+    prize: "Rs. 3,000+",
     fee: "TBA",
     color: "#06b6d4",
     day: 3,
@@ -390,13 +367,8 @@ export const EVENTS: EventItem[] = [
     description:
       "Participants create intricate mehandi designs and compete for artistic excellence.",
     date: "Day 3",
-<<<<<<< HEAD
     venue: "NIT CAMPUS",
-    prize: "Rs. 3,500+",
-=======
-    venue: "TBA",
-    prize: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
+    prize: "Rs. 3,000+",
     fee: "TBA",
     color: "#ff6b6b",
     day: 3,
@@ -413,13 +385,8 @@ export const EVENTS: EventItem[] = [
     description:
       "Designers showcase their creations through live runway presentations and compete for style awards.",
     date: "Day 3",
-<<<<<<< HEAD
     venue: "NIT CAMPUS",
-    prize: "Rs. 3,500+",
-=======
-    venue: "TBA",
-    prize: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
+    prize: "Rs. 3,000+",
     fee: "TBA",
     color: "#ec4899",
     day: 3,
@@ -436,13 +403,8 @@ export const EVENTS: EventItem[] = [
     description:
       "Vocalists perform and compete based on vocal skill, song choice, and stage presence.",
     date: "Day 3",
-<<<<<<< HEAD
     venue: "NIT CAMPUS",
-    prize: "Rs. 4,000+",
-=======
-    venue: "TBA",
-    prize: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
+    prize: "Rs. 3,000+",
     fee: "TBA",
     color: "#8b5cf6",
     day: 3,
@@ -459,13 +421,8 @@ export const EVENTS: EventItem[] = [
     description:
       "Dancers and groups showcase their choreography and compete for dance supremacy.",
     date: "Day 3",
-<<<<<<< HEAD
     venue: "NIT CAMPUS",
-    prize: "Rs. 5,000+",
-=======
-    venue: "TBA",
-    prize: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
+    prize: "Rs. 3,000+",
     fee: "TBA",
     color: "#f97316",
     day: 3,
@@ -473,49 +430,17 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "06:30 PM - 08:00 PM",
     tags: ["Dance", "Choreography", "Performance"],
-<<<<<<< HEAD
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSelAK3NqQ4FZUZTllV1FlS2VAwsDDuWur3RIHcTeehFAUQ57Q/viewform",
-=======
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
-  },
-  {
-    id: "prize-distribution",
-    icon: "🏆",
-    name: "Prize Distribution",
-    tagline: "Celebrating Excellence",
-    description:
-      "Official ceremony to recognize and award winners across all competition categories.",
-    date: "Day 3",
-<<<<<<< HEAD
-    venue: "NIT CAMPUS",
-=======
-    venue: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
-    prize: "Awards",
-    fee: "Free",
-    color: "#ffd700",
-    day: 3,
-    teamSize: "All participants",
-    resultAnnouncement: "Final Results",
-    dayTimeVenue: "08:00 PM - 09:30 PM",
-    tags: ["Awards", "Ceremony", "Closing"],
   },
   {
     id: "dj-night",
-    icon: "🎧",
+    icon: "�",
     name: "Grand DJ Finale - Closing Night",
     tagline: "Beats till Dawn",
     description:
       "DJs showcase their mixing skills and keep the energy high with the latest tracks for the grand finale.",
     date: "Day 3",
-<<<<<<< HEAD
     venue: "NIT CAMPUS",
-    prize: "Rs. 3,500+",
-=======
-    venue: "TBA",
-    prize: "TBA",
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
+    prize: "Rs. 3,000+",
     fee: "TBA",
     color: "#a78bfa",
     day: 3,
@@ -524,7 +449,30 @@ export const EVENTS: EventItem[] = [
     dayTimeVenue: "09:45 PM - Late Night",
     tags: ["Music", "DJ", "Party", "Finale"],
   },
-<<<<<<< HEAD
+  {
+    id: "traditional-dance-competition",
+    icon: "�",
+    name: "Traditional Dance Competition",
+    tagline: "Cultural Heritage",
+    description:
+      "Celebrate traditional dance forms with prizes worth Rs. 17K+",
+    date: "Day 2",
+    venue: "NIT CAMPUS",
+    prize: "Rs. 17,000+",
+    fee: "TBA",
+    color: "#dc2626",
+    day: 2,
+    teamSize: "Group",
+    resultAnnouncement: null,
+    dayTimeVenue: "10:30 AM - 12:00 PM",
+    tags: ["Dance", "Traditional", "Culture", "Day 2"],
+    coordinators: [
+      {
+        name: "Maku Tungi",
+        phone: "+91 8135857978",
+      },
+    ],
+  },
   {
     id: "solo-singing-competition",
     icon: "🎤",
@@ -566,30 +514,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "12:00 PM - 01:30 PM",
     tags: ["Dance", "Group", "Choreography", "Day 2"],
-    coordinators: [
-      {
-        name: "Maku Tungi",
-        phone: "+91 8135857978",
-      },
-    ],
-  },
-  {
-    id: "traditional-dance-competition",
-    icon: "🎭",
-    name: "Traditional Dance Competition",
-    tagline: "Cultural Heritage",
-    description:
-      "Celebrate traditional dance forms with prizes worth Rs. 17K+",
-    date: "Day 2",
-    venue: "NIT CAMPUS",
-    prize: "Rs. 17,000+",
-    fee: "TBA",
-    color: "#dc2626",
-    day: 2,
-    teamSize: "Group",
-    resultAnnouncement: null,
-    dayTimeVenue: "10:30 AM - 12:00 PM",
-    tags: ["Dance", "Traditional", "Culture", "Day 2"],
     coordinators: [
       {
         name: "Maku Tungi",
@@ -669,8 +593,6 @@ export const EVENTS: EventItem[] = [
       },
     ],
   },
-=======
->>>>>>> 319a6d59df40c5b899f068c005c72c050c3dcc93
 ];
 
 export const ROADMAP = [

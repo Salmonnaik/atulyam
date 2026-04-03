@@ -35,6 +35,19 @@ interface Artist {
 
 const artists: Artist[] = [
   {
+    name: "Ngurang Julie",
+    role: "Special Guest",
+    genre: "Fusion",
+    image: "/artist/ngurang julie.jpeg",
+    description:
+      "A special guest artist bringing fresh talent and vibrant energy to ATULYAM 2026.",
+    social: {
+      instagram: "https://instagram.com/localartist",
+      youtube: "https://youtube.com/@localartist",
+      spotify: "https://spotify.com/artist/localartist",
+    },
+  },
+  {
     name: "Taba Chake",
     role: "Headline Performer",
     genre: "Bollywood, Playback",
@@ -57,19 +70,6 @@ const artists: Artist[] = [
       instagram: "https://instagram.com/djgirl",
       youtube: "https://youtube.com/@djgirl",
       spotify: "https://spotify.com/artist/djgirl",
-    },
-  },
-  {
-    name: "Ngurang Julie",
-    role: "Special Guest",
-    genre: "Fusion",
-    image: "/artist/ngurang julie.jpeg",
-    description:
-      "A special guest artist bringing fresh talent and vibrant energy to ATULYAM 2026.",
-    social: {
-      instagram: "https://instagram.com/localartist",
-      youtube: "https://youtube.com/@localartist",
-      spotify: "https://spotify.com/artist/localartist",
     },
   },
 ];

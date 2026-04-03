@@ -192,14 +192,11 @@ export default function HallOfAttraction() {
                       <p
                         className="font-cinzel text-lg tracking-[4px] uppercase"
                         style={{
-                          color: index === 1 ? theme.accent2 : theme.textDim,
-                          textShadow:
-                            index === 1
-                              ? `0 0 18px ${theme.accent2}55`
-                              : "none",
+                          color: theme.accent2,
+                          textShadow: `0 0 18px ${theme.accent2}55`,
                         }}
                       >
-                        {index === 1 ? "Dj Jennie" : "Coming Soon"}
+                        {artist.name}
                       </p>
                     </div>
                   </div>

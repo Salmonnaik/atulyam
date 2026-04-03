@@ -647,6 +647,13 @@ export const SPONSORS: SponsorItem[] = [
     desc: "Partner",
     logo: "/sponsers/nada music and instrumental house.jpeg",
   },
+  {
+    name: "Portronics",
+    tier: "associate",
+    emoji: "🔌",
+    desc: "Partner",
+    logo: "/sponsers/Portronics.jpg",
+  },
 ];
 
 export const TIER_COLOR: Record<string, string> = {

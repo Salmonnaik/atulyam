@@ -38,7 +38,7 @@ const artists: Artist[] = [
     name: "Taba Chake",
     role: "Headline Performer",
     genre: "Bollywood, Playback",
-    image: "/artists/javed-ali.jpg",
+    image: "/artist/taba chake.jpeg",
     description: "Renowned artist performing live at ATULYAM 2026.",
     social: {
       instagram: "https://instagram.com/javedali4u",
@@ -63,7 +63,7 @@ const artists: Artist[] = [
     name: "Ngurang Julie",
     role: "Special Guest",
     genre: "Fusion",
-    image: "/artists/local-artist.jpg",
+    image: "/artist/ngurang julie.jpeg",
     description:
       "A special guest artist bringing fresh talent and vibrant energy to ATULYAM 2026.",
     social: {

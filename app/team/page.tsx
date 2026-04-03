@@ -382,7 +382,8 @@ const teamCategories: TeamCategory[] = [
         role: "Volunteer Head",
         image: "/team/akshay.jpeg",
         social: {
-          instagram: "https://instagram.com/akshaytadepalli",
+          instagram:
+            "https://www.instagram.com/tadepalli.akshay?igsh=cHpvdTMzNXRrZGd3",
         },
       },
     ],

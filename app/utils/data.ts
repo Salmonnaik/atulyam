@@ -7,7 +7,8 @@ export const EVENTS: EventItem[] = [
     icon: "🎨",
     name: "Face Painting Competition",
     tagline: "MAYLA - Facescape",
-    description: "Unleash your creativity in our face painting competition with prizes worth Rs. 2K+",
+    description:
+      "Unleash your creativity in our face painting competition with prizes worth Rs. 2K+",
     date: "Day 1",
     venue: "TBA",
     prize: "Rs. 2,000+",
@@ -18,14 +19,16 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "11:15 AM - 12:00 PM",
     tags: ["Art", "Competition", "Day 1"],
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSevLevdFKPQoY0MZLhb6fX3bYprwsBtg7Vx_vuh8CZ0rfoduw/viewform"
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSevLevdFKPQoY0MZLhb6fX3bYprwsBtg7Vx_vuh8CZ0rfoduw/viewform",
   },
   {
     id: "debate-competition",
     icon: "🎭",
     name: "Debate Competition",
     tagline: "Battle of Words",
-    description: "Showcase your oratory skills and logical reasoning in our competitive debate event",
+    description:
+      "Showcase your oratory skills and logical reasoning in our competitive debate event",
     date: "Day 1",
     venue: "TBA",
     prize: "TBA",
@@ -36,14 +39,16 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "02:00 PM - 03:30 PM",
     tags: ["Debate", "Competition", "Day 1"],
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdYCIq5GeM06DkJ0qfZEzqdDdQ6dKxEsKQ5Xm0pSgP2D-37hw/viewform"
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdYCIq5GeM06DkJ0qfZEzqdDdQ6dKxEsKQ5Xm0pSgP2D-37hw/viewform",
   },
   {
     id: "poetry-competition",
     icon: "🎪",
     name: "Poetry Competition",
     tagline: "Anime is Life",
-    description: "Express your poetic talent with anime-themed verses and creative writing",
+    description:
+      "Express your poetic talent with anime-themed verses and creative writing",
     date: "Day 2",
     venue: "TBA",
     prize: "TBA",
@@ -54,7 +59,8 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "02:00 PM - 03:30 PM",
     tags: ["Poetry", "Competition", "Day 2"],
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdlVGCcEdgp086V3D5yEnBfUY6L7dqaViVfFszTEjj8LqtsPw/viewform"
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdlVGCcEdgp086V3D5yEnBfUY6L7dqaViVfFszTEjj8LqtsPw/viewform",
   },
   {
     id: "day1-gallery-4",
@@ -72,7 +78,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 1"],
-
   },
   {
     id: "day1-gallery-5",
@@ -90,7 +95,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 1"],
-
   },
   {
     id: "day1-gallery-6",
@@ -108,7 +112,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 1"],
-
   },
   {
     id: "day1-gallery-7",
@@ -126,7 +129,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 1"],
-
   },
   {
     id: "day1-gallery-8",
@@ -144,7 +146,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 1"],
-
   },
   {
     id: "day2-gallery-1",
@@ -162,7 +163,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 2"],
-
   },
   {
     id: "day2-gallery-2",
@@ -180,7 +180,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 2"],
-
   },
   {
     id: "day2-gallery-3",
@@ -198,7 +197,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 2"],
-
   },
   {
     id: "day2-gallery-4",
@@ -216,7 +214,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 2"],
-
   },
   {
     id: "day2-gallery-5",
@@ -234,7 +231,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 2"],
-
   },
   {
     id: "day2-gallery-6",
@@ -252,7 +248,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 2"],
-
   },
   {
     id: "day2-gallery-7",
@@ -270,7 +265,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 2"],
-
   },
   {
     id: "day2-gallery-8",
@@ -288,7 +282,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "All Day",
     tags: ["Day 2"],
-
   },
   {
     id: "art-club-competition",
@@ -307,7 +300,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "09:00 AM - 10:30 AM",
     tags: ["Art", "Competition", "Creative"],
-
   },
   {
     id: "photography-competition",
@@ -326,7 +318,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "10:30 AM - 1:00 PM",
     tags: ["Photography", "Competition", "Visual"],
-
   },
   {
     id: "mehandi-competition",
@@ -345,7 +336,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "02:00 PM - 03:30 PM",
     tags: ["Mehandi", "Traditional", "Art"],
-
   },
   {
     id: "fashion-show",
@@ -364,7 +354,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "03:30 PM - 05:00 PM",
     tags: ["Fashion", "Design", "Runway"],
-
   },
   {
     id: "singing-competition",
@@ -383,7 +372,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "05:00 PM - 06:30 PM",
     tags: ["Singing", "Music", "Vocal"],
-
   },
   {
     id: "dance-competition",
@@ -402,7 +390,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "06:30 PM - 08:00 PM",
     tags: ["Dance", "Choreography", "Performance"],
-
   },
   {
     id: "prize-distribution",
@@ -421,7 +408,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: "Final Results",
     dayTimeVenue: "08:00 PM - 09:30 PM",
     tags: ["Awards", "Ceremony", "Closing"],
-
   },
   {
     id: "dj-night",
@@ -440,7 +426,6 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "09:45 PM - Late Night",
     tags: ["Music", "DJ", "Party", "Finale"],
-
   },
 ];
 
@@ -782,4 +767,3 @@ export const HIGHLIGHTS = [
     spotify: "https://spotify.com/artist/example6",
   },
 ];
-

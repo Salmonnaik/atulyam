@@ -246,7 +246,8 @@ const teamCategories: TeamCategory[] = [
         role: "Sponsorship Team",
         image: "/team/gerna.jpeg",
         social: {
-          instagram: "https://instagram.com/gernapanyang",
+          instagram:
+            "https://www.instagram.com/gernap_?igsh=MWZzdDM2aXdsdHNucw%3D%3D&utm_source=qr",
         },
       },
       {
@@ -262,7 +263,8 @@ const teamCategories: TeamCategory[] = [
         role: "Sponsorship Team",
         image: "/team/uma.png",
         social: {
-          instagram: "https://instagram.com/umashanker",
+          instagram:
+            "https://www.instagram.com/nitian_umashankar?igsh=cXZ4ZWpvYmM2eTBw",
         },
       },
     ],
@@ -374,7 +376,8 @@ const teamCategories: TeamCategory[] = [
         role: "Volunteer Head",
         image: "/team/tabin.jpg",
         social: {
-          instagram: "https://instagram.com/nabamtabin",
+          instagram:
+            "https://www.instagram.com/nabam_tabin?igsh=ZG1vdnpoZ2xjc2cx&utm_source=qr",
         },
       },
       {

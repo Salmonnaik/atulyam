@@ -1,6 +1,34 @@
 // app/utils/data.ts
 import { EventItem, MerchItem, SponsorItem } from "@/types";
 
+export const EVENT_REGISTRATION_URLS = {
+  facePaintingCompetition:
+    "https://docs.google.com/forms/d/e/1FAIpQLSevLevdFKPQoY0MZLhb6fX3bYprwsBtg7Vx_vuh8CZ0rfoduw/viewform",
+  debateCompetition:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdYCIq5GeM06DkJ0qfZEzqdDdQ6dKxEsKQ5Xm0pSgP2D-37hw/viewform",
+  poetryCompetition:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdlVGCcEdgp086V3D5yEnBfUY6L7dqaViVfFszTEjj8LqtsPw/viewform",
+  potteryPainting: "",
+  soloDuoSparksDanceCompetition:
+    "https://docs.google.com/forms/d/e/1FAIpQLSelAK3NqQ4FZUZTllV1FlS2VAwsDDuWur3RIHcTeehFAUQ57Q/viewform",
+  battleOfBands:
+    "https://docs.google.com/forms/d/e/1FAIpQLSelAK3NqQ4FZUZTllV1FlS2VAwsDDuWur3RIHcTeehFAUQ57Q/viewform",
+  writingCompetition:
+    "https://docs.google.com/forms/d/e/1FAIpQLSfZoxI1yuHNxI0vy161bxR6Y50W9bNlzp1HCRetNoSigsVmLQ/viewform",
+  situationSlam:
+    "https://docs.google.com/forms/d/e/1FAIpQLSeuNnjxWxA_ykeXr1c8ELsuW1vWtDzbvrqilhUtYihCcKEW4A/viewform",
+  cosplay:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdlJYFpE8hMoTFX9c-nDk0Zx-uvS0vxfJInvsOFuND7YOb2AA/viewform",
+  voiceOfAtulyam:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdtM21FiQhm5DsagoAML5PGhCEhg_lqrs4Lb1OwyEQs6i-vwA/viewform",
+  danceClub:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdrxYmVpqZt-F_4eSJ62hvAD-WsZSVO4xPIojCzHkvmWOSboA/viewform",
+  storyRecital:
+    "https://docs.google.com/forms/d/e/1FAIpQLSelAK3NqQ4FZUZTllV1FlS2VAwsDDuWur3RIHcTeehFAUQ57Q/viewform",
+  cinema:
+    "https://docs.google.com/forms/d/e/1FAIpQLSd6PICHYjgl_xYviM48-ue1HiU5jFQFy3gj4CxASxrVM4SKdg/viewform",
+};
+
 export const EVENTS: EventItem[] = [
   {
     id: "face-painting-competition",
@@ -19,8 +47,7 @@ export const EVENTS: EventItem[] = [
     resultAnnouncement: null,
     dayTimeVenue: "11:15 AM - 12:00 PM",
     tags: ["Art", "Competition", "Day 1"],
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSevLevdFKPQoY0MZLhb6fX3bYprwsBtg7Vx_vuh8CZ0rfoduw/viewform",
+    registrationLink: EVENT_REGISTRATION_URLS.facePaintingCompetition,
   },
   {
     id: "debate-competition",
@@ -30,7 +57,7 @@ export const EVENTS: EventItem[] = [
     description:
       "Showcase your oratory skills and logical reasoning in our competitive debate event",
     date: "Day 1",
-venue: "NIT CAMPUS",
+    venue: "NIT CAMPUS",
     prize: "Rs. 3,000+",
     fee: "TBA",
     color: "#ff88aa",
@@ -39,8 +66,7 @@ venue: "NIT CAMPUS",
     resultAnnouncement: null,
     dayTimeVenue: "02:00 PM - 03:30 PM",
     tags: ["Debate", "Competition", "Day 1"],
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdYCIq5GeM06DkJ0qfZEzqdDdQ6dKxEsKQ5Xm0pSgP2D-37hw/viewform",
+    registrationLink: EVENT_REGISTRATION_URLS.debateCompetition,
   },
   {
     id: "poetry-competition",
@@ -50,7 +76,7 @@ venue: "NIT CAMPUS",
     description:
       "Express your poetic talent with anime-themed verses and creative writing",
     date: "Day 2",
-venue: "NIT CAMPUS",
+    venue: "NIT CAMPUS",
     prize: "Rs. 2,500+",
     fee: "TBA",
     color: "#9b59f5",
@@ -59,8 +85,7 @@ venue: "NIT CAMPUS",
     resultAnnouncement: null,
     dayTimeVenue: "02:00 PM - 03:30 PM",
     tags: ["Poetry", "Competition", "Day 2"],
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdlVGCcEdgp086V3D5yEnBfUY6L7dqaViVfFszTEjj8LqtsPw/viewform",
+    registrationLink: EVENT_REGISTRATION_URLS.poetryCompetition,
   },
   {
     id: "solo-duo-dance-competition",
@@ -79,8 +104,7 @@ venue: "NIT CAMPUS",
     resultAnnouncement: null,
     dayTimeVenue: "02:30 PM - 05:00 PM",
     tags: ["Dance", "Competition", "Solo", "Duo", "Day 1"],
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSelAK3NqQ4FZUZTllV1FlS2VAwsDDuWur3RIHcTeehFAUQ57Q/viewform",
+    registrationLink: EVENT_REGISTRATION_URLS.soloDuoSparksDanceCompetition,
   },
   {
     id: "pottery-painting",
@@ -99,8 +123,7 @@ venue: "NIT CAMPUS",
     resultAnnouncement: null,
     dayTimeVenue: "03:30 PM - 04:30 PM",
     tags: ["Art", "Pottery", "Competition", "Day 1"],
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfq4ojiyuifzq1bjzcHzWQew4SP6baRkrSb3BRzdWb8TdjYEg/viewform",
+    registrationLink: EVENT_REGISTRATION_URLS.potteryPainting,
   },
   {
     id: "day1-gallery-4",
@@ -454,8 +477,7 @@ venue: "NIT CAMPUS",
     icon: "�",
     name: "Traditional Dance Competition",
     tagline: "Cultural Heritage",
-    description:
-      "Celebrate traditional dance forms with prizes worth Rs. 17K+",
+    description: "Celebrate traditional dance forms with prizes worth Rs. 17K+",
     date: "Day 2",
     venue: "NIT CAMPUS",
     prize: "Rs. 17,000+",
@@ -472,6 +494,7 @@ venue: "NIT CAMPUS",
         phone: "+91 8135857978",
       },
     ],
+    registrationLink: EVENT_REGISTRATION_URLS.danceClub,
   },
   {
     id: "solo-singing-competition",
@@ -496,6 +519,7 @@ venue: "NIT CAMPUS",
         phone: "+91 9859340258",
       },
     ],
+    registrationLink: EVENT_REGISTRATION_URLS.voiceOfAtulyam,
   },
   {
     id: "group-dance-competition",
@@ -544,6 +568,7 @@ venue: "NIT CAMPUS",
         phone: "+91 9283614771",
       },
     ],
+    registrationLink: EVENT_REGISTRATION_URLS.storyRecital,
   },
   {
     id: "on-spot-photography-competition",
@@ -592,6 +617,7 @@ venue: "NIT CAMPUS",
         phone: "+91 9259889725",
       },
     ],
+    registrationLink: EVENT_REGISTRATION_URLS.cinema,
   },
 ];
 

@@ -511,7 +511,7 @@ export default function Landing() {
                   className="font-cinzel font-bold t-accent"
                   style={{ fontSize: "clamp(1.8rem,4vw,3rem)" }}
                 >
-                  Powered By Stars
+                  Powered By Coca Cola
                 </h2>
               </div>
               <div className="overflow-hidden mb-4">

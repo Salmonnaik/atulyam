@@ -39,7 +39,7 @@ export default function Footer() {
               <br />
               April 9-11, 2026
               <br />
-              College of Engineering
+              NIT ARUNACHAL PRADESH
             </p>
           </div>
 
@@ -90,7 +90,7 @@ export default function Footer() {
                 📱 +91 98765 43210
               </p>
               <p className="text-xs" style={{ color: theme.textMid }}>
-                📍 College Campus, City
+                📍 NIT College Campus, MAIN STAGE
               </p>
             </div>
 

@@ -87,7 +87,7 @@ export default function Footer() {
                 📧 atulyam@nitap.ac.in
               </p>
               <p className="text-xs" style={{ color: theme.textMid }}>
-                📱 +91 98765 43210
+                📱 +91 92335 68948
               </p>
               <p className="text-xs" style={{ color: theme.textMid }}>
                 📍 NIT College Campus, MAIN STAGE

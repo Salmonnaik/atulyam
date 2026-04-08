@@ -40,7 +40,14 @@ Each theme changes accent colors, backgrounds, borders, cursor glow. Persisted i
 npm install
 npm run dev        # → http://localhost:3000
 npm run build      # production build
+npm run start      # serve production build
 ```
+
+## Available Scripts
+
+- `npm run dev` - start development server
+- `npm run build` - create production build
+- `npm run start` - start production server
 
 ## Team Committee
 

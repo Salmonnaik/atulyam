@@ -2,7 +2,7 @@
 
 A dynamic and immersive web experience for ATULYAM 2026, the cultural festival celebrating Japanese culture at NIT Arunachal Pradesh. Built with Next.js, TypeScript, and Tailwind CSS.
 
-**Event Dates:** 16-18 April 2026
+**Event Dates:** 9-11 April 2026
 
 ## Features
 
@@ -15,13 +15,16 @@ A dynamic and immersive web experience for ATULYAM 2026, the cultural festival c
 
 ## Pages
 
-| Route       | Description                                             |
-| ----------- | ------------------------------------------------------- |
-| `/`         | Landing – Galaxy Hero + About + Sponsors Carousel + CTA |
-| `/events`   | 6 event categories with Day 1/2/3 filter                |
-| `/roadmap`  | 3-Day interactive timeline with schedule                |
-| `/merch`    | Merchandise store with cart + modals                    |
-| `/sponsors` | Full sponsor tiers: Title, Platinum, Gold, Associate    |
+| Route                 | Description                                                 |
+| --------------------- | ----------------------------------------------------------- |
+| `/`                   | Landing – Galaxy Hero + About + Sponsors Carousel + CTA     |
+| `/events`             | Unified event poster gallery with direct registration links |
+| `/roadmap`            | 3-Day interactive timeline with schedule                    |
+| `/merch`              | Merchandise store with cart + modals                        |
+| `/sponsors`           | Full sponsor tiers: Title, Platinum, Gold, Associate        |
+| `/gallery`            | Festival moments gallery                                    |
+| `/hall-of-attraction` | Featured artists showcase                                   |
+| `/team`               | Faculty + student committee directory                       |
 
 ## Theme Switcher
 

@@ -156,7 +156,7 @@ export default function Gallery() {
                 className="font-cinzel font-bold text-3xl tracking-wider mb-4"
                 style={{ color: theme.accent }}
               >
-                ATULYAM Gallery
+                Past Atulyam Gallery
               </h2>
               <p
                 className="text-lg max-w-2xl mx-auto"

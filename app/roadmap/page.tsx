@@ -127,15 +127,15 @@ export default function RoadmapPage() {
                 {/* Schedule timeline */}
                 <div>
                   <h3
-                    className="font-cinzel text-lg mb-6 tracking-wider"
+                    className="font-cinzel text-xl mb-7 tracking-wider"
                     style={{ color: theme.textMid }}
                   >
                     Schedule
                   </h3>
-                  <div className="relative pl-8">
+                  <div className="relative pl-10 md:pl-12">
                     {/* Vertical line */}
                     <div
-                      className="absolute left-3 top-2 bottom-2 w-px"
+                      className="absolute left-4 md:left-5 top-2 bottom-2 w-px"
                       style={{
                         background: `linear-gradient(to bottom,${dayData.color},${dayData.color}22)`,
                       }}
@@ -147,11 +147,11 @@ export default function RoadmapPage() {
                         initial={{ opacity: 0, x: -12 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.1 + i * 0.08, duration: 0.6 }}
-                        className="relative mb-7 last:mb-0"
+                        className="relative mb-8 last:mb-0"
                       >
                         {/* Dot */}
                         <div
-                          className="absolute -left-[21px] top-[6px] w-3 h-3 rounded-full border-2 flex-shrink-0"
+                          className="absolute -left-[25px] md:-left-[29px] top-[8px] w-3.5 h-3.5 rounded-full border-2 flex-shrink-0"
                           style={{
                             background: i === 0 ? dayData.color : theme.bg,
                             borderColor: dayData.color,
@@ -161,24 +161,32 @@ export default function RoadmapPage() {
                         />
 
                         <div
-                          className="glass-card p-4 border-l-2 transition-all hover:translate-x-1 duration-200"
+                          className="glass-card p-5 md:p-6 border-l-2 transition-all hover:translate-x-1 duration-200"
                           style={{
                             borderLeftColor: `${dayData.color}80`,
                             borderColor: theme.border,
                           }}
                         >
                           <div
-                            className="font-mono text-[0.6rem] tracking-[2px] mb-1"
+                            className="font-mono text-[0.72rem] md:text-xs tracking-[2px] mb-2"
                             style={{ color: dayData.color }}
                           >
                             {item.time}
                           </div>
                           <div
-                            className="font-body text-base font-medium"
+                            className="font-body text-lg md:text-xl font-medium leading-snug"
                             style={{ color: theme.text }}
                           >
                             {item.event}
                           </div>
+                          {item.venue && (
+                            <div
+                              className="font-mono text-[0.68rem] md:text-xs tracking-[1.5px] mt-3 uppercase"
+                              style={{ color: theme.textDim }}
+                            >
+                              Venue: {item.venue}
+                            </div>
+                          )}
                         </div>
                       </motion.div>
                     ))}

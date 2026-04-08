@@ -110,6 +110,12 @@ atulyam/
 └── types/                # TypeScript definitions
 ```
 
+## Content Maintenance
+
+- Event poster-to-link mapping is maintained in `app/events/page.tsx` (`EVENT_POSTERS` array).
+- Shared event form URL constants are maintained in `app/utils/data.ts` (`EVENT_REGISTRATION_URLS`).
+- Event card registration button behavior is in `app/events/components/EventCard.tsx`.
+
 ## Contributing
 
 This is the official ATULYAM 2026 website. For contributions or bugs:

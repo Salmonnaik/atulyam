@@ -348,7 +348,7 @@ export default function SponsorsPage() {
               vibrant, creative, 3,000+ student cultural universe.
             </p>
             <motion.a
-              href="mailto:sponsors@atulyam.edu"
+              href="mailto:atulyam@nitap.ac.in"
               whileHover={{ scale: 1.04, y: -2 }}
               whileTap={{ scale: 0.97 }}
               className="inline-block px-12 py-4 font-mono text-[0.72rem] font-bold tracking-[3px] uppercase text-black cursor-none clip no-underline"

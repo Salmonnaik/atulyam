@@ -25,6 +25,7 @@ export default function EventCard({
     });
   };
 
+  
   const handleRegisterClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     const link = event.registrationLink || "https://forms.google.com/example";

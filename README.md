@@ -10,8 +10,10 @@ A dynamic and immersive web experience for ATULYAM 2026, the cultural festival c
 - 📱 Fully responsive design (mobile, tablet, desktop)
 - ✨ Smooth animations with Framer Motion
 - 🖱️ Custom cursor with theme-aware styling
-- 🎭 Interactive event categories and schedule
-- 👥 Complete team directory with photos
+- 🎭 Poster-first events gallery with per-card registration links
+- 🎤 Hall of Attraction artist showcase section
+- 🖼️ Real festival gallery with lightbox preview
+- 👥 Complete team directory with faculty + student committees
 
 ## Pages
 
